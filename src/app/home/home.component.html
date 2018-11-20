@@ -1,6 +1,56 @@
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top my-navbar">
+	<a class="navbar-brand" href="#">Angular</a>
+	<button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
+		<ul class="navbar-nav mr-auto justify-content-end">
+			<li class="nav-item navbar-right">
+				<a class="nav-link" id="id01" href="#">Files</a>
+			</li>
+			<li class="nav-item navbar-right">
+				<a class="nav-link" id="id01" href="#">Files</a>
+			</li>
+		</ul>
+	</div>
+</nav>
 
-<div class="content">
+<div class="home" [ngClass]="{'home': !isOpened, 'home-opened': isOpened}" [style.background-color] = "blendedColor">
+	<div class="loading-animation" *ngIf="!isOpened">
+		<div class="app-loading">
+			<div class="logo"></div>
+		<!--
+		<svg class="spinner" viewBox="25 25 50 50">
+			<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+		</svg> -->
+		<svg class="beat" width="108px" height="128px" viewBox="0 0 54 64" *ngIf="!isLoaded">
+			<defs></defs>
+			<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+				<path class="beat-loader" d="M0.5,38.5 L16,38.5 L19,25.5 L24.5,57.5 L31.5,7.5 L37.5,46.5 L43,38.5 L53.5,38.5" id="Path-2" stroke-width="2" sketch:type="MSShapeGroup"></path>
+			</g>
+		</svg>
+		<svg *ngIf="!isOpened" class="heart" viewBox="0 0 32 29.6" [ngClass]="{'moving-heart': isLoaded, 'beating-heart': !isLoaded}">
+			<path class="path" d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+			c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+		</svg>
+	</div>
+</div>
+
+<div class="content" *ngIf="isOpened">
+	<div class="row">
+		<div class="col">
+			<img src="assets/img/home-01.png" class="side-screen-img">
+		</div>
+		<div class="col">
+			<div class="name">
+				<p>I'm Jing,</p>
+				<p>I believe that design is about lighting up the world through making connection.</p>
+			</div>
+		</div>
+	</div>
+
+	<!--
 	<div class="content__container">
 		<p class="content__container__text">
 			Hello
@@ -8,9 +58,14 @@
 
 		<ul class="content__container__list">
 			<li class="content__container__list__item">world !</li>
-			<li class="content__container__list__item">bob !</li>
-			<li class="content__container__list__item">users !</li>
-			<li class="content__container__list__item">everybody !</li>
+			<li class="content__container__list__item">there !</li>
 		</ul>
 	</div>
+	<div class="name">
+		<p>I'm Jing,</p>
+		<p>I believe that design is about lighting up the world through making connection.</p>
+	</div>
+</div>
+-->
+</div>
 </div>
