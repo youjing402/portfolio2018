@@ -10,9 +10,16 @@ export class HomeComponent implements OnInit {
 
 	isLoaded = false;
 	isOpened = false;
+	isScrolled1 = false;
+	isScrolled2 = false;
+	hasScrolled2Passed = false;
+	isScrolled3 = false;
+	isScrolled4 = false;
 	isNavbarCollapsed = true;
 	blendedColor = "#ff5555";
 	originalColor = "#ff5555";
+	loadingColor = "#FCA18C";
+	nameZoom = 1;
 
   constructor(public el: ElementRef) { }
 
@@ -30,12 +37,42 @@ export class HomeComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
     checkScroll() {
       //const componentPosition = this.el.nativeElement.offsetTop;
-      console.log("hshsheh");
       const scrollPosition = window.pageYOffset;
-      const maxScrollPosition = document.getElementsByClassName("home-opened")[0].clientHeight/2;
+      const firstScreenRatio = 1/4.5;
+      const maxScrollPosition = document.getElementsByClassName("home-opened")[0].clientHeight*(1-firstScreenRatio);
       var percentage = scrollPosition / maxScrollPosition;
       this.blendedColor = this.blend(this.originalColor, "#ff7c7c", percentage);
-      console.log (this.blendedColor);
+      if (scrollPosition > maxScrollPosition/4.5) {
+      	this.isScrolled1 = true;
+      }
+      if (scrollPosition < maxScrollPosition/4.5) {
+      	this.isScrolled1 = false;
+      }
+      if (scrollPosition > maxScrollPosition*2/4.5) {
+      	console.log("max1 = " + scrollPosition);
+      	this.isScrolled2 = true;
+      	const t = timer(500);
+      	const subscribe = t.subscribe(val => this.hasScrolled2Passed = true);
+      }
+      if (scrollPosition < maxScrollPosition*2/4.5) {
+      	this.isScrolled2 = false;
+      	this.hasScrolled2Passed = false;
+      }
+      if (scrollPosition > maxScrollPosition*3/4.5) {
+      	console.log("max2 = " + maxScrollPosition);
+      	this.isScrolled3 = true;
+      }
+      if (scrollPosition < maxScrollPosition*3/4.5) {
+      	this.isScrolled3 = false;
+      }
+      if (scrollPosition > maxScrollPosition) {
+      	this.isScrolled4 = true;
+      }
+      if (scrollPosition < maxScrollPosition) {
+      	this.isScrolled4 = false;
+      }
+
+      this.nameZoom = Math.max (0.6, 1 - (scrollPosition-(maxScrollPosition/3)) / 500);
     }
 
   blend(hex1, hex2, percentage) {

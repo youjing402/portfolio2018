@@ -1,22 +1,25 @@
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <nav class="navbar navbar-expand-md navbar-dark fixed-top my-navbar">
-	<a class="navbar-brand" href="#">Angular</a>
+	<a class="navbar-brand" href="#">Jing</a>
 	<button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
 		<ul class="navbar-nav mr-auto justify-content-end">
 			<li class="nav-item navbar-right">
-				<a class="nav-link" id="id01" href="#">Files</a>
+				<a class="nav-link" id="id01" href="#">Work</a>
 			</li>
 			<li class="nav-item navbar-right">
-				<a class="nav-link" id="id01" href="#">Files</a>
+				<a class="nav-link" id="id01" href="#">About</a>
+			</li>
+			<li class="nav-item navbar-right">
+				<a class="nav-link" id="id01" href="#">Resume</a>
 			</li>
 		</ul>
 	</div>
 </nav>
 
-<div class="home" [ngClass]="{'home': !isOpened, 'home-opened': isOpened}" [style.background-color] = "blendedColor">
+<div class="home" [ngClass]="{'home': !isOpened, 'home-opened': isOpened}" [style.background-color] = "isOpened? blendedColor : loadingColor">
 	<div class="loading-animation" *ngIf="!isOpened">
 		<div class="app-loading">
 			<div class="logo"></div>
@@ -37,15 +40,29 @@
 	</div>
 </div>
 
-<div class="content" *ngIf="isOpened">
-	<div class="row">
-		<div class="col">
-			<img src="assets/img/home-01.png" class="side-screen-img">
+<div class="content hide-on-init" *ngIf="isOpened" [ngClass]="!isScrolled4 ? 'fixed-content' : 'absolute-content'">
+	<div class="row justify-content-center">
+		<div class="col col-lg-6">
+			<div class="home1" *ngIf="!hasScrolled2Passed">
+				<img src="assets/img/home-01.png" class="animated fadeInUp side-screen-img" [ngClass]="isScrolled2 ? 'fadeOutUp' : 'fadeInUp'">
+				<img src="assets/img/home-02.png" *ngIf="isScrolled1" class="hide-on-init animated side-screen-img" [ngClass]="isScrolled2 ? 'fadeOutUp' : 'fadeInUp'">
+			</div>
+			<div class="home2" *ngIf="isScrolled2 && hasScrolled2Passed">
+				<img src="assets/img/home-03.png" class="hide-on-init animated fadeInUp side-screen-img">
+			</div>
 		</div>
-		<div class="col">
-			<div class="name">
-				<p>I'm Jing,</p>
-				<p>I believe that design is about lighting up the world through making connection.</p>
+		<div class="col col-lg-5 text-block">
+			<div class="name hide-on-init animated fadeOutBig" [ngClass]="{'smaller-name': isScrolled1}" [style.zoom] = "isScrolled1? nameZoom : 1">
+				<p>Hi, I'm Jing,</p>
+				<p>a Product Designer | Connection Crafter.</p>
+			</div>
+			<div class="intro-1 hide-on-init animated" *ngIf="isScrolled1 && !hasScrolled2Passed" [ngClass]="isScrolled2 ? 'fadeOutUp' : 'fadeInUp'">
+				<p>To me,</p>
+				<p><span class="emphasis-1">Design</span> is about exploring our <span class="emphasis-1">CONNECTIONS</span> with the world.</p>
+			</div>
+			<div class="intro-2 hide-on-init animated fadeInUp" *ngIf="isScrolled2 && hasScrolled2Passed">
+				<p>And,</p>
+				<p><span class="emphasis-2">Design</span> is also about building <span class="emphasis-2">CONNECTIONS</span> among us all.</p>
 			</div>
 		</div>
 	</div>
@@ -67,5 +84,38 @@
 	</div>
 </div>
 -->
+</div>
+<div class="work-grid">
+	<div>Project Showcase</div>
+	<div class="row justify-content-center">
+		<div class="col-lg-5 col-sm-12">
+			<div class="thumb-image square animated fadeInUp">
+				<div class="crop-img">
+					<img src="assets/img/projectthumb-01.png" class="thumb-image">
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-5 col-sm-12">
+			<div class="thumb-image square animated fadeInUp">
+				<div class="crop-img">
+					<img src="assets/img/projectthumb-01.png" class="thumb-image">
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-5 col-sm-12">
+			<div class="thumb-image square animated fadeInUp">
+				<div class="crop-img">
+					<img src="assets/img/projectthumb-01.png" class="thumb-image">
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-5 col-sm-12">
+			<div class="thumb-image square animated fadeInUp">
+				<div class="crop-img">
+					<img src="assets/img/projectthumb-01.png" class="thumb-image">
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 </div>
