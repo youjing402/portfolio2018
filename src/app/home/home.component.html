@@ -42,7 +42,7 @@
 
 <div class="content hide-on-init" *ngIf="isOpened" [ngClass]="!isScrolled4 ? 'fixed-content' : 'absolute-content'">
 	<div class="row justify-content-center">
-		<div class="col col-lg-6">
+		<div class="col col-lg-5">
 			<div class="home1" *ngIf="!hasScrolled2Passed">
 				<img src="assets/img/home-01.png" class="animated fadeInUp side-screen-img" [ngClass]="isScrolled2 ? 'fadeOutUp' : 'fadeInUp'">
 				<img src="assets/img/home-02.png" *ngIf="isScrolled1" class="hide-on-init animated side-screen-img" [ngClass]="isScrolled2 ? 'fadeOutUp' : 'fadeInUp'">
@@ -52,18 +52,23 @@
 			</div>
 		</div>
 		<div class="col col-lg-5 text-block">
-			<div class="name hide-on-init animated fadeOutBig" [ngClass]="{'smaller-name': isScrolled1}" [style.zoom] = "isScrolled1? nameZoom : 1">
-				<p>Hi, I'm Jing,</p>
-				<p>a Product Designer | Connection Crafter.</p>
+			<div class="name hide-on-init animated fadeOutBig" [ngClass]="{'smaller-name': isScrolled1}" [style.opacity] = "isScrolled1? transparentFontOpacity : 1">
+				<p class="light-font">Hi, I'm Jing,</p>
+				<p class="bold-font">a <a class="_primary-link">Product Designer</a></p>
 			</div>
-			<div class="intro-1 hide-on-init animated" *ngIf="isScrolled1 && !hasScrolled2Passed" [ngClass]="isScrolled2 ? 'fadeOutUp' : 'fadeInUp'">
-				<p>To me,</p>
-				<p><span class="emphasis-1">Design</span> is about exploring our <span class="emphasis-1">CONNECTIONS</span> with the world.</p>
+			<div class="intro-1 hide-on-init animated fadeInUp" *ngIf="isScrolled1">
+				<p>who believe that <span class="emphasis-1">design</span> is all about <span class="emphasis-1">CONNECTIONS</span> between us, <span class="intro-2 hide-on-init animated fadeInUp" *ngIf="isScrolled2 && hasScrolled2Passed">and between everything around us.</span></p>
+				<!--
+				<button type="button" class="btn btn-lg">
+					<fa name="cog" animation="spin"></fa> Resume
+				</button> -->
 			</div>
+
+			<!--
 			<div class="intro-2 hide-on-init animated fadeInUp" *ngIf="isScrolled2 && hasScrolled2Passed">
 				<p>And,</p>
 				<p><span class="emphasis-2">Design</span> is also about building <span class="emphasis-2">CONNECTIONS</span> among us all.</p>
-			</div>
+			</div> -->
 		</div>
 	</div>
 

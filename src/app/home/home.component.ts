@@ -19,6 +19,7 @@ export class HomeComponent implements OnInit {
 	blendedColor = "#ff5555";
 	originalColor = "#ff5555";
 	loadingColor = "#FCA18C";
+	transparentFontOpacity = 1;
 	nameZoom = 1;
 
   constructor(public el: ElementRef) { }
@@ -73,6 +74,7 @@ export class HomeComponent implements OnInit {
       }
 
       this.nameZoom = Math.max (0.6, 1 - (scrollPosition-(maxScrollPosition/3)) / 500);
+      this.transparentFontOpacity = Math.max (0.7, 1 - (scrollPosition-(maxScrollPosition/3)) / 500);
     }
 
   blend(hex1, hex2, percentage) {

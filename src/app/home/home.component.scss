@@ -3,6 +3,14 @@ body {
 
 }
 
+.light-font {
+  font-weight: 300;
+}
+
+.bold-font {
+  font-weight: bold;
+}
+
 .home {
   height: 100vh;
   width: 100%;
@@ -15,6 +23,7 @@ body {
   width: 100%;
   position: absolute;
   background-color: #ff5555;
+  font-weight: 300;
 }
 
 .home-relative {
@@ -58,10 +67,10 @@ body {
 
 .smaller-name {
   //font-family: 'Lato', sans-serif;
-  font-size: 35px;
+  //font-size: 35px;
   //line-height: 40px;
   //color: #ecf0f1;
-  color: rgba(236, 240, 241, 0.5);
+  color: rgba(236, 240, 241, 1);
 }
 
 .intro-1 {
@@ -196,12 +205,12 @@ body {
 }
 
 .content {
-  padding-top: 15%;
+  padding-top: 10%;
   left: 0%;
   width: 100%;
   
   font-family: 'Lato', sans-serif;
-  font-size: 35px;
+  font-size: 28px;
   //line-height: 40px;
   color: #ecf0f1;
 }
@@ -342,6 +351,38 @@ body {
   margin-right: 0px !important;
   margin-left: 0px !important;
 }
+
+._primary-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 8px 0;
+  font-weight: bold;
+    //text-transform: uppercase;
+    position: relative;
+    //font-size: 30px;
+  }
+
+  ._primary-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0%;
+    height: .15em;
+    background: #FDB92D;
+    opacity: .8;
+  }
+
+  .color-fill {
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    background: #FDB92D;
+  }
 
 // 6 is the number of animation.
 // Here, there are 4 lines :

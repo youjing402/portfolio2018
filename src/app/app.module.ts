@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    AnimateOnScrollModule.forRoot()
+    AnimateOnScrollModule.forRoot(),
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
