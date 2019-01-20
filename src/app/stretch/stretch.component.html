@@ -1,0 +1,594 @@
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lustria" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top my-navbar">
+	<a class="navbar-brand" href="#">Jing</a>
+	<button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
+		<ul class="navbar-nav mr-auto justify-content-end">
+			<li class="nav-item navbar-right">
+				<a class="nav-link" id="id01" href="#workSection">Work</a>
+			</li>
+			<li class="nav-item navbar-right">
+				<a class="nav-link" id="id01" href="#">About</a>
+			</li>
+			<li class="nav-item navbar-right">
+				<a class="nav-link" id="id01" href="#">Resume</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+
+<div class="stretch-page">
+	<div class="row banner justify-content-around">
+		<div class="titles col-lg-4 col-sm-4">
+			<p class="banner-title">
+				Stretch!
+			</p>
+			<p class="banner-subtitle">
+				A mobile meal planner that helps you make a better use of time, budget, and resources.
+			</p>
+			<div class="attributes">
+				<div class="row attribute1">
+					<div class="col-lg-6 col-sm-6">
+						<div class="attribute-title"><b>Duration</b></div>
+						<!--<fa name="calendar"></fa>-->
+						<div class="attribute-content">Sep ~ Nov 2018</div>
+					</div>
+					<div class="col-lg-6 col-sm-6">
+						<div class="attribute-title"><b>Role</b></div>
+						<!--<fa name="user"></fa>-->
+						<div class="attribute-content">Product Designer</div>
+					</div>
+				</div>
+				<div class="row attribute2">
+					<div class="col-lg-6 col-sm-6">
+						<div class="attribute-title"><b>Team</b></div>
+						<!--<fa name="cog" animation="spin"></fa>-->
+						<div class="attribute-content">Piyush Dawande</div>
+						<div class="attribute-content">Mia Fan</div>
+						<div class="attribute-content">Elisa Krebs</div>
+					</div>
+					<div class="col-lg-6 col-sm-6">
+						<div class="attribute-title"><b>Contributions</b></div>
+						<!--<fa name="cog" animation="spin"></fa>-->
+						<div class="attribute-content">Interview</div>
+						<div class="attribute-content">Contextual Inquiry</div>
+						<div class="attribute-content">Ideation</div>
+						<div class="attribute-content">Prototyping</div>
+						<div class="attribute-content">Mobile Design</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="banner-img col-lg-6 col-sm-6">
+			<img src="assets/img/stretch-banner-ui.png" class="part-img">
+		</div>
+	</div>
+
+	<div class="big-part">
+		<div class="big-part-inner">
+			<div class="big-part-head">
+				<p class="big-part-title"> Problem Space </p>
+			</div>
+			<div class="large-font-content">
+				<p> Food insecurity is defined as a lack of consistent access to enough food for an active, healthy life. 1 in 7 people struggles with food insecurity in Indiana, and the problem could be more prevalent than we thought. People are not always aware of the risk, and they may not have the skills to prepare for the future risk or handle it when it comes.</p>
+				<div><fa name="quote-left"></fa></div>
+				<div class="quote"> 
+					<span class="sentence">Food insecurity is often a <b>temporary state</b>, and everyone can be <b>at risk at some points</b> in his or her life."</span> <span class="source"><br>-- Coordinator at Community Kitchen, a local NPO combatting food insecurity in Bloomington, Indiana</span>
+				</div>
+				<br>
+				<br>
+				<p class="question"> <b>How can we prevent the risk of food insecurity by helping people to plan meals and manage food in ways that make a better use of budget and time? </b>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="big-part">
+		<div class="big-part-inner">
+			<div class="big-part-head">
+				<p class="big-part-title"> Design Outcome </p>
+			</div>
+			<div class="large-font-content">
+				<p> We came up with, Stretch, a meal planner that features the key concept of "stretching" meals.</p>
+				<img src="assets/img/stretch-flow-concept.png" class="part-img small-section">
+				<div class="row demo-section">
+					<div class="col-lg-3 col-sm-3 demo-frame">
+						<img src="assets/img/iphone8-frame.png" class="demo-iphone-bg">
+						<img src="assets/img/stretch-demo-new-plan.gif" class="demo-animation">
+					</div>
+					<div class="col-lg-1 col-sm-1"></div>
+					<div class="col-lg-7 col-sm-7 demo-intro">
+						<p class="demo-title"><b>Plan meals through multiple days</b></p> 
+						<p class="demo-subtitle">Be in control of your budget and time</p>
+						<p class="demo-description">Budget and time are two keys to meal preparation. Users can plan several meals ahead based on available budget, time, and food to gain an overview over effective resource usages.</p>
+					</div>
+				</div>
+
+				<div class="row demo-section">
+					<div class="col-lg-3 col-sm-3 demo-frame">
+						<img src="assets/img/iphone8-frame.png" class="demo-iphone-bg">
+						<img src="assets/img/stretch-demo-recipe.gif" class="demo-animation">
+					</div>
+					<div class="col-lg-1 col-sm-1"></div>
+					<div class="col-lg-7 col-sm-7 demo-intro">
+						<p class="demo-title"><b>Easy, quick, flexible recipes that stretch your meals</b></p> 
+						<p class="demo-subtitle">Save and reallocate time and energy: prepare extra and repurpose for future meals</p>
+						<p class="demo-description">Holistic recipe planning features the core concept of "stretching the food". Based on users' cooking availabity, they will be instructed to prepare more food when they have time, and the extra portions will be reused or directly consumed in future meals to save time and make better use of ingredients. </p>
+					</div>
+				</div>
+
+				<div class="row demo-section">
+					<div class="col-lg-3 col-sm-3 demo-frame">
+						<img src="assets/img/iphone8-frame.png" class="demo-iphone-bg">
+						<img src="assets/img/stretch-demo-grocery.gif" class="demo-animation">
+					</div>
+					<div class="col-lg-1 col-sm-1"></div>
+					<div class="col-lg-7 col-sm-7 demo-intro">
+						<p class="demo-title"><b>Manage your grocery shopping and food stock</b></p> 
+						<p class="demo-subtitle">Use what you have, get what you need </p>
+						<p class="demo-description">Users can shop for all grocery items that are required by the planned meals at once with the easy-manage grocery list. Also, users can check through the quantity and expiry dates of food stock to decide what to use in next meals and improve food usage efficiency. </p>
+					</div>
+				</div>
+
+				<div class="row demo-section">
+					<div class="col-lg-3 col-sm-3 demo-frame">
+						<img src="assets/img/iphone8-frame.png" class="demo-iphone-bg">
+						<img src="assets/img/stretch-demo-stats.png" class="demo-animation">
+					</div>
+					<div class="col-lg-1 col-sm-1"></div>
+					<div class="col-lg-7 col-sm-7 demo-intro">
+						<p class="demo-title"><b>Track your budget, spending, and time saved </b></p> 
+						<p class="demo-subtitle">Gain overview of your progress and resources, and see your improvements over time</p>
+						<p class="demo-description">Planning meals is rewarding and motivating, particularly when the progress becomes visible: how you save your time and budget, and how you better utilize your resources. Based on the statistics, users will be able to better manage and adjust their resources.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="big-part">
+		<div class="big-part-inner">
+			<div class="big-part-head">
+				<p class="big-part-title"> Timeline </p>
+				<!--<p class="big-part-sub-title"> How did we come here </p>-->
+			</div>
+			<div class="mid-font-content">
+				<p> Process & Timeline & Double Diamond</p>
+				<img class="part-img" src="assets/img/stretch-timeline.png">
+			</div>
+		</div>
+	</div>
+
+	<div class="big-part">
+		<div class="big-part-inner">
+			<div class="big-part-head">
+				<p class="big-part-title"> Research </p>
+				<!--<p class="big-part-sub-title"> How did we come here </p>-->
+			</div>
+			<div class="mid-font-content">
+				<p> In order to gain an overview about food insecurity and the existing community trying to combat it, we conducted initial research through: </p>
+				<div class="research-icons row justify-content-center section">
+					<div class="col-lg-3 col-sm-3 center-align">
+						<fa name="book" class="icon1"></fa>
+						<div class="icon-title">Literature Review</div>
+						<div class="icon-intro">for food insecurity data and relevant programs and organizations</div>
+					</div>
+					<div class="col-lg-3 col-sm-3 center-align">
+						<fa name="comments" class="icon1"></fa>
+						<div class="icon-title">Interview</div>
+						<div class="icon-intro">with individuals and local organizations</div>
+					</div>
+					<div class="col-lg-3 col-sm-3 center-align">	
+						<fa name="eye" class="icon1"></fa>
+						<div class="icon-title">Observation</div>
+						<div class="icon-intro">at local organizations and farmers' market events</div>
+					</div>
+					<div class="col-lg-3 col-sm-3 center-align">
+						<fa name="pencil" class="icon1"></fa>
+						<div class="icon-title">Contextual Inquiry</div>
+						<div class="icon-intro">with nutrion expert</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<p class="sub-title"> Budget, Time, and Life Uncertainty </p>
+					<p class="sub-big-title"> Understanding Food Insecurity as a Temporary State </p>
+					<div class="margin-50">
+						<p> We had the assumption that people confronting food insecurity are living in extreme poverty. But the result from our field research disproved this: People going for cheap food are just normal people who work hard to feed themselves and their family.  </p>
+						<p>Food insecurity is not as simple as 0 and 1; due to life uncertainties, anyone could . </p>
+					</div>
+					<div class="margin-50">
+						<img src="assets/img/stretch-causes.png" class="img-70">
+					</div>
+					<p>Often, as a result of life uncertainties, <b>budget and time</b> becomes challenging, and planning for meal preparation to stay food secure becomes crucial yet harder. This led us to the question that: </p>
+					<div class="question"> 
+						<p class="sentence"> "When it comes to meal preparation under budget and time constraints, how can we help individuals become more proactive and resilient to potential risks of food insecurity?"
+						</p>
+					</div>
+				</div>
+
+				<div class="section">
+					<!--<p class="sub-title"> #1 Individuals in need </p> -->
+					<p class="sub-title"> <b> Problems Identification </b> </p>
+					<p class="sub-big-title"> <b> How do people prepare meals and manage their food </b> </p>
+					<div class="section">
+						<p> To learn about issues people have in meal preparation that can be potentially improved, we interviewed 20 people about their eating habits, meal preparation, and food management process. </p>
+						<p> Based on the interviews, we mapped out people's journey of meal preparation in different stages: from planning, shopping, preparing, to consuming. We synthesized and analyzed their experience, problems, and opportunities for improvement.</p>
+					</div>
+					<div class="section">
+						<img src="assets/img/stretch-experience-map.png" class="part-img">
+					</div>
+
+<!--
+				<div class="row">
+					<div class="col-lg-6 col-sm-6">
+						
+					</div>
+					<div class="col-lg-6 col-sm-6">
+						<p class="method-title"> Experience Map </p>
+						<p class="method-content"> From the reseach, we mapped out people's journey of meal preparation in different stages: from planning, shopping, preparing, to consuming. We synthesized and analyzed their experience, problems, and opportunities for improvement. </p>
+					</div>
+				</div> -->
+
+				<div class="section">
+					
+				</div>
+
+				<p class="sub-title"> <b> Synthesizing Insights </b> </p>
+				<p class="sub-big-title"> <b> What hinders people from making the best use of resources </b> </p>
+
+				<div class="section">
+					<p> People want to make the best use of their budget and time, but they are not because <b>they don't have the awareness and skills to plan and prepare meals in a holistic way</b>: </p>
+				</div>
+
+				<div class="section">
+
+					<div class="row section justify-content-around">
+						<div class="col-lg-2 col-sm-2">
+							<img src="assets/img/stretch-insight-plan.png" class="part-img">
+						</div>
+						<div class="col-lg-8 col-sm-8">
+							<p class="insight-title"><b>People generally <b class="color-emphasis">lack</b> the time, skills, and awareness to <b class="color-emphasis">plan meals ahead</b>, and are unsure of what comes next.</b> </p>
+							<p class="insight-content-medium">Many do not have the habit of planning grocery list, ingredients, and individual meals. They do see the value of planning, but they find it <b>tedious and do not worth the time and energy</b>. Without a plan, they over-spend the budget and time, and they do not have a clear picture of what is coming.</p>
+						</div>
+					</div>
+					<div class="row section justify-content-around">
+						<div class="col-lg-2 col-sm-2">
+							<img src="assets/img/stretch-insight-food.png" class="part-img">
+						</div>
+						<div class="col-lg-8 col-sm-8">
+							<p class="insight-title"><b>People have <b class="color-emphasis">limited</b> knowledge about <b class="color-emphasis">efficient usages of ingredients</b> across meals.</b> </p>
+							<p class="insight-content-medium">People are used to choosing from a limited range of ingredients they are familiar with. Also, many would not consider the various usages of ingredients, despite that it can be helpful when planning efficient food use across different meals. </p>
+						</div>
+					</div>
+
+					<div class="row section justify-content-around">
+						<div class="col-lg-2 col-sm-2">
+							<img src="assets/img/stretch-insight-meal.png" class="part-img">
+						</div>
+						<div class="col-lg-8 col-sm-8">
+							<p class="insight-title"><b>People are used to <b class="color-emphasis">cooking just enough</b>, yet they complain about <b class="color-emphasis">making meals from scratch when they don't have time</b>. </b> </p>
+							<p class="insight-content-medium">Making every meal from scratch is time consuming and energy consuming. Sometimes people would just eat processed food or skip meals for convenience. However, people often do not cook more than needed, mainly due to lack of awareness.</p>
+						</div>
+					</div>
+
+					<!--
+						<p> Therefore, we were looking for opportunities to <b>help people with food budget to plan and make their meals more easily in the way that makes a better use out of limited resources</b> (i.e. budget, time, and food ingredients). </p> -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="big-part">
+		<div class="big-part-inner">
+			<div class="big-part-head">
+				<p class="big-part-title"> Inspiration </p>
+				<!--<p class="big-part-sub-title"> How did we come here </p>-->
+			</div>
+			<div class="mid-font-content">
+				<p class="sub-title"> <b> Learning from Experts </b> </p>
+				<p class="sub-big-title"> How Successful Individuals and Organizations Deal with Food </p>
+
+				<p class="section"> To further learn about professional skills of meal planning and food management that could benefit people, we looked into organizations and a fitness trainer who are experts at food management and meal preparation, to see what <b>practices and strategies</b> help them make efficient use of resources. </p>
+
+				<div class="row section">
+					<div class="col-lg-6 col-sm-6">
+						<img src="assets/img/stretch-expert-affinity.png" class="part-img">
+					</div>
+					<div class="col-lg-6 col-sm-6">
+						<p class="method-title"> Affinity Diagram </p>
+						<p class="method-content"> We used affinity diagram to organized and synthesized findings we gathered from research with experts and organizations. Through analyzing and summarizing the categories, we learnt about their effective food practices. </p>
+					</div>
+				</div>
+
+				<div class="row section">
+					<div class="col-lg-6 col-sm-6">
+						<img src="assets/img/stretch-expert-story.png" class="part-img">
+					</div>
+					<div class="col-lg-6 col-sm-6">
+						<p class="method-title"> Story Mapping </p>
+						<p class="method-content"> We mapped out the flow that experts manage food, plan meals, and prepare meals. In that, we considered alternative scenarios in different stages and compare with average people's story to find design opportunities. </p>
+					</div>
+				</div>
+
+				<div class="section">
+					<p class="sub-title"> <b> Oppotunities for Application </b> </p>
+					<p class="sub-big-title"> <b> Key Inspirations </b> </p>
+					<div class="row">
+						<div class="col-lg-6 col-sm-6 interview-photos">
+							<p class="insight-title-medium"><b>Plan and do with a <b class="color-emphasis">big picture</b> in mind</b></p>
+							<div class="insight-content-medium">
+								<p> They planned in advance, and for many meals across days at once. Keeping the big picture allowed them to plan the most suitable recipes, adjust ingredients in different meals, reuse for better utilization, and allocate time and energy.</p>
+								<p> When actually making meals, they often prepared more than needed: to save time for future meals, and to avoid accidents. </p>	
+							</div>
+						</div>
+						<div class="col-lg-6 col-sm-6 interview-photos">
+							<p class="insight-title-medium"><b>Maintain food <b class="color-emphasis">organization</b></b></p>
+							<div class="insight-content-medium">
+								<p> Keeping food in good organization allowed them to track food freshness and quantity, which greatly helped them with food usage planning: the right ingredients with right quantity to be consumed on the right day.</p>
+								<p> Not only raw ingredients, leftovers were also a big part in food management for efficient reuse.</p>
+							</div>
+						</div>
+					</div>
+					<div class="section row">
+						<div class="col-lg-6 col-sm-6 center-align">	
+							<img class="photo-img" src="assets/img/stretch-photo-cooking-2.png">
+							<p class="note-paragraph"> Fitness trainer Janet demonstrating how she planned meals for the week</p>
+						</div>
+						<div class="col-lg-6 col-sm-6 center-align">
+							<img class="photo-img" src="assets/img/stretch-photo-storage-1.png">
+							<p class="note-paragraph"> Food in good organization at Community Kitchen and Crimson Cupboard food pantry</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="big-part">
+		<div class="big-part-inner">
+			<div class="big-part-head">
+				<p class="big-part-title"> Ideation </p>
+				<!--<p class="big-part-sub-title"> How did we come here </p>-->
+			</div>
+			<div class="mid-font-content">
+				<div class="row section">
+					<div class="col-lg-6 col-sm-6">
+						<img src="assets/img/stretch-ideation.jpg" class="part-img">
+					</div>
+					<div class="col-lg-6 col-sm-6">
+						<p class="method-title"> What-If Scenarios </p>
+						<p class="method-content"> Based on what we learned about people's pain points in meal preparation and management, we jumped out of data and brainstormed multiple concepts from coming up with what-if scenarios. </p>
+					</div>
+				</div>
+
+				<div class="row section">
+					<div class="col-lg-6 col-sm-6">
+						<img src="assets/img/stretch-differential.png" class="part-img">
+					</div>
+					<div class="col-lg-6 col-sm-6">
+						<p class="method-title"> Semantic Differential </p>
+						<p class="method-content"> We grouped concepts into 3 clusters, discussed the pros and cons by considering previous what-if scenarios, and performed semantic differential to analyze their feasibility and level of impact. </p>
+					</div>
+				</div>
+
+				<p class="section">
+					Through assessing the feasibility and impact of different concepts, we chose two of the most promising ones and saw the potential of combining them together:
+				</p>
+
+				<p class="sub-title"> <b> Envision </b> </p>
+				<p class="sub-big-title"> What if meals are pre-planned and cooking time is re-allocated based on what one has?  </p>
+
+				<div class="scenario-section">
+					<div class="width-45">
+						<img src="assets/img/stretch-scenario-1.png" class="part-img">
+					</div>
+					<div class="width-5">
+						<div class="vertical-align">
+							<p><b>+</b></p>
+						</div>
+					</div>
+					<div class="width-45">
+						<img src="assets/img/stretch-scenario-2.png" class="part-img">
+					</div>
+				</div>
+
+				<div class="section scenario-section">
+					<div class="width-45">
+						<p class="note-paragraph"><b>(1) Personal Meal Planner:</b><br>Make a better use of money by planning meals throughout the week based on one's food budget. </p>
+					</div>
+					<div class="width-5">
+						<p></p>
+					</div>
+					<div class="width-45">
+						<p class="note-paragraph"><b>(2) Stretch One's Food:</b><br>Make a better use of food and time by cooking more at once and utilize the extra portion to prepare the next meal(s). </p>
+					</div>			
+				</div>
+				<div>
+					We wanted to design a meal planner that teaches people how to plan their meals ahead and resuse food smartly in the way that make a better use of their resources.
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="big-part">
+		<div class="big-part-inner">
+			<div class="big-part-head">
+				<p class="big-part-title"> Concept </p>
+				<!--<p class="big-part-sub-title"> How did we come here </p>-->
+			</div>
+			<div class="mid-font-content">
+				<div class="section">
+					<p class="sub-title"> <b> Conceptual Testing </b> 
+					</p>
+					<p class="sub-big-title"> Validating the Core </p>
+					<div class="section">
+						<p>To test out the concept in a quick and dirty fashion, we wanted to know (1) Whether in practice, such planning method achieves the goal this product aims for: to save resources and to make people feel safe and in control as we expected, (2) What thoughts and problems people may have when following the plan. </p>
+					</div>
+					<div class="row section">
+						<div class="col-lg-6 col-sm-6">
+							<img src="assets/img/stretch-menus.png" class="part-img">
+						</div>
+						<div class="col-lg-6 col-sm-6">
+							<p class="method-title"> Experience Prototyping </p>
+							<p class="method-content"> We created a concept prototype by designing a 4-meal experimental recipe with the help from the expert and asking participants to follow the 2-day instructions from grocery shopping to cooking. </p>
+						</div>
+					</div>
+					<div class="row section">
+						<div class="col-lg-6 col-sm-6">
+							<img src="assets/img/stretch-usability-test.png" class="part-img">
+						</div>
+						<div class="col-lg-6 col-sm-6">
+							<p class="method-title"> Paper Prototyping </p>
+							<p class="method-content"> We also created a paper prototype capturing the key flow from planning meals, getting grocery items, to making meals. We tested with participants to learn about their quick reactions about the key idea and flow. </p>
+						</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="section">
+						<p class="sub-title"> <b> Feedback and Iteration </b> </p>
+						<p class="sub-big-title"> <b> Design for More Rewarding and Flexible Plan-Following Experience </b> </p>
+					</div>
+
+					<div class="row section">
+						<div class="col-sm-2 col-lg-2">
+							<img src="assets/img/stretch-advantage.png" class="part-img">
+						</div>
+						<div class="col-sm-1 col-lg-1">
+						</div>
+						<div class="col-sm-4 col-lg-4">
+							<p class="insight-title-medium"><b class="color-emphasis">Effective saving of resources</b></p>
+							<p class="insight-content-medium">Participants agreed that planning left-over repurposing and preparing extra for future is very helpful in saving resources, particularly time.</p>
+						</div>
+
+						<div class="col-sm-4 col-lg-4">
+							<p class="insight-title-medium"><b class="color-emphasis">Sense of Security</b></p>
+							<p class="insight-content-medium">Planning multiple days ahead, getting all ingredients, and preparing extra portions help user stay away from worries about uncertainties.</p>
+						</div>
+					</div>
+					<div class="row section">
+						<div class="col-sm-2 col-lg-2">
+							<img src="assets/img/stretch-disadvantage.png" class="part-img">
+						</div>
+						<div class="col-sm-1 col-lg-1">
+						</div>
+						<div class="col-sm-4 col-lg-4">
+							<p class="insight-title-medium"><b class="color-emphasis-neg">Planning could be troublesome</b></p>
+							<p class="insight-content-medium">It is hard to be determined to start a new plan, and it is stressful to stick to it, unless the <b>perceived benefit</b> is not big enough to outweight such inconvenience.</p>
+						</div>
+
+						<div class="col-sm-4 col-lg-4">
+							<p class="insight-title-medium"><b class="color-emphasis-neg">Allowing flexibility is crucial</b></p>
+							<p class="insight-content-medium">Since meals are dependent, the planner should be more <b>flexible</b> to handle cases like missing a meal or changes of ingredient stock.</p>
+						</div>
+					</div>
+					<p> The idea of planning for stretching meals was proven to be worth-developing, and that we needed to take care of making it easy and rewarding to plan and follow plans, and maintaining a fair level of flexibility in the planning mechanism. </p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="big-part">
+		<div class="big-part-inner">
+			<div class="big-part-head">
+				<p class="big-part-title"> Design </p>
+				<!--<p class="big-part-sub-title"> How did we come here </p>-->
+			</div>
+			<div class="mid-font-content">
+				<div class="section">
+					<p class="sub-title"> <b> Design Goals </b> </p>
+					<p class="sub-big-title"> Establishing Guidelines </p>
+					<p> To guide the the product design, we first set up key goals for the product to achieve. We referred to the top 10 psychological needs based on Sheldon et al. to help us see from users' perspectives and establish guidlines for designing the experience to be created for users.</p>
+					<div class="section">
+						<img src="assets/img/stretch-psychology.png" class="img-70">
+						<p class="note-paragraph"> Key psychological needs to address </p>
+					</div>
+
+					<div class="section">
+						<ul>
+							<li><b>What users want to achieve:</b> Making a better use of resources (i.e. time, money, food) to be in control of their eating.</li>
+							<li><b>What users need to do to achieve these goals:</b> Better food planning and management practice.</li>
+							<li><b>What the product can provide to help them achieve:</b> Better support of food planning and management knowledge and skills.</li>
+						</ul>
+						<!--<p>It helps people to manage budgets properly to get food that is sufficient for a period, and it helps people to save time by preparing something extra and utilize in the future.</p>-->
+					</div>
+
+					<div class="section">
+						<p class="sub-title"> <b> Testing the Core </b> </p>
+						<p class="sub-big-title"> MVP Design </p>
+						<p>Therefore, based on the previous ideations and the goal analysis, we came up with <b>Stretch</b>, a mobile app meal planner that featuring stretching meals as the key concept, to help users better plan and manage their food. </p>
+						<p>To begin with, we came up with the MVP that captured the core feature: planning for streched meals. Here shows the wireframes of the MVP. </p>
+						<img src="assets/img/stretch-wireframe.png" class="part-img">
+
+					</div>
+
+					<div class="section">
+						<p class="sub-title"> <b> Final Design </b> </p>
+						<p class="sub-big-title"> Skinning the Product </p>
+						<img src="assets/img/stretch-features.png" class="part-img">
+					</div>
+
+					<p> Features timeline & structure </p>
+
+					<p> Flowchart & wireframe </p>
+					<p> Hi-fi & key features animation</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="big-part">
+		<div class="big-part-inner">
+			<div class="big-part-head">
+				<p class="big-part-title"> Reflection </p>
+				<!--<p class="big-part-sub-title"> How did we come here </p>-->
+			</div>
+			<div class="mid-font-content">
+				<p> Validation: concept & usability </p>
+				<p> Iteration & new features </p>
+				<p> Future plan </p>
+				<div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--
+		<div class="row section">
+			<div class="col-lg-2 col-sm-2">
+				<h4> Exploring  </h4>
+			</div>
+			<div class="col-lg-10 col-sm-10">
+				<p> Validation: concept & usability </p>
+				<p> Iteration & new features </p>
+				<p> Future plan </p>
+				<div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row section">
+			<div class="col-lg-2 col-sm-2">
+				<h4> Iteration </h4>
+			</div>
+			<div class="col-lg-10 col-sm-10">
+				<p> Validation: concept & usability </p>
+				<p> Iteration & new features </p>
+				<p> Future plan </p>
+			</div>
+		</div>
+
+	-->
+</div>

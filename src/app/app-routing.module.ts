@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { StretchComponent } from './stretch/stretch.component';
 
 const appRoutes: Routes = [
-	{path: '', component: HomeComponent}
+	{path: '', component: HomeComponent},
+	{path: 'projects/stretch', component: StretchComponent}
 ]
 
 @NgModule({

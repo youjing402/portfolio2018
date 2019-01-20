@@ -1,4 +1,8 @@
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lustria" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
 <nav class="navbar navbar-expand-md navbar-dark fixed-top my-navbar">
 	<a class="navbar-brand" href="#">Jing</a>
 	<button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,7 +11,7 @@
 	<div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
 		<ul class="navbar-nav mr-auto justify-content-end">
 			<li class="nav-item navbar-right">
-				<a class="nav-link" id="id01" href="#">Work</a>
+				<a class="nav-link" id="id01" href="#workSection">Work</a>
 			</li>
 			<li class="nav-item navbar-right">
 				<a class="nav-link" id="id01" href="#">About</a>
@@ -42,22 +46,27 @@
 
 <div class="content hide-on-init" *ngIf="isOpened" [ngClass]="!isScrolled4 ? 'fixed-content' : 'absolute-content'">
 	<div class="row justify-content-center">
-		<div class="col col-lg-5">
-			<div class="home1" *ngIf="!hasScrolled2Passed">
-				<img src="assets/img/home-01.png" class="animated fadeInUp side-screen-img" [ngClass]="isScrolled2 ? 'fadeOutUp' : 'fadeInUp'">
-				<img src="assets/img/home-02.png" *ngIf="isScrolled1" class="hide-on-init animated side-screen-img" [ngClass]="isScrolled2 ? 'fadeOutUp' : 'fadeInUp'">
+		<div class="col col-lg-6 img-col">
+			<img src="assets/img/home-00.png" *ngIf="isScrolled3" class="side-screen-img">
+			<div class="home1" *ngIf="!hasScrolled3Passed">
+				<img src="assets/img/home-01-2.png" class="animated fadeInUp side-screen-img" [ngClass]="isScrolled3 ? 'fadeOutUp' : 'fadeInUp'">
+				<img src="assets/img/home-01-1.png" *ngIf="!isScrolled3" class="animated fadeInUp side-screen-img">
+				<img src="assets/img/home-02.png" class="hide-on-init animated side-screen-img delay-1s" [ngClass]="{'fadeOutUp': isScrolled3, 'zoomIn': !isScrolled3, 'delay-1s': !isScrolled3}">
 			</div>
-			<div class="home2" *ngIf="isScrolled2 && hasScrolled2Passed">
-				<img src="assets/img/home-03.png" class="hide-on-init animated fadeInUp side-screen-img">
+			<div class="home2" *ngIf="isScrolled3 && hasScrolled3Passed">
+				<img src="assets/img/home-03-1.png" class="hide-on-init animated fadeInUp side-screen-img">
+				<img src="assets/img/home-03-2.png" class="hide-on-init animated fadeInUp side-screen-img">
+				<img src="assets/img/home-04-3.png" class="hide-on-init animated fadeInUp side-screen-img">
+				<img src="assets/img/home-04.png" class="hide-on-init animated side-screen-img delay-1s zoomIn">
 			</div>
 		</div>
-		<div class="col col-lg-5 text-block">
+		<div class="col col-lg-6 text-block">
 			<div class="name hide-on-init animated fadeOutBig" [ngClass]="{'smaller-name': isScrolled1}" [style.opacity] = "isScrolled1? transparentFontOpacity : 1">
 				<p class="light-font">Hi, I'm Jing,</p>
 				<p class="bold-font">a <a class="_primary-link">Product Designer</a></p>
 			</div>
-			<div class="intro-1 hide-on-init animated fadeInUp" *ngIf="isScrolled1">
-				<p>who believe that <span class="emphasis-1">design</span> is all about <span class="emphasis-1">CONNECTIONS</span> between us, <span class="intro-2 hide-on-init animated fadeInUp" *ngIf="isScrolled2 && hasScrolled2Passed">and between everything around us.</span></p>
+			<div class="intro-1 hide-on-init animated fadeInUp delay-1s">
+				<p>who believe that <span class="emphasis-1">design</span> is all about <span class="emphasis-1">connections</span> between us, <span class="intro-2 hide-on-init animated fadeInUp" *ngIf="isScrolled3 && hasScrolled3Passed">and between everything around us.</span></p>
 				<!--
 				<button type="button" class="btn btn-lg">
 					<fa name="cog" animation="spin"></fa> Resume
@@ -70,6 +79,9 @@
 				<p><span class="emphasis-2">Design</span> is also about building <span class="emphasis-2">CONNECTIONS</span> among us all.</p>
 			</div> -->
 		</div>
+	</div>
+	<div class="ocean hide-on-init animated fadeInUp delay-2s">
+		<div class="wave"> </div>
 	</div>
 
 	<!--
@@ -91,12 +103,17 @@
 -->
 </div>
 <div class="work-grid">
-	<div>Project Showcase</div>
+	<div class="ocean2 hide-on-init animated fadeInUp delay-2s">
+		<div class="wave2"> </div>
+	</div>
+	<div class="section-title" id="workSection">Work</div>
 	<div class="row justify-content-center">
 		<div class="col-lg-5 col-sm-12">
 			<div class="thumb-image square animated fadeInUp">
 				<div class="crop-img">
-					<img src="assets/img/projectthumb-01.png" class="thumb-image">
+					<a href="projects/stretch">
+						<img src="assets/img/projectthumb-01.png" class="thumb-image">
+					</a>
 				</div>
 			</div>
 		</div>
