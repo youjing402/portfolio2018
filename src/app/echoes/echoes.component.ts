@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./echoes.component.scss']
 })
 export class EchoesComponent implements OnInit {
+	isNavbarCollapsed = true;
 
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./stretch.component.scss']
 })
 export class StretchComponent implements OnInit {
+	isNavbarCollapsed = true;
 
   constructor() { }
 
