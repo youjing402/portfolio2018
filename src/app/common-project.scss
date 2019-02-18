@@ -13,6 +13,8 @@
   //padding: 40px;
   -webkit-text-stroke: 0.45px;
   -webkit-font-smoothing: antialiased;
+  text-stroke: 0.45px;
+  font-smoothing: antialiased;
   letter-spacing: 0.01rem;
   //font-size: 24px;
 
@@ -94,6 +96,22 @@
 
 .img-50 {
 	width: 50%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.img-80 {
+	width: 80%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.img-20 {
+	width: 20%;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -376,39 +394,42 @@
 }
 
 .demo-title {
-		font-family: 'Roboto Slab', sans-serif;
-		font-size: 22px;
-		margin-bottom: 0px;
+	font-family: 'Roboto Slab', sans-serif;
+	font-size: 22px;
+	margin-bottom: 0px;
 		//font-weight: bold;
-}
+	}
 
-.demo-subtitle {
+	.demo-subtitle {
 		font-family: 'Roboto Slab', sans-serif;
 		font-weight: 100;
 		-webkit-text-stroke: 0px;
-}
+		text-stroke: 0px;
+	}
 
-.demo-description {
+	.demo-description {
 		padding-top: 50px;
 		font-size: 15px;
-}
+	}
 
-.demo-description-med {
-	padding-top: 30px;
-	margin-bottom: 50px;
-	font-size: 15px;
-}
+	.demo-description-med {
+		padding-top: 30px;
+		margin-bottom: 50px;
+		font-size: 15px;
+	}
 
-.demo-section {
-	margin-bottom: 100px;
-}
+	.demo-section {
+		margin-bottom: 100px;
+	}
 
-.banner {
-	background-color: #84AF4A;
-	padding-top: 100px;
-	padding-bottom: 100px;
-	padding-left: 100px;
-	padding-right: 100px;
+	.banner {
+		background-color: #84AF4A;
+		padding-top: 100px;
+		padding-bottom: 100px;
+		padding-left: 100px;
+		padding-right: 100px;
+		overflow: hidden;
+	//max-height: 100vh;
 
 	color: white;
 
@@ -435,9 +456,14 @@
 	.attribute-content {
 		-webkit-text-stroke: 0px;
 	}
+
+	.banner-img {
+		max-height: 100%;
+		width: 50%;
+	}
 }
 
-li {
+.page li {
 	margin-bottom: 20px;
 }
 
@@ -450,4 +476,10 @@ li {
 
 .margin-20 {
 	margin-bottom: 20px;
+}
+
+.img-120 {
+	width: 120%;
+	position: relative;
+	left: -10%;
 }

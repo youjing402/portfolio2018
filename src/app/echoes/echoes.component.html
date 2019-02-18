@@ -1,4 +1,4 @@
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lustria" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,400" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
@@ -68,50 +68,52 @@
 			</div>
 
 		</div>
-		<div class="banner-img col-lg-6 col-sm-6">
-			<img src="assets/img/echoes-banner.png" class="part-img">
+		<div class="col-lg-6 col-sm-6">
+			<img class="banner-img-echoes" src="assets/img/echoes-cover.png">
 		</div>
 	</div>
 
-	<div class="big-part">
-		<div class="big-part-inner">
-			<div class="big-part-head">
-				<p class="big-part-title"> Problem Space </p>
-			</div>
-			<div class="large-font-content">
-				<div class="section">
-					<p> Artists in the music industry are confronted with various problems, both financially and mentally. Their career success and sense of self-accomplishment is often dependent on listeners' support.</p>
-					<p>
-						However, the current communication is usually <b>one-way</b> from artists to listeners, with the lack of meaningful feedback coming from listeners.
+	<div class="content-wrapper" #wrapper>
+
+		<div class="big-part">
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Problem Space </p>
+				</div>
+				<div class="large-font-content">
+					<div class="section">
+						<p> Artists in the music industry are confronted with various problems, both financially and mentally. Their career success and sense of self-accomplishment is often dependent on listeners' support.</p>
+						<p>
+							However, the current communication is usually <b>one-way</b> from artists to listeners, with the lack of meaningful feedback coming from listeners.
+						</p>
+					</div>
+					<img src="assets/img/echoes-disconnection.png" class="img-70" id="echoes-disconnection" (click)="open('echoes-disconnection')">
+					<br>
+					<br>
+					<p class="question"> <b>How do we bridge the gap to create a better connection between listeners and artists? </b>
 					</p>
 				</div>
-				<img src="assets/img/echoes-disconnection.png" class="img-70">
-				<br>
-				<br>
-				<p class="question"> <b>How do we bridge the gap to create a better connection between listeners and artists? </b>
-				</p>
 			</div>
 		</div>
-	</div>
 
-	<div class="big-part">
-		<div class="big-part-inner">
-			<div class="big-part-head">
-				<p class="big-part-title"> Insights </p>
-			</div>
-			<div class="large-font-content">
-				<div>
-					<div class="section">
-						<div class="sub-big-title"> Musicians say:</div>
-						<div class="row justify-content-center">
-							<div class="col-sm-3 col-lg-3">
-								<img src="assets/img/echoes-musician-line.png" class="part-img">
-							</div>
-							<div class="col-sm-8 col-lg-8">
-								<ul class="overall-insight-list">
-									<li>
-										<b>Knowing listeners' support is very important</b> to both musicians' career development and sense of self-actualization that what they have been trying to achieve is affirmed.
-									</li>
+		<div class="big-part">
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Insights </p>
+				</div>
+				<div class="large-font-content">
+					<div>
+						<div class="section">
+							<div class="sub-big-title"> Musicians say:</div>
+							<div class="row justify-content-center">
+								<div class="col-sm-3 col-lg-3">
+									<img src="assets/img/echoes-musician-line.png" class="part-img">
+								</div>
+								<div class="col-sm-8 col-lg-8">
+									<ul class="overall-insight-list">
+										<li>
+											<b>Knowing listeners' support is very important</b> to both musicians' career development and sense of self-actualization that what they have been trying to achieve is affirmed.
+										</li>
 									<!--
 									<li>
 										Many musicians enjoy making music and performing music, but having them promoting for themselves all the time is awkward.
@@ -169,7 +171,7 @@
 			</div>
 			<div class="large-font-content">
 				<p> We designed, Echoes, a music streaming platform that focuses on elicitating listeners' feelings of music and encouraging feeling-centered sharing between listeners and artists. </p>
-				<img src="assets/img/stretch-flow-concept.png" class="part-img small-section">
+				<img src="assets/img/echoes-overview.png" class="img-70 section" id="echoes-overview" (click)="open('echoes-overview')">
 				<div class="row demo-section">
 					<div class="col-lg-4 col-sm-4 demo-frame">
 						<img src="assets/img/iphone8-silver.png" class="demo-iphone-bg">
@@ -283,7 +285,7 @@
 			</div>
 		</div>
 
-		<img src="assets/img/echoes-field-study.png" class="part-img">
+		<img src="assets/img/echoes-field-study.png" class="part-img" id="echoes-field-study" (click)="open('echoes-field-study')">
 
 		<div class="large-font-out-content separate-small-part section center-align">
 			<fa name="question-circle" class="icon1"></fa>
@@ -300,7 +302,7 @@
 					<div class="section">
 						<p class="margin-50"> Clearly, listeners should not be the only one to hold responsibility: platform plays a big part in fostering feedback. To study existing channels and platforms for listeners to communicate their feedback to musicians, we conducted competitive analysis on 8 online channels and 2 offline (in person) channels based on the interactivity and quality of the listener feedback. </p>
 
-						<img src="assets/img/echoes-competitive.png" class="img-70 section">
+						<img src="assets/img/echoes-competitive.png" class="img-70 section" id="echoes-competitive" (click)="open('echoes-competitive')">
 
 						<p class="center-align big-question margin-50"><b>What leads to high quality online feedback?</b></p>
 						<div class="inner-insights row justify-content-center">
@@ -367,7 +369,7 @@
 				<p class="margin-50"> To further understand how to motivate listeners to compose and share music feedback, we conducted participatory design method to explore desired alternatives with both musicians and listeners. </p>
 				<div class="row section">
 					<div class="col-lg-6 col-sm-6">
-						<img src="assets/img/echoes-codesign.png" class="part-img">
+						<img src="assets/img/echoes-codesign.png" class="part-img" id="echoes-codesign" (click)="open('echoes-codesign')">
 					</div>
 					<div class="col-lg-6 col-sm-6">
 						<p class="method-title"> Participatory Design Workshop </p>
@@ -381,7 +383,7 @@
 
 		<div class="row">
 			<div class="col-sm-2 col-lg-2">
-				<img src="assets/img/echoes-expression-ver.png" class="part-img">
+				<img src="assets/img/echoes-expression-ver.png" class="part-img" id="echoes-expression-ver" (click)="open('echoes-expression-ver')">
 			</div>
 			<div class="col-sm-8 col-lg-8">
 				<div class="margin-50 inner-insights">
@@ -467,18 +469,18 @@
 
 					<div class="margin-50">
 						<p class="margin-50">From the research, we synethsized and summarized the key value of musicians and listeners: what are most important to them in feedback generation and sharing. <b>Musicians are looking for feedback of high value and quality, while listeners are looking for low barrier and more motivations of producing feedback.</b></p>
-						<img src="assets/img/echoes-values.png" class="img-50">
+						<img src="assets/img/echoes-values.png" class="img-50" id="echoes-values" (click)="open('echoes-values')">
 						<!--<p class="note-paragraph"> How musicians and listeners value feedback </p> -->
 					</div>
 					<div class="margin-50">
 						<p class="margin-50">We brainstormed rounds of ideas regarding feedback generation and sharing mechanisms, and analyze them based on their value to musicians, and the perceived barrier of producing to listeners. </p>
-						<img src="assets/img/echoes-ideation.png" class="img-70 margin-50">
-						<img src="assets/img/echoes-balance.png" class="img-70">
+						<img src="assets/img/echoes-ideation.png" class="img-70 margin-50" id="echoes-ideation" (click)="open('echoes-ideation')">
+						<img src="assets/img/echoes-balance.png" class="img-70" id="echoes-balance" (click)="open('echoes-balance')">
 					</div>
 
 					<div >
 						<p>We are therefore looking for ways to ensure high quality feedback, yet not too hard for listeners to generate. Therefore, from our analysis, <b>music experience/story sharing</b> is the one with most potential. </p>
-						<img src="assets/img/echoes-scenario.png" class="img-70">
+						<img src="assets/img/echoes-scenario.png" class="img-70" id="echoes-scenario" (click)="open('echoes-scenario')">
 					</div>
 				</div>
 
@@ -500,7 +502,7 @@
 					<p class="sub-big-title"> Validating the Core </p>
 					<p class="margin-50">We drafted out the wireframes capturing the core idea and flow of (1) listener composing feelings of music, (2) listener discovering others' feelings of music, (3) for musicians to react to listeners' feelings.</p>
 					<div class="section">
-						<img src="assets/img/echoes-wireframe.JPG" class="part-img">
+						<img src="assets/img/echoes-wireframe.JPG" class="part-img" id="echoes-wireframe" (click)="open('echoes-wireframe')">
 						<p class="note-paragraph"> Whiteboard wireframes </p>
 					</div>
 					<div class="section">
@@ -552,7 +554,7 @@
 						<p class="margin-50">As a content platform, <b>motivating people to share more and share better</b> is the most important thing. </p>
 						<p class="margin-50 sub-small-title">/Original version with users' feedback from the test</p>
 						<div class="section">
-							<img src="assets/img/echoes-wireframe-1.png" class="img-70 margin-50">
+							<img src="assets/img/echoes-wireframe-1.png" class="img-70 margin-50" id="echoes-wireframe-1" (click)="open('echoes-wireframe-1')">
 						</div>
 						<p class="center-align big-question margin-50"><b>How to simplify things yet provide options and space for expression?</b></p>
 						<p class="section"> Based on research and brainstorming, we worked on improving the flow of composing music feedback by considering <b>use cases</b>. We categorized the timing when a listener has strong feelings of music into 3 cases:</p>
@@ -617,15 +619,15 @@
 					</div>
 
 					<p class="margin-50 sub-small-title">/Proposed Expression Staircase Design</p>
-					<img src="assets/img/echoes-2stage-iteration.png" class="part-img margin-50">		
+					<img src="assets/img/echoes-2stage-iteration.png" class="part-img margin-50" id="echoes-2stage-iteration" (click)="open('echoes-2stage-iteration')">		
 
 					<p class="margin-50"> To meet the needs of different cases and users, we simplified and broke the big feedback composition chunk into 1. Building atmosphere collage using provided vibe stickers, 2. Compose thoughts with visuals and lyrics as inspiration and prompts to faciliate natural experience. </p> 
-					<img src="assets/img/echoes-express-flow.png" class="img-50 margin-50">
+					<img src="assets/img/echoes-express-flow.png" class="img-50 margin-50" id="echoes-express-flow" (click)="open('echoes-express-flow')">
 					
 				</div>
 
 			</div>
-			<img src="assets/img/echoes-high-flow-1.png" class="part-img section">
+			<img src="assets/img/echoes-high-flow-1.png" class="part-img section" id="echoes-high-flow-1" (click)="open('echoes-high-flow-1')">
 
 			<div class="mid-font-content">
 				<div class="section">
@@ -633,87 +635,18 @@
 					<p class="sub-big-title"> <b> Design for Feeling Sharing </b> </p>
 					<p> Listeners read and write for resonance: we use feelings as the medium that carry music to people. Everyday, listeners wil receive a list of music for discovery that <b>match feelings expressed previously</b>.</p> 
 					<p class="margin-50">We design to use proper social features to encourage (1) expression sharing, and (2) feeling-centered music spreading, viewing, and searching. </p>
-					<img src="assets/img/echoes-high-flow-2.png" class="part-img">
+					<img src="assets/img/echoes-high-flow-2.png" class="part-img" id="echoes-high-flow-2" (click)="open('echoes-high-flow-2')">
 				</div>
 
 				<div class="section">
 					<p class="sub-title"> <b> "Rock", Bookmark, and More </b> </p>
 					<p class="sub-big-title"> <b> Design for Musician Interaction </b> </p>
 					<p class="margin-50">For the musician interaction part, we design to <b>complete the feedback cycle</b> between musicians and listeners: (1) for musicians to show their thoughts, (2) for musicians to add listener feedback to collection for future usages, (3) and to provide incentives for listeners to engage more.  </p>
-					<img src="assets/img/echoes-high-flow-3.png" class="part-img">
+					<img src="assets/img/echoes-high-flow-3.png" class="part-img" id="echoes-high-flow-3" (click)="open('echoes-high-flow-3')">
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<!--
-	<div class="big-part">
-		<div class="big-part-inner">
-			<div class="big-part-head">
-				<p class="big-part-title"> Final </p>
-			</div>
-			<div class="mid-font-content">
-				<div class="section">
-					<p class="sub-title"> <b> Design Goals </b> </p>
-					<p class="sub-big-title"> Establishing Guidelines </p>
-					<p> To guide the the product design, we first set up key goals for the product to achieve. Based on our iterative findings about users' needs, we referred to the top 10 psychological needs according to Sheldon et al. to summarize and establish guidlines for designing the experience.</p>
-				</div>
-				<div class="section">
-					<img src="assets/img/stretch-guidelines.png" class="part-img">
-					<p class="note-paragraph"> The 3 key guidelines of the design </p>
-				</div>
-
-				<div class="section">
-					<p class="sub-title"> <b> Top down </b> </p>
-					<p class="sub-big-title"> Design Overview </p>
-					<div class="section">
-						<img src="assets/img/stretch-features.png" class="part-img">
-						<p class="note-paragraph"> Key features </p>
-					</div>
-					<div class="section">
-						<img src="assets/img/stretch-ia.jpg" class="part-img">
-						<p class="note-paragraph"> Information Architecture </p>
-					</div>
-				</div>
-
-				<div class="section">
-					<p class="sub-title"> <b> Core Feature Design </b> </p>
-					<p class="sub-big-title"> Design Highlights </p>		
-				</div>
-			</div>
-
-			<div class="section-150">
-				<p class="center-align demo-title"><b> 1) Staircase-like feeling expression </b></p>
-				<p class="center-align demo-description-med"> Time is one of the huge concerns. Therefore, we considered the design where preparation from scratch is no longer necessary for every meal: based on one's availability of cooking, meals can be arranged to fit into one's schedule and save time. Stretching food happens in 2 forms: repurpousing food prepared in previous meals to make new meals, and directly eating the extra-prepared meal. </p>
-				<div class="row justify-content-center">
-					<div class="col-sm-9 col-lg-9">
-						<img src="assets/img/stretch-highlight1.png" class="part-img">
-					</div>
-				</div>
-			</div>
-
-			<div class="section-150">
-				<p class="center-align demo-title"><b> 2) Share and discover for resonance </b></p>
-				<p class="center-align demo-description-med"> To ensure flexibility in order to lower the barrier for users to follow plans, adjustments are allowed to be made on planned meals. When the user is no longer able to prepare a meal, he/she can choose to postpone, skip, and edit it. Depending on cases, plan could be kept the same, or modified for resource optimization. </p>
-				<div class="row">
-					<div class="col-sm-12 col-lg-12">
-						<img src="assets/img/stretch-highlight2.png" class="part-img">
-					</div>
-				</div>
-			</div>
-
-			<div class="section-150">
-				<p class="center-align demo-title"><b> 3) React to or keep listeners' feelings </b></p>
-				<p class="center-align demo-description-med"> To ensure flexibility in order to lower the barrier for users to follow plans, adjustments are allowed to be made on planned meals. When the user is no longer able to prepare a meal, he/she can choose to postpone, skip, and edit it. Depending on cases, plan could be kept the same, or modified for resource optimization. </p>
-				<div class="row">
-					<div class="col-sm-12 col-lg-12">
-						<img src="assets/img/stretch-highlight2.png" class="part-img">
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div> -->
 
 	<div class="big-part">
 		<div class="big-part-inner">
@@ -751,7 +684,7 @@
 					<p class="sub-title"> <b> Immersive design </b> </p>
 					<p class="sub-big-title"> Experience for Impact </p>	
 					<p class="margin-50">We also envisioned the scenarios where the visual experience crafted by listeners can be enpowered by <b>tangible experience devices</b> such as projectors. <b>Designing for immersive experience</b> to maximize the impact of users' atmospheres to inspire and engage more people into music enjoying and expression. </p>
-					<img src="assets/img/echoes-physical.png" class="part-img">	
+					<img src="assets/img/echoes-physical.png" class="part-img" id="echoes-physical" (click)="open('echoes-physical')">	
 				</div>
 			</div>
 		</div>
@@ -764,7 +697,9 @@
 				<!--<p class="big-part-sub-title"> How did we come here </p>-->
 			</div>
 			<div class="mid-font-content center-align">
-				<iframe width="789" height="444" src="https://www.youtube.com/embed/klTHbCDVQLE"> </iframe>
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/klTHbCDVQLE"> </iframe>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -777,10 +712,11 @@
 			</div>
 			<div class="mid-font-content">
 				<ul>
-					<li><b>Be flexible:</b> There is no such thing as universal design process: sometimes instead of sticking to a design cookbook, diving into research insights and be flexible enough to switch between directions is much more important.</li>
-					<li><b>And, be flexible:</b> In different stages of design, designer's mindset is expected to change and adjust: sometimes from top-down view, sometimes from down-top view, sometimes diverging, sometimes converging, sometimes focusing on details, sometimes focusing on overview. It is very important to identify the right strategy in different situations, and be open-minded to jump forwards and backwards.</li>
+					<li><b>Design with people, not for people</b> Designers don't know everything and shouldn't pretend or try too hard to know everything. Be a humble learner, talk with people, get them involved in the process (not just interviews at the start or testing in the end), and let them design things.</li>
+					<li><b>Just do it:</b> In this project, we've gone through a long research process and discussed a lot on the concept- and system-level before deiciding to move on to a particular path. Next time, it would be better if we can start the rapid prototyping process earlier to get more time to polish the actual design.</li>
 				</ul>
 			</div>
 		</div>
 	</div>
+</div>
 </div>

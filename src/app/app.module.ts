@@ -12,6 +12,9 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { StretchComponent } from './stretch/stretch.component';
 import { FitmiComponent } from './fitmi/fitmi.component';
 import { EchoesComponent } from './echoes/echoes.component';
+import { InvolvedComponent } from './involved/involved.component';
+
+import { LightboxModule } from 'ngx-lightbox';
 
 @NgModule({
   declarations: [
@@ -19,14 +22,16 @@ import { EchoesComponent } from './echoes/echoes.component';
     HomeComponent,
     StretchComponent,
     FitmiComponent,
-    EchoesComponent
+    EchoesComponent,
+    InvolvedComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     AnimateOnScrollModule.forRoot(),
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    LightboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

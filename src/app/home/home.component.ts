@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
 	hasScrolled3Passed = false;
 	isScrolled3 = false;
 	isScrolled4 = false;
+	isScrolled5 = false;
 	isNavbarCollapsed = true;
 	blendedColor = "#ff5555";
 	originalColor = "#ff5555";
@@ -24,6 +25,17 @@ export class HomeComponent implements OnInit {
 	transparentFontOpacity = 1;
 	nameZoom = 1;
 	fragment = "";
+
+	isMeSelected = true;
+	isMapSelected = false;
+	isCodeSelected = false;
+	isAnalysisSelected = false;
+	isResearchSelected = false;
+	isDesignSelected = false;
+
+	selectedPart = "me";
+
+	meHeight = 0;
 
 	constructor(public el: ElementRef, public route: ActivatedRoute) { }
 
@@ -56,6 +68,7 @@ export class HomeComponent implements OnInit {
 		const scrollPosition = window.pageYOffset;
 		const firstScreenRatio = 1/5;
 		const maxScrollPosition = document.getElementsByClassName("home-opened")[0].clientHeight*(1-firstScreenRatio);
+		const fullScrollPosition = document.getElementsByClassName("home-opened")[0].clientHeight;
 		var percentage = scrollPosition / maxScrollPosition;
 		this.blendedColor = this.blend(this.originalColor, "#ff7c7c", percentage);
 		if (scrollPosition > maxScrollPosition/5) {
@@ -86,9 +99,16 @@ export class HomeComponent implements OnInit {
 		}
 		if (scrollPosition > maxScrollPosition) {
 			this.isScrolled4 = true;
+			this.setHeightByChildrenHeight("side-screen-me","me-img-bg");
 		}
 		if (scrollPosition < maxScrollPosition) {
 			this.isScrolled4 = false;
+		}
+		if (scrollPosition > fullScrollPosition) {
+			this.isScrolled5 = true;
+		}
+		if (scrollPosition < fullScrollPosition) {
+			this.isScrolled5 = false;
 		}
 
 		this.nameZoom = Math.max (0.6, 1 - (scrollPosition-(maxScrollPosition/3)) / 500);
@@ -125,6 +145,21 @@ export class HomeComponent implements OnInit {
 
 		var hex3 = "#" + r3 + g3 + b3;
 		return hex3;
+	}
+
+	setHeightByChildrenHeight(parent, child)
+	{
+		var height = document.getElementsByClassName("me-img-bg")[0].clientHeight;
+
+		this.meHeight = height;
+	}
+
+	selectMap() {
+		this.isMapSelected = true;
+	}
+
+	selectMe() {
+		this.isMeSelected = true;
 	}
 
 }

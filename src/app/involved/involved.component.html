@@ -1,0 +1,700 @@
+<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lustria" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top my-navbar">
+	<a class="navbar-brand" href="#">Jing</a>
+	<button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
+		<ul class="navbar-nav mr-auto justify-content-end">
+			<li class="nav-item navbar-right">
+				<a class="nav-link" id="id01" href="#workSection">Work</a>
+			</li>
+			<li class="nav-item navbar-right">
+				<a class="nav-link" id="id01" href="#">About</a>
+			</li>
+			<li class="nav-item navbar-right">
+				<a class="nav-link" id="id01" href="#">Resume</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+
+<div class="stretch-page page">
+	<div class="row banner justify-content-around">
+		<div class="titles col-lg-4 col-sm-4">
+			<p class="banner-title">
+				Involved
+			</p>
+			<p class="banner-subtitle margin-20">
+				Google Design Exercise: Student Organization Platform Design for New Students
+			</p>
+			<div class="attributes">
+				<div class="row attribute1">
+					<div class="col-lg-6 col-sm-6">
+						<div class="attribute-title"><b>Duration</b></div>
+						<!--<fa name="calendar"></fa>-->
+						<div class="attribute-content">Feb 2019 (1 week)</div>
+					</div>
+					<div class="col-lg-6 col-sm-6">
+						<div class="attribute-title"><b>Context</b></div>
+						<!--<fa name="user"></fa>-->
+						<div class="attribute-content">Google Design Exercise 2019</div>
+					</div>
+				</div>
+				<div class="row attribute2">
+					<div class="col-lg-6 col-sm-6">
+						<div class="attribute-title"><b>Type</b></div>
+						<!--<fa name="cog" animation="spin"></fa>-->
+						<div class="attribute-content">Individual Project</div>
+					</div>
+					<div class="col-lg-6 col-sm-6">
+						<div class="attribute-title"><b>Contributions</b></div>
+						<!--<fa name="cog" animation="spin"></fa>-->
+						<div class="attribute-content">Interview</div>
+						<div class="attribute-content">Card Sorting</div>
+						<div class="attribute-content">Paper Prototyping</div>
+						<div class="attribute-content">Usability Testing</div>
+						<div class="attribute-content">Wireframing</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="col-lg-6 col-sm-6">
+			<img class="banner-img part-img" src="assets/img/involved-banner.png">
+		</div>
+	</div>
+
+	<div #wrapper>
+		<div class="big-part">
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Prompt </p>
+				</div>
+				<div class="large-font-content">
+					<div class="section">
+						<p> A new school year is approaching and the orientation team is looking to you for some design expertise. Design an experience for new students to browse, search, and propose new student organizations.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part">
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Problems </p>
+				</div>
+				<div class="large-font-content">
+					<div class="section">
+						<p class="big-text"> <b>New students' overall goal is to find suitable organizations to engage with.</b></p>
+						<p class="section">Exploring existing organizations and proposing new organizations are 2 ways going about accomplishing this goal. And they both have certain problems:</p>
+
+						<div class="row section align-items-center justify-content-center">
+							<div class="col-sm-2 col-lg-2">
+								<img class="part-img" src="assets/img/involved-exploration-black.svg">
+							</div>
+							<div class="col-sm-1 col-lg-1"></div>
+							<div class="col-sm-7 col-lg-7">
+								<p><b> Exploration is Inefficient</b></p>
+								<div class="small-text">
+									<p> Currently, there are mainly 2 ways of exploring and examining existing oganizations: "yellow pages" (e.g. school organization website, involvement fair) and word of mouth.  </p>
+									<p> Students find yellow pages not supporting <b>efficient exploration</b> and do not provide <b>reliable information</b> that they need. Although word of mouth is reliable and more <b>tailored</b>, it's still not efficient as it can be hard to find someone with the right interpersonal connections and know the right information.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row align-items-center justify-content-center">
+							<div class="col-sm-2 col-lg-2">
+								<img class="part-img" src="assets/img/involved-new.svg">
+							</div>
+							<div class="col-sm-1 col-lg-1"></div>
+							<div class="col-sm-7 col-lg-7">
+								<p> <b> Proposal lacks support</b></p>
+								<div class="small-text">
+									<p>Only a few students choose to start new organizations. Aside from the objective factor that they prefer to join pre-created community, the <b>high perceived burden</b> of starting application and <b>the lack of recruitment support</b> further impede the new proposal, that it's hard to establish the community with right people and idea. </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part">
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Solution </p>
+				</div>
+				<div class="large-font-content">
+					<div class="section">
+						<p class="center-align big-text section"> <b>Interpersonal Connection</b> is the key to my solution. </p>
+						<img class="img-20 section" src="assets/img/involved-network.svg">
+
+						<div class="row align-items-center">
+							<div class="col-sm-5 col-lg-5">
+								<img src="assets/img/involved-hf-1.png" class="part-img">
+							</div>
+							<div class="col-sm-6 col-lg-6">
+								<p class="demo-title"><b>Exploration tailoring based on friend's interests</b></p>
+								<div class="small-text">
+									<p>Within the personal interested categories, the ones that are most popular among friends will be prioritized in the exploration list. </p>
+									<p class="demo-rationale-tag">Rationales</p> 
+									<p>From interviews, students tend to be more inclined to knowing and joining organizations that people they know have joined. It provides a way to quickly prioritize options that are more likely to interest users from dozens of others, which makes the exploration process efficient and more accurate. </p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row align-items-center">
+							<div class="col-sm-5 col-lg-5">
+								<img src="assets/img/involved-hf-3.png" class="part-img">
+							</div>
+							<div class="col-sm-6 col-lg-6">
+								<p class="demo-title"><b>Conversation for authentic and personal evaluation</b></p>
+								<div class="small-text">
+									<p>When viewing an organization, users will see friends who are members and start conversation with them for more detailed information.</p>
+									<p class="demo-rationale-tag">Rationales</p> 
+									<p>From interviews, students are looking for information related to personal experience which most organization official pages do not provide, and they generally don't want to ask strangers at first place. By letting them quickly see friends in there they can talk to, it makes the process of getting to know an organization holistically more efficient and less stressful.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row align-items-center">
+							<div class="col-sm-5 col-lg-5">
+								<img src="assets/img/involved-lf-5.png" class="part-img">
+							</div>
+							<div class="col-sm-6 col-lg-6">
+								<p class="demo-title"><b>Crowdsourcing for recruitment and idea polishment</b></p>
+								<div class="small-text">
+									<p>When proposing new organizations, ideas don't need to be finalized and can be posted to match people with same interests and start recruitment and idea iterations. People will be able to see proposals when they search for relevant keywords and react.</p>
+									<p class="demo-rationale-tag">Rationales</p> 
+									<p>From officer interview and task flow analysis of the new organization registration system, I discovered that all materials and initial recruitment need to be finalized before students enter the proposal system. By providing such preparation stage, the perceived barrier of proposing lowers down and student get support from the larger community.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part">
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Process </p>
+				</div>
+				<div class="mid-font-content">
+					<div>
+						<div class="section">
+							<p class="sub-title"><b> Starting & Planning </b></p>
+							<p class="sub-big-title"> Research Goals</p>
+							<div class="margin-50">
+								Orientation events and student organization culture in different universities can be quite different. To familiarize myself with how these work in IU, after doing some secondary research online, I decided to conduct some quick field studies with students and staff members of relevant programs at IU to gain a complete picture.
+							</div>
+							<div class="margin-50">
+								<p>
+									Through the research, I want to learn:
+								</p>
+								<ul>
+									<li>
+										Why do new students join and propose organizations and what are their goals?
+									</li>
+									<li>
+										What is the current process, platforms, and experience of joining and proposing organizations?
+									</li>
+									<li>
+										What matter the most to new students when looking for organizations?
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="section">
+							<p class="sub-title"><b> The Big Picture </b></p>
+							<p class="sub-big-title"> Why New Students Joining Organizations is Important</p>
+							<p> Talking to both students and staff members helped me gain a larger picture of the importance of new students joining organizations, not just to students themselves, but also to organizations and school: </p>
+							<img src="assets/img/involved-stakeholder.png" class="img-70" id="involved-stakeholder" (click)="open('involved-stakeholder')">
+							<p>Synthesizing goals of different stakeholders helped me locate the most important goal for three of them in common, which is to enable students to <b>discover and engage with the community that is suitable for them</b>.</p>
+							<p>"Engagement with community is physically, emotionally, and culturally."</p>
+							<p>However, finding a community/organization and fit in is not always easy.</p>
+						</div>
+						<div class="section">
+							<p class="sub-title"><b> Overall Flow </b></p>
+							<p class="sub-big-title"> How New Students Attempt to Find a Suitable Organization</p>
+							<p> Synthesizing results from secondary research of existing platform at IU and from interviews with students, I mapped out the existing flow of joining organizations and proposing new organizations, the 2 ways of engaging with organization.</p>
+							<img src="assets/img/involved-org-overall-flow.png" class="img-80" id="involved-org-overall-flow" (click)="open('involved-org-overall-flow')">
+							<p> According to the resesarch, most new students would not consider establishing new organizations, so I separate the 2 paths and discuss them separately. (Steps with low saturation are out of scope of this project, yet they are shown to complete the overall picture of the flow.)</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part">
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Explore & Evaluate </p>
+				</div>
+				<div class="mid-font-content">
+					<div class="section">
+						<p> Based on research, before deciding to join organizations, students will go through 2 stages/steps to help them "diverge and converge":</p> 
+
+						<ol>
+							<li>
+								to first <b>explore</b> openly for potential organizations that may interest and fit them.
+							</li> 
+							<li>
+								to <b>evaluate</b> options carefully regarding whether they will be <b>good fits</b> by learning more detailed information.
+							</li>
+						</ol>
+					</div>
+
+					<div>
+						<div class="section">
+
+							<p class="sub-big-title"><b> Existing Channels & Insights </b></p>
+							<div class="margin-50">
+								<p> To further explore how new students experience with such exploration and evaluation, I mapped out what they do and what they think in different stages, discover things they care when looking for suitable organizations, what problems they have and why they are not achieving the desired results through the current channels.  </p>
+								<img src="assets/img/involved-journeymap.png" class="part-img" id="involved-journeymap" (click)="open('involved-journeymap')">
+							</div>
+
+							<p class="title margin-20"><b> Insights - What Information are Students Looking for </b></p>
+							<div class="section">
+								<div class="margin-50">
+									To determine what organizations to look for and whether they are "the right one", students are often directed by the following 2 factors:
+								</div>
+								<br>
+								<div class="inner-insights row justify-content-center">
+									<div class="col-sm-5 col-lg-5">
+										<img src="assets/img/involved-interest.svg" class="img-20 margin-20">
+										<p class="inner-insight-title center-align">Interest: What They Do</p>
+										<p class="inner-insight-item">Whether personal interest matches what organizations do is often the first thing students consider: vague or specific, they have something in mind, and would first look for organizations cater to their intersts.</p>
+									</div>
+									<div class="col-sm-5 col-lg-5">
+										<img src="assets/img/involved-culture.svg" class="img-20 margin-20">
+										<p class="inner-insight-title center-align">Culture: Who They Are</p>
+										<p class="inner-insight-item">The culture fostered and the interpersonal connections in organizations are important to know. Organizations doing similar things can have different styles and atmospheres, and students want to make sure they find the right one.</p>
+									</div>
+								</div>
+							</div>
+
+							<p class="title margin-20"><b> Problems - Current Channels of Acquiring Information </b></p>
+							<div class="margin-50">
+								The map further reveals insights of preferences and problems when students are experiencing with the current channels of gaining the most important information as mentioned above. Students are:
+							</div>
+
+							<div class="inner-insights row justify-content-center margin-50">
+								<div class="col-sm-5 col-lg-5">
+									<p class="inner-insight-title center-align">Tired of overwhelming information with no personal tailoring</p>
+									<p class="inner-insight-item">"No one is looking at that <b>long list</b> of organizations on the website or the fair handouts: it’s just too overwhelming with irrelevant information that <b>doesn't know my interest</b>."</p>
+									<p class="inner-insight-item">"It's <b>ineffective to explore potential activities</b>: if I am to explore the category of arts, all the website shows me is the list of 135 organizations sorted alphabetically and I have to go through them to <b>discover what kinds of activitie are in there</b>."</p>
+									<img src="assets/img/involved-current-explore.png" class="part-img" id="involved-current-explore" (click)="open('involved-current-explore')">
+								</div>
+								<div class="col-sm-5 col-lg-5">
+									<p class="inner-insight-title center-align">Comfortable with knowing an organization from people, yet asking everyone individually can be a burden</p>
+									<p class="inner-insight-item">"I prefer <b>hearing from friends</b> and knowing what they are up to. But you just can't get to everone."</p>
+									<p class="inner-insight-item">"Before joining, I’d like to know more about the kind of <b>culture</b> in the organization. Offcial sites say little about it and do not seem as <b>reliable</b>. So I often <b>ask friends or acquaintance</b> who know that organization. But sometimes it take time to figure out who I can ask."</p>
+									<img src="assets/img/involved-current-info.png" class="part-img" id="involved-current-info" (click)="open('involved-current-info')">
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="large-font-out-content separate-big-part section">
+				<p class="emphasis center-align"> <b>What If the experience of looking for organizations is...</b>
+				</p>
+				<div class="">
+					<div class="row dev-question">
+						<div class="col-sm-3">
+							<img src="assets/img/involved-tailor.svg" class="img-20 margin-20">
+						</div>
+						<div class="col-sm-9">
+							<div class=""><b>Tailored</b> by personal interests and social connections?
+							</div>
+						</div>
+					</div>
+					<div class="row dev-question">
+						<div class="col-sm-3">
+							<img src="assets/img/involved-social.svg" class="img-20 margin-20">
+						</div>
+						<div class="col-sm-9">
+							<div class=""><b>Reliable & Authentic</b> that one can explore and know more about organization from friends and member-generated information?
+							</div>
+						</div>
+					</div>
+					<div class="row dev-question">
+						<div class="col-sm-3">
+							<img src="assets/img/involved-exploration.svg" class="img-20 margin-20">
+						</div>
+						<div class="col-sm-9">
+							<div class=""><b>Supportive of Interest Exploration</b> that students can easily discover new things under interested categories?
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="big-part-inner">
+				<div class="mid-font-content">
+
+					<div class="section">
+						<p class="sub-big-title"> Ideation</p>
+						<p> From the insights, I brainstormed the concept with core features of:</p>
+						<img src="assets/img/involved-idea.JPG" class="part-img margin-50" id="involved-idea" (click)="open('involved-idea')">
+						<p> The underlying core idea is that <b>social connection and word of mouth</b> are being emphasized. New students can see friends' organizations, and who are or were in an interested organization and take their words as reference to help them decide whether it is a good fit for them. </p>
+						<p> There are mainly 2 ways for students to explore potential interested organizations: (1) the traditional searching and browsing via categories or keywords with support for easier exploration, (2) browse what friends are into.  What students can see via both ways are <b>tailored by their personal interests</b>.</p>
+					</div>
+					<div class="section">
+						<p class="sub-title"><b> User Flow </b></p>
+						<p class="sub-big-title"> Designing Browsing and Searching Experience</p>
+
+						<p> Browsing and searching are the two most important functions in the stage of exploration and evaluation of organizations. To design for the experience that fulfills previous mentioned user goals and addresses issues, I considered <b>3 cases</b> how a user would go about looking for suitable organizations. These are based on my card sorting activity where participants sorted out the flow in different ways of attempting the task.</p>
+
+						<div class="section">
+							<div class="row margin-20">
+								<div class="col-sm-1 col-lg-1">
+								</div>
+								<div class="col-sm-11 col-lg-11">
+									<div class="row inner-insights">
+										<div class="col-sm-4 col-lg-4">
+											<img src="assets/img/involved-browse1.jpg" class="img-50 margin-20">
+											<p class="inner-insight-title center-align without-margin">Case 1: Wandering</p>
+										</div>
+										<div class="col-sm-4 col-lg-4">
+											<img src="assets/img/involved-browse2.jpg" class="img-50 margin-20">
+											<p class="inner-insight-title center-align without-margin">Case 2: Interest Exploring</p>
+										</div>
+										<div class="col-sm-4 col-lg-4">
+											<img src="assets/img/involved-browse3.jpg" class="img-50 margin-20">
+											<p class="inner-insight-title center-align without-margin">Case 3: Goal-in-Mind</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-sm-1 col-lg-1 hid-title">
+									Needs
+								</div>
+								<div class="col-sm-11 col-lg-11">
+									<div class="row justify-content-center inner-insights">
+										<div class="col-sm-4 col-lg-4">								
+											<p class="inner-insight-item">Doesn't have specific things in mind: just wants to browse through the list to get some updates, and wants to quickly see something that interests him/her.</p>
+										</div>
+										<div class="col-sm-4 col-lg-4">		
+											<p class="inner-insight-item">Wants to explore an area, but can be vague. May want to check out the <b>big category</b>; or only <b>interested in its sub-areas</b> but <b>does not come knowing what to search for specifically</b>.</p>
+										</div>
+										<div class="col-sm-4 col-lg-4">		
+											<p class="inner-insight-item">Has something rather specific in mind and just wants to look for it.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-sm-1 col-lg-1 hid-title">
+									Actions
+								</div>
+								<div class="col-sm-11 col-lg-11">
+									<div class="row justify-content-center inner-insights">
+										<div class="col-sm-4 col-lg-4">
+											Stays on home screen to browse through <b>what his/her friends are interested in</b> and what organizations are <b>recommended based on his/her personal interests</b>.
+										</div>
+										<div class="col-sm-4 col-lg-4">
+											He/she can start from the big category, and see if he/she needs subcategories/keywords recommendation under it.
+										</div>
+										<div class="col-sm-4 col-lg-4">
+											User <b>searches for keywords</b>. Direct search is the best way to accomplish the task, and they want searching to be smart.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<p> Based on use case breakdown, I further developed the complete workflow for users to explore and evaluate organizations:</p>		
+
+						<img src="assets/img/involved-browse-flow.png" class="img-50" id="involved-browse-flow" (click)="open('involved-browse-flow')">
+
+					</div>
+
+
+					<div class="section">
+						<p class="sub-big-title"> Paper Prototyping & Testing</p>
+						<img src="assets/img/involved-paper-browse.png" class="img-120 margin-50" id="involved-paper-browse" (click)="open('involved-paper-browse')">
+						<p>I asked participants to go through the 3 tasks with the think-out-loud technique, observed their behaviors, and collected feedback for improvement.</p>
+						<ul>
+							<li>
+								<p>Participants want to know what kinds of topics can be covered under categories in order to help them make decision whether they indeed cater to their preferences. Therefore sub-categories are added.</p>
+							</li>
+							<li>
+								<p>Participant are excited about the mechanism of getting to know what friends are up to, yet they mostly want to keep their own preferences prioritized with friend preferences as references. Thus, order feature is cancelled and the searching result is ranked by the default order where personal interest is the primary factor followed by friend popularity.</p>
+							</li>
+						</ul>
+					</div>
+
+					<div class="section">
+						<p class="sub-big-title"> Digital Wireframes</p>
+						<img src="assets/img/involved-wf-1.png" class="img-120" id="involved-wf-1" (click)="open('involved-wf-1')">
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+		<div class="big-part">
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Propose </p>
+				</div>
+				<div class="mid-font-content">
+					<div>
+						<div class="section">
+							<p class="sub-title"><b> Who, When, and How </b></p>
+							<p class="sub-big-title"> Context of Proposing New Organizations </p>
+
+							<div class="section">
+								<p> Based on interviews, most new students would not consider establishing new organizations because:</p> 
+								<ol>
+									<li>
+										As new students, they are <b>not yet familiar</b> with things on campus: don't know many <b>people</b> that have the same interest and want to start an organization from scratch, and are not familiar with the <b>campus organization system</b>.
+									</li> 
+									<li>
+										They don't think there it <b>does not worth time and efforts</b> to create a new community if there is <b>already one</b> that is not bad to fit in.
+									</li>
+								</ol>
+							</div>
+
+							<div class="section">
+								<p> I also talked to staff at the IU Involvment Center and experienced with the flow of the existing system at IU of new organization application and found the following issues: </p>
+								<img src="assets/img/involved-propose-flow.png" class="part-img" id="involved-propose-flow" (click)="open('involved-propose-flow')">
+							</div>
+
+							<div class="section">
+								<p>Synthesizing findings from both participants and existing platform analysis, I concluded the following challenges to tackle:</p>
+
+								<div class="inner-insights row justify-content-center">
+									<div class="col-sm-5 col-lg-5">
+										<img src="assets/img/involved-burden.svg" class="img-20 margin-20">
+										<p class="inner-insight-title center-align">High perceived burden to start & Lack of Support for unmatured proposals</p>
+										<p class="inner-insight-item">The current system demands everything to be fully prepared by students before they start applying for organization regristration and get rejected for several times. The <b>perceived burden is too high</b> at the beginning, and unmatured proposals are <b>not getting timely feedback</b>.</p>
+									</div>
+									<div class="col-sm-5 col-lg-5">
+										<img src="assets/img/involved-recruit.svg" class="img-20 margin-20">
+										<p class="inner-insight-title center-align">Lack support for recruitment and peers matching</p>
+										<p class="inner-insight-item">Recruiting members is not easy for new organizations and new students. <b>Promotion channel</b> is limited: either by nudging friends, or physically promoting within small range. It also does not guarantee that <b>members recruited have the same goal and commitment</b>.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="section">
+								<p class="sub-big-title"> Ideation: Crowdsourcing the Proposal </p>
+								<div class="margin-50">
+									<p> The design of new proposal experience aimed at making the <b>preparation process (including idea polishing and member recruitment)</b> of a new organization proposal <b>easier</b> by <b>"crowdsourcing"</b>: opening up incomplete proposals to public and get support <b>until it's fully prepared</b> and all the subsequent documents sent for offcials to review. </p>
+									<p>I hoped that through this design, it is less stressful for new students to propose an idea, and they can easily include people who match here and better fund a community that people with the same goals can fit in. </p>
+								</div>
+								<img src="assets/img/involved-proposal-scenario.JPG" class="part-img" id="involved-proposal-scenario" (click)="open('involved-proposal-scenario')">
+								<p></p>
+							</div>
+
+							<div class="section">
+								<p class="sub-title"><b> User Flow </b></p>
+								<p class="sub-big-title"> Designing Proposing Experience</p>
+								<img src="assets/img/involved-proposal-user-flow.png" class="img-120" id="involved-proposal-user-flow" (click)="open('involved-proposal-user-flow')">
+								<p> Based on the idea from insights, I developed the flow for user to (1) Propose organization to public and receive recruitment help and idea suggestion from other users looking for it; (2) Naturally browse through proposal list and start new proposal when they can't find satisfacting organizations.</p>
+							</div>
+
+							<div class="section">
+								<p class="sub-big-title"> Paper Prototype & Testing</p>
+								<img src="assets/img/involved-paper-propose.png" class="part-img margin-50" id="involved-paper-propose" (click)="open('involved-paper-propose')">
+								<ul>
+									<li>
+										<p>The onboarding instruction for creating proposal is not clear and not intuitive. Steps need to be clear enough for people to know what are to be done by themselves and what are to be done by the platform.</p>
+									</li>
+									<li>
+										<p>Comparing with the description of established organizations, participants would like to see more unique things about vision and promises from the proposed organizations. Therefore, the information to be entered and the instruction are changed. </p>
+									</li>
+								</ul>
+							</div>
+
+							<div class="section">
+								<p class="sub-big-title"> Digital Wireframes</p>
+								<img src="assets/img/involved-wf-2.png" class="part-img" id="involved-wf-2" (click)="open('involved-wf-2')">
+							</div>
+
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!--
+<div class="big-part">
+	<div class="big-part-inner">
+		<div class="big-part-head">
+			<p class="big-part-title"> Design Outcome </p>
+		</div>
+		<div class="large-font-content">
+			<p> We designed, Echoes, a music streaming platform that focuses on elicitating listeners' feelings of music and encouraging feeling-centered sharing between listeners and artists. </p>
+			<img src="assets/img/echoes-overview.png" class="img-70 section">
+			<div class="row demo-section">
+				<div class="col-lg-4 col-sm-4 demo-frame">
+					<img src="assets/img/iphone8-silver.png" class="demo-iphone-bg">
+					<img src="assets/img/echoes-demo-post.gif" class="demo-animation">
+				</div>
+				<div class="col-lg-1 col-sm-1"></div>
+				<div class="col-lg-6 col-sm-6 demo-intro">
+					<p class="demo-subject">/for listeners</p>
+					<p class="demo-title"><b>Express your feelings of music in a natural and creative way with 2 possible levels</b></p> 
+					<p class="demo-subtitle">Visual "atmosphere" and verbal "thoughts"</p>
+					<p class="demo-description">When listening to music, listeners can easily select vibe stickers to express the overall impression of the music <b>atmosphere</b>. The visual captures their unique feelings, and also encourage them to write about <b>thoughts</b> in words.</p>
+					<p class="demo-rationale-tag">Rationales</p>
+					<p class="demo-rationale">Often time, it is not easy for listeners to express their feelings for music, even if they do have words to say. Finding the process of articulating abstract feelings interruptive, difficult, and unrewarding, many listeners would simply just give up. Therefore, we designed to lower such barrier, hoping to hear from more silent listeners. </p>
+				</div>
+			</div>
+
+			<div class="row demo-section">
+				<div class="col-lg-4 col-sm-4 demo-frame">
+					<img src="assets/img/iphone8-silver.png" class="demo-iphone-bg">
+					<img src="assets/img/echoes-demo-discover.gif" class="demo-animation">
+				</div>
+				<div class="col-lg-1 col-sm-1"></div>
+				<div class="col-lg-6 col-sm-6 demo-intro">
+					<p class="demo-subject">/for listeners</p>
+					<p class="demo-title"><b>Discover music through resonating with others' feelings</b></p> 
+					<p class="demo-subtitle">A new way to look at music: experience and read about what people feel of music </p>
+					<p class="demo-description">Every day, a list of songs will be recommended to users, using others' story as medium, for them to discover music and stories they feel resonant about. The discovery system is designed to better connect listeners with music and other listeners based on their previous reactions about music to recommend music.  </p>
+					<p class="demo-rationale-tag">Rationales</p>
+					<p class="demo-rationale">Listeners are fond of reading others' personal experiences and discover new music based on others' thoughts, compared to recommended by algorithms. Making music a co-created space by both artists and listeners add layers to the meaning of music, and motivate listeners to express more. </p>
+				</div>
+			</div>
+
+			<div class="row demo-section">
+				<div class="col-lg-4 col-sm-4 demo-frame">
+					<img src="assets/img/iphone8-silver.png" class="demo-iphone-bg">
+					<img src="assets/img/echoes-demo-diary.gif" class="demo-animation">
+				</div>
+				<div class="col-lg-1 col-sm-1"></div>
+				<div class="col-lg-6 col-sm-6 demo-intro">
+					<p class="demo-subject">/for listeners</p>
+					<p class="demo-title"><b>Keep your music memories in a diary</b></p> 
+					<p class="demo-subtitle">Discover yourself over time </p>
+					<p class="demo-description">All entries are kept in one's profile page, just like a music memory diary, for one to revisit and re-discover. </p>
+					<p class="demo-rationale-tag">Rationales</p>
+					<p class="demo-rationale">Listeners often attach memory to music they listen to in different period of time, and the bonding between them and music is strengthened when the memory is revisited over time. Making their music experiences into diary provides the inner motivation for them to express for themselves and record authentic feelings.</p>
+				</div>
+			</div>
+
+			<div class="row demo-section">
+				<div class="col-lg-4 col-sm-4 demo-frame">
+					<img src="assets/img/iphone8-silver.png" class="demo-iphone-bg">
+					<img src="assets/img/echoes-demo-reaction.png" class="demo-animation">
+				</div>
+				<div class="col-lg-1 col-sm-1"></div>
+				<div class="col-lg-6 col-sm-6 demo-intro">
+					<p class="demo-subject">/for artists & listeners</p>
+					<p class="demo-title"><b>Interact with artists and other listeners with shared feelings </b></p> 
+					<p class="demo-subtitle">Establish connections with everyone that treasures the piece you love</p>
+					<p class="demo-description">Both listeners and artists are able to react to others' feelings by liking the entry and adding thoughts easily. Besides, artists are able to add listeners' entries to their collections for bookmarking and showcasing. </p>
+					<p class="demo-rationale-tag">Rationales</p>
+					<p class="demo-rationale">One of the biggest reasons why listeners do not write feedback to music and artists is that they do not think artists will look into it. However, our research reveals the opposite: artists love reading about how people feel about music with their personal stories. Therefore, by providing the channel for artists to directly react to listeners' thoughts, the motivation for both side to communicate is increased.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+<div class="big-part">
+	<div class="big-part-inner">
+		<div class="big-part-head">
+			<p class="big-part-title"> High Fidelity Prototype </p>
+		</div>
+		<div class="mid-font-content">
+			<div class="section">
+				<p>Below are selected screens of high fidelity UI:</p>
+				<div class="row justify-content-around">
+					<div class="col-sm-5 col-lg-5">
+						<img src="assets/img/involved-hf-1.png" class="part-img" id="involved-hf-1" (click)="open('involved-hf-1')">
+						<p class="note-paragraph margin-50">Home screen</p>
+					</div>
+					<div class="col-sm-5 col-lg-5">
+						<img src="assets/img/involved-hf-2.png" class="part-img" id="involved-hf-2" (click)="open('involved-hf-2')">
+						<p class="note-paragraph margin-50">Category Screen</p>
+					</div>
+					<div class="col-sm-5 col-lg-5">
+						<img src="assets/img/involved-hf-3.png" class="part-img" id="involved-hf-3" (click)="open('involved-hf-3')">
+						<p class="note-paragraph">Organization Detail Screen</p>
+					</div>
+					<div class="col-sm-5 col-lg-5">
+						<img src="assets/img/involved-hf-4.png" class="part-img" id="involved-hf-4" (click)="open('involved-hf-4')">
+						<p class="note-paragraph">Organization Detail Screen (Scrolled Down)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="big-part">
+	<div class="big-part-inner">
+		<div class="big-part-head">
+			<p class="big-part-title"> Research Methods </p>
+		</div>
+		<div class="mid-font-content">
+			<div class="section">
+				<p>During the initial research stage and testing stage, I conducted several different research with stakeholders to gain insights:</p>
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-around">
+		<div class="col-sm-3 col-lg-3">
+			<img src="assets/img/involved-research-1.png" class="part-img" id="involved-research-1" (click)="open('involved-research-1')">
+			<p class="note-paragraph margin-50">Interview with an officer from IU Student Involvement Center to understand process of joining organizations and registering new ones</p>
+		</div>
+		<div class="col-sm-3 col-lg-3">
+			<img src="assets/img/involved-research-2.png" class="part-img" id="involved-research-2" (click)="open('involved-research-2')">
+			<p class="note-paragraph margin-50">Interview with a coordinator at IU First Year Experience Program to learn about the orientation process and first year students' characteristics</p>
+		</div>
+		<div class="col-sm-3 col-lg-3">
+			<img src="assets/img/involved-research-3.png" class="part-img" id="involved-research-3" (click)="open('involved-research-3')">
+			<p class="note-paragraph">Card sorting activity with students to organize task flows for organization exploration and prioritize organization information</p>
+		</div>
+		<div class="col-sm-3 col-lg-3">
+			<img src="assets/img/involved-research-4.png" class="part-img" id="involved-research-4" (click)="open('involved-research-4')">
+			<p class="note-paragraph">Usability testing using paper prototype with students to improve flow and interfaces</p>
+		</div>
+	</div>
+
+	<div class="big-part-inner">
+		<div class="mid-font-content">
+		</div>
+	</div>
+</div>
+
+
+<div class="big-part">
+	<div class="big-part-inner">
+		<div class="big-part-head">
+			<p class="big-part-title"> Reflection </p>
+			<!--<p class="big-part-sub-title"> How did we come here </p>-->
+		</div>
+		<div class="mid-font-content">
+			<ul>
+				<li><b>Do just-enough research:</b> The amount of research can be done is always restricted by time. Given such a short time frame of 7 days, I could have spent more time doing the actual design, and be more comfortable with knowing only "a bit" of things.</li>
+				<li><b>Divide complex tasks into pieces:</b> Although this is a small project, it still involves multiple tasks which are all not easy to think through and solve neatly (i.e. the browsing part and the proposal part). I previously intended to tie the two together to find if there's a way to perfectly connect the two, but it turn out that divide and conquer is the key. Sometimes it worths thinking to what degree things should be connected, in order to stop & separate at the right moment. </li>
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+</div>

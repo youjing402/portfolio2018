@@ -1,9 +1,11 @@
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lustria" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,400" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/nhq3kdp.css">
 
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top my-navbar">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" [ngClass]="!isScrolled5 ? 'my-navbar' : 'my-colored-navbar'">
 	<a class="navbar-brand" href="#">Jing</a>
 	<button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
@@ -17,127 +19,221 @@
 				<a class="nav-link" id="id01" href="#">About</a>
 			</li>
 			<li class="nav-item navbar-right">
-				<a class="nav-link" id="id01" href="#">Resume</a>
+				<a class="nav-link" id="id01" href="assets/file/resume-jy.pdf" target="_blank">Resume</a>
 			</li>
 		</ul>
 	</div>
 </nav>
 
-<div class="home" [ngClass]="{'home': !isOpened, 'home-opened': isOpened}" [style.background-color] = "isOpened? blendedColor : loadingColor">
-	<div class="loading-animation" *ngIf="!isOpened">
-		<div class="app-loading">
-			<div class="logo"></div>
-		<!--
-		<svg class="spinner" viewBox="25 25 50 50">
-			<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
-		</svg> -->
-		<svg class="beat" width="108px" height="128px" viewBox="0 0 54 64" *ngIf="!isLoaded">
-			<defs></defs>
-			<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-				<path class="beat-loader" d="M0.5,38.5 L16,38.5 L19,25.5 L24.5,57.5 L31.5,7.5 L37.5,46.5 L43,38.5 L53.5,38.5" id="Path-2" stroke-width="2" sketch:type="MSShapeGroup"></path>
-			</g>
-		</svg>
-		<svg *ngIf="!isOpened" class="heart" viewBox="0 0 32 29.6" [ngClass]="{'moving-heart': isLoaded, 'beating-heart': !isLoaded}">
-			<path class="path" d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
-			c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
-		</svg>
-	</div>
-</div>
-
-<div class="content hide-on-init" *ngIf="isOpened" [ngClass]="!isScrolled4 ? 'fixed-content' : 'absolute-content'">
-	<div class="row justify-content-center">
-		<div class="col col-lg-6 img-col">
-			<img src="assets/img/home-00.png" *ngIf="isScrolled3" class="side-screen-img">
-			<div class="home1" *ngIf="!hasScrolled3Passed">
-				<img src="assets/img/home-01-2.png" class="animated fadeInUp side-screen-img" [ngClass]="isScrolled3 ? 'fadeOutUp' : 'fadeInUp'">
-				<img src="assets/img/home-01-1.png" *ngIf="!isScrolled3" class="animated fadeInUp side-screen-img">
-				<img src="assets/img/home-02.png" class="hide-on-init animated side-screen-img delay-1s" [ngClass]="{'fadeOutUp': isScrolled3, 'zoomIn': !isScrolled3, 'delay-1s': !isScrolled3}">
-			</div>
-			<div class="home2" *ngIf="isScrolled3 && hasScrolled3Passed">
-				<img src="assets/img/home-03-1.png" class="hide-on-init animated fadeInUp side-screen-img">
-				<img src="assets/img/home-03-2.png" class="hide-on-init animated fadeInUp side-screen-img">
-				<img src="assets/img/home-04-3.png" class="hide-on-init animated fadeInUp side-screen-img">
-				<img src="assets/img/home-04.png" class="hide-on-init animated side-screen-img delay-1s zoomIn">
+<div class="home-wrapper" [style.background-color] = "isOpened? blendedColor : loadingColor">
+	<div class="home" [ngClass]="{'home': !isOpened, 'home-opened': isOpened}" >
+		<div class="loading-animation">
+			<div class="app-loading">
+				<div class="logo"></div>
+				<svg class="beat" width="108px" height="128px" viewBox="0 0 54 64" *ngIf="!isLoaded">
+					<defs></defs>
+					<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+						<path class="beat-loader" d="M0.5,38.5 L16,38.5 L19,25.5 L24.5,57.5 L31.5,7.5 L37.5,46.5 L43,38.5 L53.5,38.5" id="Path-2" stroke-width="2" sketch:type="MSShapeGroup"></path>
+					</g>
+				</svg>
+				<svg *ngIf="!isOpened" class="heart" viewBox="0 0 32 29.6" [ngClass]="{'moving-heart': isLoaded, 'beating-heart': !isLoaded}">
+					<path class="path" d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+					c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+				</svg>
 			</div>
 		</div>
-		<div class="col col-lg-6 text-block">
-			<div class="name hide-on-init animated fadeOutBig" [ngClass]="{'smaller-name': isScrolled1}" [style.opacity] = "isScrolled1? transparentFontOpacity : 1">
-				<p class="light-font">Hi, I'm Jing,</p>
-				<p class="bold-font">a <a class="_primary-link">Product Designer</a></p>
+
+		<div class="content hide-on-init" [ngClass]="!isScrolled4 ? 'fixed-content' : 'absolute-content'" [style.background-color] = "isOpened? blendedColor : loadingColor" [style.display] = "isOpened? 'block' : 'none'">
+			<div class="row justify-content-center">
+				<div class="col-sm-6 col-xs-12 img-col">
+					<img src="assets/img/home-00.png" *ngIf="isScrolled3" class="side-screen-img">
+					<div class="home1" *ngIf="!hasScrolled3Passed">
+						<img src="assets/img/home-01-2.png" class="animated fadeInUp side-screen-img" [ngClass]="isScrolled3 ? 'fadeOutUp' : 'fadeInUp'">
+						<img src="assets/img/home-01-1.png" *ngIf="!isScrolled3" class="animated fadeInUp side-screen-img">
+						<img src="assets/img/home-02.png" class="hide-on-init animated side-screen-img delay-1s" [ngClass]="{'fadeOutUp': isScrolled3, 'zoomIn': !isScrolled3, 'delay-1s': !isScrolled3}">
+					</div>
+					<div class="home2" *ngIf="isScrolled3 && hasScrolled3Passed">
+						<img src="assets/img/home-03-1.png" class="hide-on-init animated fadeInUp side-screen-img">
+						<img src="assets/img/home-03-2.png" class="hide-on-init animated fadeInUp side-screen-img">
+						<img src="assets/img/home-04-3.png" class="hide-on-init animated fadeInUp side-screen-img">
+						<img src="assets/img/home-04.png" class="hide-on-init animated side-screen-img delay-1s zoomIn">
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-12 text-block">
+					<div class="name hide-on-init animated fadeOutBig" [ngClass]="{'smaller-name': isScrolled1}" [style.opacity] = "isScrolled1? transparentFontOpacity : 1">
+						<p class="light-font">Hi, I'm Jing,</p>
+						<p class="bold-font">a <a class="_primary-link">Product Designer</a></p>
+					</div>
+					<div class="intro-1 hide-on-init animated fadeInUp delay-1s">
+						<p>who believes that <span class="emphasis-1">design</span> is all about <span class="emphasis-1">connections</span> between things around us, <span class="intro-2 hide-on-init animated fadeInUp" *ngIf="isScrolled3 && hasScrolled3Passed">and between us.</span></p>
+					</div>
+				</div>
 			</div>
-			<div class="intro-1 hide-on-init animated fadeInUp delay-1s">
-				<p>who believe that <span class="emphasis-1">design</span> is all about <span class="emphasis-1">connections</span> between us, <span class="intro-2 hide-on-init animated fadeInUp" *ngIf="isScrolled3 && hasScrolled3Passed">and between everything around us.</span></p>
-				<!--
-				<button type="button" class="btn btn-lg">
-					<fa name="cog" animation="spin"></fa> Resume
-				</button> -->
+			<div class="ocean hide-on-init animated fadeInUp delay-2s">
+				<div class="wave"> </div>
+			</div> 
+		</div>
+		
+	</div>
+	<div class="work-grid" *ngIf="isOpened">
+
+		<!--
+		<div class="ocean2 hide-on-init animated fadeInUp delay-2s">
+			<div class="wave2"> </div>
+		</div>
+		-->
+		<div class="section-title" id="workSection">Work</div>
+		<div class="row justify-content-center">
+			<div class="col-lg-5 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
+				<div class="thumb-image square" >
+					<div class="crop-img">
+						<a href="projects/echoes">
+							<img src="assets/img/projectthumb-01.png">
+						</a>
+					</div>
+				</div>
+				<p class="project-categories">
+					/UX Design /UX Research /Platform Design /Design Competition
+				</p>
+				<p class="project-title">
+					Echoes - CHI Student Design Competition
+				</p>
+				<p class="project-description">
+					A Feeling-Centered music experience that connects listeners and artists
+				</p>
+
+			</div>
+			<div class="col-lg-5 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
+				<div class="thumb-image square">
+					<div class="crop-img">
+						<a href="projects/stretch">
+							<img src="assets/img/projectthumb-02.png">
+						</a>
+					</div>
+				</div>
+				<p class="project-categories">
+					/UX Design /UX Research /Mobile App Design
+				</p>
+				<p class="project-title">
+					Stretch - the Invisible Food Insecurity
+				</p>
+				<p class="project-description">
+					A mobile meal planner that optimizes use of time, budget, and resources
+				</p>
 			</div>
 
 			<!--
-			<div class="intro-2 hide-on-init animated fadeInUp" *ngIf="isScrolled2 && hasScrolled2Passed">
-				<p>And,</p>
-				<p><span class="emphasis-2">Design</span> is also about building <span class="emphasis-2">CONNECTIONS</span> among us all.</p>
-			</div> -->
-		</div>
-	</div>
-	<div class="ocean hide-on-init animated fadeInUp delay-2s">
-		<div class="wave"> </div>
-	</div>
-
-	<!--
-	<div class="content__container">
-		<p class="content__container__text">
-			Hello
-		</p>
-
-		<ul class="content__container__list">
-			<li class="content__container__list__item">world !</li>
-			<li class="content__container__list__item">there !</li>
-		</ul>
-	</div>
-	<div class="name">
-		<p>I'm Jing,</p>
-		<p>I believe that design is about lighting up the world through making connection.</p>
+			<div class="col-lg-5 col-sm-12 project">
+				<div class="thumb-image square animated fadeInUp">
+					<div class="crop-img">
+						<img src="assets/img/projectthumb-01.png">
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-5 col-sm-12 project">
+				<div class="thumb-image square animated fadeInUp">
+					<div class="crop-img">
+						<img src="assets/img/projectthumb-01.png">
+					</div>
+				</div>
+			</div>
+		-->
 	</div>
 </div>
--->
+<div class="about">
+	<div class="about-content hid-on-init" *ngIf="isOpened" animateOnScroll animationName="animated fadeIn">
+		<div class="hover-instruction">Hover for interaction</div>
+		<div class="row justify-content-center">
+			<div class="col-xs-12 col-sm-4 side-screen-me" [style.height]="meHeight+'px'">
+				<img src="assets/img/me-bg.png" class="side-screen-me-img me-img-bg" >
+				<img src="assets/img/me-1.png" class="side-screen-me-img me-img-1 hid-on-init" animateOnScroll animationName="animated fadeIn" (mouseover)="selectedPart = 'map'" (mouseleave)="selectedPart = 'me'">
+				<img src="assets/img/me-2.png" class="side-screen-me-img me-img-2 hid-on-init" animateOnScroll animationName="animated fadeIn" (mouseover)="selectedPart = 'me'" (mouseleave)="selectedPart = 'me'">
+				<img src="assets/img/me-3.png" class="side-screen-me-img me-img-3 hid-on-init delay-1s" animateOnScroll animationName="animated fadeIn" (mouseover)="selectedPart = 'code'" (mouseleave)="selectedPart = 'me'">
+				<img src="assets/img/me-4.png" class="side-screen-me-img me-img-4 hid-on-init delay-1s" animateOnScroll animationName="animated fadeIn" (mouseover)="selectedPart = 'analysis'" (mouseleave)="selectedPart = 'me'">
+				<img src="assets/img/me-5.png" class="side-screen-me-img me-img-5 hid-on-init delay-1s" animateOnScroll animationName="animated fadeIn" (mouseover)="selectedPart = 'research'" (mouseleave)="selectedPart = 'me'">
+				<img src="assets/img/me-6.png" class="side-screen-me-img me-img-6 hid-on-init delay-1s" animateOnScroll animationName="animated fadeIn" (mouseover)="selectedPart = 'design'" (mouseleave)="selectedPart = 'me'">
+				
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<!--<div class="greeting-code">jing.greet(" </div>-->
+				<div class="greeting-title" id="aboutSection" *ngIf="selectedPart == 'me'"><span class="greeting-code">jing.greet("</span>Hellooo💡<span class="greeting-code">");</span></div>
+				<div class="greeting-title" id="aboutSection" *ngIf="selectedPart == 'map'"><span class="greeting-code">jing.greet("</span>My Journey🌍<span class="greeting-code">");</span></div>
+				<div class="greeting-title" id="aboutSection" *ngIf="selectedPart == 'code'"><span class="greeting-code">jing.greet("</span>Code💻<span class="greeting-code">");</span></div>
+				<div class="greeting-title" id="aboutSection" *ngIf="selectedPart == 'analysis'"><span class="greeting-code">jing.greet("</span>Analysis📈<span class="greeting-code">");</span></div>
+				<div class="greeting-title" id="aboutSection" *ngIf="selectedPart == 'research'"><span class="greeting-code">jing.greet("</span>Research💬<span class="greeting-code">");</span></div>
+				<div class="greeting-title" id="aboutSection" *ngIf="selectedPart == 'design'"><span class="greeting-code">jing.greet("</span>Design🎨<span class="greeting-code">");</span></div>
+				<!--<div> <span class="greeting-title"></span> <span class="greeting-code">");</span></div>-->
+
+
+				<div class="intro-para">
+					<div class="intro-me" *ngIf="selectedPart == 'me'">
+						<p>Thanks for visiting! I'm a product designer pursuing M.S. Human-Computer Interaction Design at Indiana University Bloomington. Previously, I completed my bachelor's in Computer Science. </p>
+						<p>I love exploring <b>connections</b> between people, environment, business, cultures, technology, and everything within the <b>product ecosystem</b>. I believe that design is not only about making things pleasing on aesthetic or experience level: it's about diving into people's mind and uncovering possibilities to envision a better alternative future. </p>
+						<p>If you are interested in talking with me, please feel free to drop me an email at: <a href="mailto:youjing402@gmail.com?Subject=Hi%20Jing" target="_top">youjing402@gmail.com</a></p>
+					</div>
+					<div class="intro-map" *ngIf="selectedPart == 'map'">
+						<p>I came from Xiamen, a beautiful island located in Southeastern China. I entered National University of <b>Singapore</b> to study <b>Computer Science</b> and started to experience with the beauty of multiculturalism. </p> 
+						<p>During my undergrad years, I spent half a year in Europe to complete the exchange program. There, I developed more interests in HCI through completing design courses in <b>Sweden</b>, and decided to continue my study after graduation.</p>
+						<p>Now that I'm in <b>US</b> studying <b>HCI design</b>, I hope to bring viewpoints from my background, and to grow as a product designer in the IT industry. </p>
+					</div>
+					<div class="intro-code" *ngIf="selectedPart == 'code'">
+						<p>I acquired technical skills from my undergrad CS study.</p>
+						<p>I love being "geeky" and enjoy crafting things. I always keep eyes on emerging technologies and how they can be designed to create new experience and services to better solve people's problems.</p>
+						<p><b>Skills Highlights:</b></p>
+						<div class="list">
+							<div><b>Web:</b> HTML, CSS, JavaScript/TypeScript, Angular, Ionic</div>
+							<div><b>Languages:</b> Java, Swift, C#, Python</div>
+							<div><b>Technologies:</b> iOS, web, AR, VR, Unity game dev</div>
+						</div>
+					</div>
+					<div class="intro-analysis" *ngIf="selectedPart == 'analysis'">
+						<p>I had experience in dealing with <b>big data analysis</b> and <b>statistical analysis of quantitative study</b>.</p>
+						<p>I believe in data's power in uncovering patterns in business and user behaviors, and in shaping better products, services, and experiences. </p>
+					</div>
+					<div class="intro-research" *ngIf="selectedPart == 'research'">
+						<p>I acquired various research skills that allow me to understand users and stakeholders, and to bring their values together for better product design.</p>
+						<p><b>Skills Highlights:</b></p>
+						<div class="list">
+							<div><b>Field Studies:</b> Interview, Contextual Inquiry, Survey, Diary Study</div>
+							<div><b>Analysis:</b> Affinity Diagram, Competitive Analysis, Journey Maps, Story Maps, Stakeholder Maps, Persona, Task Analysis</div>
+							<div><b>Others:</b> Usability Testing, Card Sorting, Participatory Design Toolkits, Co-Design Workshop</div>
+						</div>
+					</div>
+					<div class="intro-design" *ngIf="selectedPart == 'design'">
+						<p>I acquired different design methods and tools to conceptualize and realize ideas.</p>
+						<p><b>Skills Highlights:</b></p>
+						<div class="list">
+							<div><b>Methods:</b> Wireframing, Storyboarding, Prototyping, Sketching, Ideation, Iterating</div>
+							<div><b>Tools:</b> Sketch, Photoshop, Illustrator, Adobe XD, InDesign, InVision, Principle</div>
+						</div>
+					</div>
+
+						<!--
+							<p>Just half a year ago, I completed my bachelor's in Computer Science at National University of Singapore, during which I experienced with various types of technology, from web, mobile development, big data analysis, to AR and VR. I love being "geeky" and enjoy crafting things.  I always and will always keep eyes on emerging technologies and how they can be designed to create new experience and services to better solve people's problems.</p> -->
+
+				<!--
+					<p>Oh, and BTW, I love traveling, and I'm extremely interested in the historical and cultural aspects of traveling. I celebrate differences, and I appreciate connections that I feel across times and cultures. Besides, I like drawing, writing, playing music, making games, and dyeing my hair to rainbow colors.</p> -->
+					
+				</div>
+			</div>
+		</div>
+		
+		<!--
+		<div class="row justify-content-center">
+			<div class="col-sm-2 col-lg-2">
+				<img src="assets/img/home-profile.jpg" class="circle-img profile-img">
+			</div>
+		</div> -->
+		<div class="profile-info row">
+			<div class="col-sm-2 col-lg-2"></div>
+			<div class="col-sm-8 col-lg-8">
+				
+			</div>
+			<div class="col-sm-2 col-lg-2"></div>
+		</div>
+	</div>
 </div>
-<div class="work-grid">
-	<div class="ocean2 hide-on-init animated fadeInUp delay-2s">
-		<div class="wave2"> </div>
-	</div>
-	<div class="section-title" id="workSection">Work</div>
-	<div class="row justify-content-center">
-		<div class="col-lg-5 col-sm-12">
-			<div class="thumb-image square animated fadeInUp">
-				<div class="crop-img">
-					<a href="projects/stretch">
-						<img src="assets/img/projectthumb-01.png" class="thumb-image">
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-5 col-sm-12">
-			<div class="thumb-image square animated fadeInUp">
-				<div class="crop-img">
-					<img src="assets/img/projectthumb-01.png" class="thumb-image">
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-5 col-sm-12">
-			<div class="thumb-image square animated fadeInUp">
-				<div class="crop-img">
-					<img src="assets/img/projectthumb-01.png" class="thumb-image">
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-5 col-sm-12">
-			<div class="thumb-image square animated fadeInUp">
-				<div class="crop-img">
-					<img src="assets/img/projectthumb-01.png" class="thumb-image">
-				</div>
-			</div>
-		</div>
-	</div>
+<div *ngIf="isOpened" class="foot">
+	<p class="copyright center-align">Designed and hand-coded by Jing You © 2019 💡</p>
 </div>
 </div>
