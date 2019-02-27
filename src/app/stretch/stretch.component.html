@@ -10,14 +10,20 @@
 	</button>
 	<div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
 		<ul class="navbar-nav mr-auto justify-content-end">
-			<li class="nav-item navbar-right">
-				<a class="nav-link" id="id01" href="#workSection">Work</a>
+			<li class="nav-item dropdown" ngbDropdown>
+				<a class="nav-link dropdown-toggle" id="id01" ngbDropdownToggle>Work</a>
+				<div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+					<a class="dropdown-item purple-text" href="projects/echoes">Echoes</a>
+					<a class="dropdown-item green-text" href="projects/stretch">Stretch</a>
+					<a class="dropdown-item coral-text" href="projects/involved">Involved</a>
+					<a class="dropdown-item blue-text" href="projects/poco">Poco A Poco</a>
+				</div>
 			</li>
 			<li class="nav-item navbar-right">
-				<a class="nav-link" id="id01" href="#">About</a>
+				<a class="nav-link" id="id02" href="#">About</a>
 			</li>
 			<li class="nav-item navbar-right">
-				<a class="nav-link" id="id01" href="#">Resume</a>
+				<a class="nav-link" id="id03" href="#">Resume</a>
 			</li>
 		</ul>
 	</div>
@@ -33,28 +39,28 @@
 			<p class="banner-subtitle">
 				A mobile meal planner that helps you make a better use of time, budget, and resources.
 			</p>
-			<div class="attributes">
+			<div class="attributes margin-50">
 				<div class="row attribute1">
-					<div class="col-lg-6 col-sm-6">
+					<div class="col-lg-6 col-6">
 						<div class="attribute-title"><b>Duration</b></div>
 						<!--<fa name="calendar"></fa>-->
 						<div class="attribute-content">Sep ~ Nov 2018</div>
 					</div>
-					<div class="col-lg-6 col-sm-6">
+					<div class="col-lg-6 col-6">
 						<div class="attribute-title"><b>Role</b></div>
 						<!--<fa name="user"></fa>-->
 						<div class="attribute-content">Product Designer</div>
 					</div>
 				</div>
 				<div class="row attribute2">
-					<div class="col-lg-6 col-sm-6">
+					<div class="col-lg-6 col-6">
 						<div class="attribute-title"><b>Team</b></div>
 						<!--<fa name="cog" animation="spin"></fa>-->
 						<div class="attribute-content">Piyush Dawande</div>
 						<div class="attribute-content">Mia Fan</div>
 						<div class="attribute-content">Elisa Krebs</div>
 					</div>
-					<div class="col-lg-6 col-sm-6">
+					<div class="col-lg-6 col-6">
 						<div class="attribute-title"><b>Contributions</b></div>
 						<!--<fa name="cog" animation="spin"></fa>-->
 						<div class="attribute-content">Interview</div>

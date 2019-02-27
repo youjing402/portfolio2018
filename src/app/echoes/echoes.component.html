@@ -10,18 +10,58 @@
 	</button>
 	<div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
 		<ul class="navbar-nav mr-auto justify-content-end">
-			<li class="nav-item navbar-right">
-				<a class="nav-link" id="id01" href="#workSection">Work</a>
+			<li class="nav-item dropdown" ngbDropdown>
+				<a class="nav-link dropdown-toggle" id="id01" ngbDropdownToggle>Work</a>
+				<div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+					<a class="dropdown-item purple-text" href="projects/echoes">Echoes</a>
+					<a class="dropdown-item green-text" href="projects/stretch">Stretch</a>
+					<a class="dropdown-item coral-text" href="projects/involved">Involved</a>
+					<a class="dropdown-item blue-text" href="projects/poco">Poco A Poco</a>
+				</div>
 			</li>
 			<li class="nav-item navbar-right">
-				<a class="nav-link" id="id01" href="#">About</a>
+				<a class="nav-link" id="id02" href="#">About</a>
 			</li>
 			<li class="nav-item navbar-right">
-				<a class="nav-link" id="id01" href="#">Resume</a>
+				<a class="nav-link" id="id03" href="#">Resume</a>
 			</li>
 		</ul>
 	</div>
 </nav>
+
+<div class="timeline" *ngIf="isScrolled1">
+	<a (click)="scrollToElement(bigpart1)">
+		<div class="container left" [ngClass]="(!isScrolled2 && isScrolled1) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Overview</p>
+		</div>
+	</a>
+	<a (click)="scrollToElement(bigpart2)">
+		<div class="container left" [ngClass]="(!isScrolled3 && isScrolled2) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Outcomes</p>
+		</div>
+	</a>
+	<a (click)="scrollToElement(bigpart3)">
+		<div class="container left" [ngClass]="(!isScrolled4 && isScrolled3) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Research</p>
+		</div>
+	</a>
+	<a (click)="scrollToElement(bigpart4)">
+		<div class="container left" [ngClass]="(!isScrolled5 && isScrolled4) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Ideation</p>
+		</div>
+	</a>
+	<a (click)="scrollToElement(bigpart5)">
+		<div class="container left" [ngClass]="(!isScrolled6 && isScrolled5) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Design & Testing</p>
+		</div>
+	</a>
+	<a (click)="scrollToElement(bigpart6)">
+		<div class="container left" [ngClass]="(isScrolled6) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Final</p>
+		</div>
+	</a>
+
+</div>
 
 
 <div class="stretch-page page">
@@ -36,26 +76,26 @@
 			<a role="button" href="https://www.youtube.com/watch?v=klTHbCDVQLE&feature=youtu.be" class="btn btn-outline-light" target="_blank">Watch Video</a>
 			<div class="attributes">
 				<div class="row attribute1">
-					<div class="col-lg-6 col-sm-6">
+					<div class="col-lg-6 col-6">
 						<div class="attribute-title"><b>Duration</b></div>
 						<!--<fa name="calendar"></fa>-->
 						<div class="attribute-content">Oct ~ Dec 2018</div>
 					</div>
-					<div class="col-lg-6 col-sm-6">
+					<div class="col-lg-6 col-6">
 						<div class="attribute-title"><b>Context</b></div>
 						<!--<fa name="user"></fa>-->
 						<div class="attribute-content">CHI 2019 Student Design Competition</div>
 					</div>
 				</div>
 				<div class="row attribute2">
-					<div class="col-lg-6 col-sm-6">
+					<div class="col-lg-6 col-6">
 						<div class="attribute-title"><b>Team</b></div>
 						<!--<fa name="cog" animation="spin"></fa>-->
 						<div class="attribute-content">Yingxia Lou</div>
 						<div class="attribute-content">Christine Lu</div>
 						<div class="attribute-content">Weiyi Meng</div>
 					</div>
-					<div class="col-lg-6 col-sm-6">
+					<div class="col-lg-6 col-6">
 						<div class="attribute-title"><b>Contributions</b></div>
 						<!--<fa name="cog" animation="spin"></fa>-->
 						<div class="attribute-content">Participatory Design</div>
@@ -75,7 +115,7 @@
 
 	<div class="content-wrapper" #wrapper>
 
-		<div class="big-part">
+		<div class="big-part big-part-1" id="big-part-1" #bigpart1>
 			<div class="big-part-inner">
 				<div class="big-part-head">
 					<p class="big-part-title"> Problem Space </p>
@@ -164,7 +204,7 @@
 
 	<div></div>
 
-	<div class="big-part">
+	<div class="big-part big-part-2" id="big-part-2" #bigpart2>
 		<div class="big-part-inner">
 			<div class="big-part-head">
 				<p class="big-part-title"> Design Outcome </p>
@@ -239,7 +279,7 @@
 		</div>
 	</div>
 
-	<div class="big-part">
+	<div class="big-part big-part-3" id="big-part-3" #bigpart3>
 		<div class="big-part-inner">
 			<div class="big-part-head">
 				<p class="big-part-title"> How we got here </p>
@@ -456,7 +496,7 @@
 		</div>
 	</div>
 
-	<div class="big-part">
+	<div class="big-part big-part-4" id="big-part-4" #bigpart4>
 		<div class="big-part-inner">
 			<div class="big-part-head">
 				<p class="big-part-title"> Ideation </p>
@@ -489,7 +529,7 @@
 	</div>
 
 
-	<div class="big-part">
+	<div class="big-part big-part-5" id="big-part-5" #bigpart5>
 		<div class="big-part-inner">
 			<div class="big-part-head">
 				<p class="big-part-title"> Design </p>
@@ -690,7 +730,7 @@
 		</div>
 	</div>
 
-	<div class="big-part">
+	<div class="big-part big-part-6" id="big-part-6" #bigpart6>
 		<div class="big-part-inner">
 			<div class="big-part-head">
 				<p class="big-part-title"> Final </p>

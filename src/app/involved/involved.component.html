@@ -10,14 +10,20 @@
 	</button>
 	<div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
 		<ul class="navbar-nav mr-auto justify-content-end">
-			<li class="nav-item navbar-right">
-				<a class="nav-link" id="id01" href="#workSection">Work</a>
+			<li class="nav-item dropdown" ngbDropdown>
+				<a class="nav-link dropdown-toggle" id="id01" ngbDropdownToggle>Work</a>
+				<div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+					<a class="dropdown-item purple-text" href="projects/echoes">Echoes</a>
+					<a class="dropdown-item green-text" href="projects/stretch">Stretch</a>
+					<a class="dropdown-item coral-text" href="projects/involved">Involved</a>
+					<a class="dropdown-item blue-text" href="projects/poco">Poco A Poco</a>
+				</div>
 			</li>
 			<li class="nav-item navbar-right">
-				<a class="nav-link" id="id01" href="#">About</a>
+				<a class="nav-link" id="id02" href="#">About</a>
 			</li>
 			<li class="nav-item navbar-right">
-				<a class="nav-link" id="id01" href="#">Resume</a>
+				<a class="nav-link" id="id03" href="#">Resume</a>
 			</li>
 		</ul>
 	</div>
@@ -95,7 +101,7 @@
 						<p class="section">Exploring existing organizations and proposing new organizations are 2 ways going about accomplishing this goal. And they both have certain problems:</p>
 
 						<div class="row section align-items-center justify-content-center">
-							<div class="col-sm-2 col-lg-2">
+							<div class="col-sm-2 col-6">
 								<img class="part-img" src="assets/img/involved-exploration-black.svg">
 							</div>
 							<div class="col-sm-1 col-lg-1"></div>
@@ -109,7 +115,7 @@
 						</div>
 
 						<div class="row align-items-center justify-content-center">
-							<div class="col-sm-2 col-lg-2">
+							<div class="col-sm-2 col-6">
 								<img class="part-img" src="assets/img/involved-new.svg">
 							</div>
 							<div class="col-sm-1 col-lg-1"></div>
@@ -135,7 +141,7 @@
 						<p class="center-align big-text section"> <b>Interpersonal Connection</b> is the key to my solution. </p>
 						<img class="img-20 section" src="assets/img/involved-network.svg">
 
-						<div class="row align-items-center">
+						<div class="row align-items-center demo-section">
 							<div class="col-sm-5 col-lg-5">
 								<img src="assets/img/involved-hf-1.png" class="part-img">
 							</div>
@@ -144,12 +150,12 @@
 								<div class="small-text">
 									<p>Within the personal interested categories, the ones that are most popular among friends will be prioritized in the exploration list. </p>
 									<p class="demo-rationale-tag">Rationales</p> 
-									<p>From interviews, students tend to be more inclined to knowing and joining organizations that people they know have joined. It provides a way to quickly prioritize options that are more likely to interest users from dozens of others, which makes the exploration process efficient and more accurate. </p>
+									<p class="demo-rationale">From interviews, students tend to be more inclined to knowing and joining organizations that people they know have joined. It provides a way to quickly prioritize options that are more likely to interest users from dozens of others, which makes the exploration process efficient and more accurate. </p>
 								</div>
 							</div>
 						</div>
 
-						<div class="row align-items-center">
+						<div class="row align-items-center demo-section">
 							<div class="col-sm-5 col-lg-5">
 								<img src="assets/img/involved-hf-3.png" class="part-img">
 							</div>
@@ -158,12 +164,12 @@
 								<div class="small-text">
 									<p>When viewing an organization, users will see friends who are members and start conversation with them for more detailed information.</p>
 									<p class="demo-rationale-tag">Rationales</p> 
-									<p>From interviews, students are looking for information related to personal experience which most organization official pages do not provide, and they generally don't want to ask strangers at first place. By letting them quickly see friends in there they can talk to, it makes the process of getting to know an organization holistically more efficient and less stressful.</p>
+									<p class="demo-rationale">From interviews, students are looking for information related to personal experience which most organization official pages do not provide, and they generally don't want to ask strangers at first place. By letting them quickly see friends in there they can talk to, it makes the process of getting to know an organization holistically more efficient and less stressful.</p>
 								</div>
 							</div>
 						</div>
 
-						<div class="row align-items-center">
+						<div class="row align-items-center demo-section">
 							<div class="col-sm-5 col-lg-5">
 								<img src="assets/img/involved-lf-5.png" class="part-img">
 							</div>
@@ -172,7 +178,7 @@
 								<div class="small-text">
 									<p>When proposing new organizations, ideas don't need to be finalized and can be posted to match people with same interests and start recruitment and idea iterations. People will be able to see proposals when they search for relevant keywords and react.</p>
 									<p class="demo-rationale-tag">Rationales</p> 
-									<p>From officer interview and task flow analysis of the new organization registration system, I discovered that all materials and initial recruitment need to be finalized before students enter the proposal system. By providing such preparation stage, the perceived barrier of proposing lowers down and student get support from the larger community.</p>
+									<p class="demo-rationale">From officer interview and task flow analysis of the new organization registration system, I discovered that all materials and initial recruitment need to be finalized before students enter the proposal system. By providing such preparation stage, the perceived barrier of proposing lowers down and student get support from the larger community.</p>
 								</div>
 							</div>
 						</div>

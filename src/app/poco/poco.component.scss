@@ -1,0 +1,145 @@
+@import '../common-project';
+
+
+.navbar {
+	background-color: #6991C6;
+}
+
+.banner {
+	background-color: #6991C6;
+}
+
+.demo-intro {
+	padding-top: 10px;
+}
+
+.theme-font-color {
+	color: #6991C6;
+}
+
+.demo-title {
+	font-family: 'Roboto Slab', sans-serif;
+	font-size: 22px;
+	margin-bottom: 0px;
+		//font-weight: bold;
+	}
+
+	.demo-subtitle {
+		font-family: 'Roboto Slab', sans-serif;
+		font-weight: 100;
+		-webkit-text-stroke: 0px;
+	}
+
+	.demo-description {
+		padding-top: 5px;
+		font-size: 13px;
+	}
+
+	.demo-rationale {
+		padding-top: 0px;
+		font-size: 13px;
+	}
+
+	.demo-rationale-tag {
+		color: #6991C6;
+		font-weight: bold;
+		font-size: 15px;
+		padding-top: 50px;
+		margin-bottom: 5px;
+	}
+
+	.demo-description-med {
+		padding-top: 30px;
+		margin-bottom: 50px;
+		font-size: 15px;
+	}
+
+	.demo-section {
+		margin-bottom: 100px;
+	}
+
+	.demo-subject {
+		font-size: 13px;
+		-webkit-text-stroke: 0px;
+		margin-bottom: 0px;
+	//color: #6969c6;
+}
+
+.overall-insight-list {
+	font-size: 18px;
+}
+
+.large-font-out-content {
+	.emphasis {
+		font-size: 40px;
+		font-family: 'Roboto Slab', sans-serif;
+		margin-bottom: 50px;
+	}
+
+	.smaller-emphasis {
+		font-size: 22px;
+		font-weight: bold;
+	}
+
+	.dev-question {
+		font-size: 22px;
+		margin-bottom: 5px;
+	}
+
+	i {
+		color: #50E3C2;
+	}
+}
+
+.separate-big-part {
+	background-color: #6991C6;
+	color: white;
+}
+
+.separate-small-part {
+	background-color: #6991C6;
+	color: white;
+}
+
+.inner-insights {
+	font-size: 15px;
+	.inner-insight-title {
+		font-size: 18px;
+		color: #6991C6;
+		font-weight: bold;
+		padding-bottom: 15px;
+	}
+
+	.inner-insight-item {
+		padding-bottom: 10px;
+	}
+}
+
+.without-margin {
+	margin-bottom: 0px !important;
+	//padding-bottom: 0px !important;
+}
+
+.color-emphasis {
+	color: #50E3C2;
+}
+
+.color-emphasis-neg {
+	color: #6991C6;
+}
+
+.hid-title {
+	color: #888;
+}
+
+.banner-img-echoes {
+	max-height: 100vh;
+  top: -60px;
+  //position: absolute;
+}
+
+.large-font-content {
+	li {
+		margin-bottom: 80px !important;
+	}
+}

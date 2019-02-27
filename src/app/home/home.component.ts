@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
+import { Component, OnInit, HostListener, ElementRef, ViewChild } from '@angular/core';
 import {timer} from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
 
@@ -161,5 +161,10 @@ export class HomeComponent implements OnInit {
 	selectMe() {
 		this.isMeSelected = true;
 	}
+
+	scrollToElement($element): void {
+    console.log($element);
+    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
 
 }

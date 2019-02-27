@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef, AfterContentInit } from '@angular/core';
 import { Lightbox, LightboxConfig } from 'ngx-lightbox';
+import { Favicons} from '../favicons.service';
 
 @Component({
   selector: 'app-involved',
@@ -7,14 +8,19 @@ import { Lightbox, LightboxConfig } from 'ngx-lightbox';
   styleUrls: ['./involved.component.scss']
 })
 export class InvolvedComponent implements OnInit {
+  private favicons: Favicons;
 	@ViewChild('wrapper') wrapper: ElementRef;
 	isNavbarCollapsed = true;
 	private _albums: Array<{src: string, thumb: string}> = [];
 	private _ids: Array<string> = [];
 
-  constructor(private _lightbox:Lightbox, private _lightboxConfig: LightboxConfig) { }
+  constructor(private _lightbox:Lightbox, private _lightboxConfig: LightboxConfig, favicons: Favicons) {
+    this.favicons = favicons;
+    this.favicons.activate( "coral" );
+  }
 
   ngOnInit() {
+    //this.favicons.activate( "coral" );
   }
 
   ngAfterContentInit() {

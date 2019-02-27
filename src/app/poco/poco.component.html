@@ -1,0 +1,467 @@
+<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lustria" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top my-navbar">
+	<a class="navbar-brand" href="#">Jing</a>
+	<button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
+		<ul class="navbar-nav mr-auto justify-content-end">
+			<li class="nav-item dropdown" ngbDropdown>
+				<a class="nav-link dropdown-toggle" id="id01" ngbDropdownToggle>Work</a>
+				<div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+					<a class="dropdown-item purple-text" href="projects/echoes">Echoes</a>
+					<a class="dropdown-item green-text" href="projects/stretch">Stretch</a>
+					<a class="dropdown-item coral-text" href="projects/involved">Involved</a>
+					<a class="dropdown-item blue-text" href="projects/poco">Poco A Poco</a>
+				</div>
+			</li>
+			<li class="nav-item navbar-right">
+				<a class="nav-link" id="id02" href="#">About</a>
+			</li>
+			<li class="nav-item navbar-right">
+				<a class="nav-link" id="id03" href="#">Resume</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+
+<div class="stretch-page page">
+	<div class="row banner justify-content-around">
+		<div class="titles col-lg-4 col-sm-4">
+			<p class="banner-title">
+				Poco A Poco
+			</p>
+			<p class="banner-subtitle margin-20">
+				A VR immersive experience to fly with classical music.
+			</p>
+			<a role="button" href="https://www.youtube.com/watch?v=uEu2-PxSoTU" class="btn btn-outline-light margin-20" target="_blank">Watch Video</a>
+
+		</div>
+
+		<div class="col-lg-8 col-sm-8 overflow-hidden">
+			<img class="banner-img-echoes" src="assets/img/poco-banner.gif">
+
+			<!--
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe src="https://player.vimeo.com/video/251483223" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div> -->
+		</div>
+
+		<div class="attributes col-lg-12 col-sm-12">
+			<div class="row attribute1">
+				<div class="col-lg-3 col-6">
+					<div class="attribute-title"><b>Duration</b></div>
+					<!--<fa name="calendar"></fa>-->
+					<div class="attribute-content">Oct ~ Dec 2017</div>
+				</div>
+				<div class="col-lg-3 col-6 margin-20">
+					<div class="attribute-title"><b>Team</b></div>
+					<!--<fa name="cog" animation="spin"></fa>-->
+					<div class="attribute-content">Mingxuan Guo</div>
+					<div class="attribute-content">Buwei He</div>
+					<div class="attribute-content">Zan Li</div>
+					<div class="attribute-content">Zichao Lin</div>
+				</div>
+				<div class="col-lg-3 col-6 margin-20">
+					<div class="attribute-title"><b>Contributions</b></div>
+					<!--<fa name="cog" animation="spin"></fa>-->
+					<div class="attribute-content">Game Design</div>
+					<div class="attribute-content">VR Experience Design</div>
+					<div class="attribute-content">VR Game Development</div>
+					<div class="attribute-content">Testing</div>
+				</div>
+				<div class="col-lg-3 col-6">
+					<div class="attribute-title"><b>Tools</b></div>
+					<!--<fa name="user"></fa>-->
+					<div class="attribute-content">HTC Vive VR Bundles</div>
+					<div class="attribute-content">Unity 3D</div>
+					<div class="attribute-content">C#</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="content-wrapper" #wrapper>
+
+		<div class="big-part">
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Background </p>
+				</div>
+				<div class="large-font-content">
+					<div class="margin-50">
+						<p> Rhythm games are full of pop music, but we hope to convey the message that classical pieces can be very different from the typical stereotype: sometimes they are elegant and peaceful, yet, at other times, they can as well be powerful and exciting.
+						</p>
+					</div>
+					<p class="question"> <b>We aimed at presenting different sides of classical music to young audience through a VR rhythm game with the fusion of <b>music + visual + motion</b> in an immersive environment. </b>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part">
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Challenges </p>
+				</div>
+				<div class="large-font-content">
+					<ul>
+						<li class="margin-50">
+							<p><b>How to Engage with Young Audience?</b></p>
+							<p class="mid-font">Young audience often don't know much about and don't have special interests for classical music. The design needs to be engaging in the sense that the audience can enjoy the game and develop interests for learning more without much prior knowoledge. The <b>choice of music</b> and the <b>way to present</b> it would be critical. </p>
+						</li>
+						<li class="margin-50">
+							<p><b>How to Embody Abstract Music Experience?</b></p>
+							<p class="mid-font">Classical music is often abstract with no lyrics presented. Therefore, bringing it to life with the aid of appropriate <b>visual images and context</b> is important.</p>
+						</li>
+						<li class="margin-50">
+							<p><b>How to Create Immersive Experience?</b></p>
+							<p class="mid-font">Immersive experience is crucial to engaging music experience. We hope to design for ways to better combine music, visuals, and motion using VR technology to maximize player's senses to make the experience more memorable and natural.</p>
+						</li>
+					</ul>
+					<img src="assets/img/poco-concept.png" class="img-50">
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part">
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Outcomes </p>
+				</div>
+				<div class="large-font-content">
+					<div>
+						<div class="section inner-insights">
+							<p class="sub-big-title margin-50"> Key Features </p>
+							<div class="row justify-content-around section">
+								<div class="col-sm-5 col-lg-5 margin-80">
+									<img src="assets/img/poco-music.svg" class="img-30 margin-20">
+									<p class="inner-insight-title center-align without-margin">8 classical pieces with diverse styles represented by nature images</p>
+									<p>To encourage audience to engage with classical music, we conducted audience study and selected pieces in a mixture of both popular and less popular ones, and with diverse and distinct charateristics that can be easily pictured.</p>
+								</div>
+								<div class="col-sm-5 col-lg-5 margin-80">
+									<img src="assets/img/poco-terrain.svg" class="img-30 margin-20">
+									<p class="inner-insight-title center-align without-margin">Terrain design to embody music emotion and experience</p>
+									<p>To embody abstract music experience, we mapped out music atmosphere using nature images of 4 seasons and day/night, conducted secondary research and brainstormed to create suitable visual terrain representation for each piece.</p>
+								</div>
+								<div class="col-sm-5 col-lg-5 margin-80">
+									<img src="assets/img/poco-motion.svg" class="img-30 margin-20">
+									<p class="inner-insight-title center-align without-margin">Engaging  motion combined with music flow and beats</p>
+									<p>The core game mechanics is straightforward and engaging. Music, visual, and body motion are combined in the sense that in the scene, players move with music to hit rhythm, enjoying the holistic experience.</p>
+								</div>
+								<div class="col-sm-5 col-lg-5">
+									<img src="assets/img/poco-level.svg" class="img-30 margin-20">
+									<p class="inner-insight-title center-align without-margin">Level mechanism for higher playability</p>
+									<p>Multiple levels are set to make the game worth more experience and keep players engaged. Also, by unlocking levels, different instruments will be unlocked for players to explore more ways to have fun.</p>
+								</div>
+							</div>
+
+							<div class="section">
+								<p class="sub-big-title"> Sample Gameplay </p>
+								<div class="row">
+									<div class="col-sm-4 col-lg-4">
+										<img src="assets/img/poco-gamer.png" class="part-img margin-20">
+										<p class="note-paragraph left-align">In the game, players are flying forward, with music notes placed on the pathway according to the music flow. By feeling the music rhythm, players can easily move hands and body to hit rhythm notes.</p>
+									</div>
+									<div class="col-sm-8 col-lg-8">
+										<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/251513532?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="margin-20">
+							<p class="sub-big-title"> Game Levels </p>
+							<div class="row">
+								<div class="col-sm-4 col-lg-4">
+									<p class="note-paragraph left-align">There are in total of 8 stages of 8 pieces of classical music. They are mapped to 4 seasons and daytime/night according to their impression and stories behind. Levels are to be unlocked one after one, and instruments are unlocked along with levels for players to explore different ways to perform music.</p>
+								</div>
+								<div class="col-sm-8 col-lg-8">
+									<img src="assets/img/poco-menu.png" class="part-img margin-20">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--
+		<div class="large-font-out-content separate-big-part">
+			<p class="emphasis center-align"> <b>"Feeling" is the keyword.</b>
+			</p>
+			<div class="row">
+				<div class="col-sm-2 col-lg-2 smaller-emphasis right-align">What if...</div>
+				<div class="col-sm-10 col-lg-10">
+					<div class="dev-question">expressing feelings of music is <i>easy, quick, and natural</i>?
+					</div>
+					<div class="dev-question">feelings of music is turned into a way to <i>share, promote, and discover</i> music?
+					</div>
+					<div class="dev-question">music is a space for <i>both musicians and listeners</i> to add in their understandings and communicate?
+					</div>
+				</div>
+			</div>
+		</div>
+	-->
+
+	<div class="big-part">
+		<div class="big-part-inner">
+			<div class="big-part-head">
+				<p class="big-part-title"> How we got here </p>
+				<!--<p class="big-part-sub-title"> How did we come here </p>-->
+			</div>
+			<div class="mid-font-content">
+				<div class="section">
+					<p class="sub-title"><b> The overview </b></p>
+					<p class="sub-big-title"> Timeline </p>
+					<img src="assets/img/poco-timeline.png" class="img-70">
+				</div>
+
+				<div class="section">
+					<p class="sub-title"><b> Envisioning interaction forms </b></p>
+					<p class="sub-big-title"> Conceptualization </p>
+					<div class="margin-50">
+						<div class="margin-50">
+							<p> We want the experience to be engaging and intuitive, and thus, having multiple interaction design plans, We chose it to be straightforward, so that even rookies can easily enjoy the simple game control. </p>
+							<div class="row justify-content-center">
+								<div class="col-sm-6 col-lg-6">
+									<img src="assets/img/poco-concept1.png" class="img-70">
+								</div>
+								<div class="col-sm-5 col-lg-5">
+									<img src="assets/img/poco-concept2.png" class="img-70">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<p class="sub-title"><b> Researching & mapping classical music </b></p>
+					<p class="sub-big-title"> Music Selection </p>
+					<div class="margin-50">
+						<div class="margin-50">
+							<p> From examining 50+ pieces of classical music and talking to college students about what their perception and preferences of classical music, we selected a diverse set of 8 pieces based on factors such as popularity, rhythm and styles, we finalized a list of eight pieces of music of different composers, with two (easier and harder) for each season.</p>	
+						</div>
+						<img src="assets/img/poco-songs.png" class="img-70">
+					</div>
+				</div>
+
+				<div class="section">
+					<p class="sub-title"><b> High-level flow </b></p>
+					<p class="sub-big-title"> Game Flow </p>
+					<div class="margin-50">
+						<div class="margin-50">
+							<p> Having the basic stage setting, we designed the overall game flow of level system and instrument system. In the design, we took care of both casual players and more hard-core players who wish to challenge for more surprises. </p>
+							<p>We allowed players to unlock the next season as a whole just by clearing the previous easier song (as demonstrated below). For hard stages, they were “extra” stages that were rewarding yet non-compulsory: by clearing those stages, players would be able to unlock different instruments to experience different performance styles.</p>
+						</div>
+						<img src="assets/img/poco-game-flow.png" class="img-70">
+					</div>
+				</div>
+
+				<div class="section">
+					<p class="sub-title"><b> Theming music and stages </b></p>
+					<p class="sub-big-title"> Stage Concepts </p>
+					<div class="margin-50">
+						<div class="margin-50">
+							<p> Having the list of music, we then started to design the context and component of stages. Every stage was designed based on the music. Components include level design, beat map design, motion design, and mood.</p>
+							<p>From examining the music, I grasped the concept of the stage, and sketched out the concept design based on my understanding to determine the overall style and atmosphere of each scene. Below are some examples of conceptual sketches of a few stages.</p>	
+						</div>
+						<div class="row">
+							<div class="col-sm-3 col-lg-3 margin-20">
+								<img src="assets/img/poco-stage1.jpg" class="part-img">
+							</div>
+							<div class="col-sm-3 col-lg-3 margin-20">
+								<img src="assets/img/poco-stage2.jpg" class="part-img">
+							</div>
+							<div class="col-sm-3 col-lg-3 margin-20">
+								<img src="assets/img/poco-stage3.jpg" class="part-img">
+							</div>
+							<div class="col-sm-3 col-lg-3 margin-20">
+								<img src="assets/img/poco-stage4.jpg" class="part-img">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<p class="sub-title"><b> Case study of designing everything within a stage </b></p>
+					<p class="sub-big-title"> Level Design </p>
+					<div class="margin-50">
+						<div class="margin-50">
+							<p class="margin-50"> Stage 2-1 (Summer Day – Alla Turca) would be taken as the example for case study below. Midi file of the piece was analyzed section by section according to moods and speed. Keywords are extracted and used to brainstorm the features and flow of terrain.</p>
+							<audio controls class="part-img margin-50">
+								<source src="assets/img/poco-alla-turca.mp3" type="audio/mpeg">
+								</audio>
+								<img src="assets/img/poco-alla-turca.png" class="part-img section">			
+
+								<div class="row justify-content-center section">
+									<div class="col-sm-6 col-lg-6">
+										<img src="assets/img/poco-level-1.png" class="part-img">
+									</div>
+									<div class="col-sm-6 col-lg-6">
+										<p class="note-paragraph left-align">Basic terrain along with flying route was built in Unity according to the specification and drafts. After testing in VR, we adjusted the length and height of the route, and adjusted each sub-terrain according to the actual timing and tones of each section of the music.</p>	
+									</div>
+								</div>
+								<div class="row justify-content-center section">
+									<div class="col-sm-6 col-lg-6">
+										<p class="note-paragraph left-align">Thereafter, visual and lightings were polished based on the uniform game theme and specific music theme. Alla Turca was a brisk song in summer, and thus the overall visual style was bright with blue-green tone to create a cool-down yet vigorous atmosphere. Details such as grass, trees, stones and other decorations were added.</p>
+									</div>
+									<div class="col-sm-6 col-lg-6">
+										<img src="assets/img/poco-level-2.png" class="part-img">	
+									</div>
+								</div>
+
+								<div class="row justify-content-center section">
+									<div class="col-sm-6 col-lg-6">
+										<img src="assets/img/poco-level-3.png" class="part-img">
+									</div>
+									<div class="col-sm-6 col-lg-6">
+										<p class="note-paragraph left-align">We integrated the beat map into the terrain and adjust their positions and speed through testing in VR. We made sure that notes were within the appropriate range for players to hit and that movements were at the right difficulty level.</p>	
+									</div>
+								</div>
+
+								<div class="row justify-content-center">
+									<div class="col-sm-6 col-lg-6">
+										<p class="note-paragraph left-align">I then design the visual aspect of in-game interaction: including the shape, size and appearance of notes, as well as controller model, animation and interaction with notes. We tested in VR to ensure that the interaction was smooth and that players felt in control.</p>
+									</div>
+									<div class="col-sm-6 col-lg-6 section">
+										<img src="assets/img/poco-level-4.png" class="part-img">	
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="section">
+						<p class="sub-title"><b> Designing VR UI </b></p>
+						<p class="sub-big-title"> UI Structure and Flow </p>
+						<div class="margin-50">
+							<div class="margin-50">
+								<p> Having the basic structures and level arrangements in mind, I began to draft out the flow of the game UI, and structure it into information architecture.</p>
+							</div>
+
+							<div class="row justify-content-center section">
+								<div class="col-sm-6 col-lg-6">
+									<img src="assets/img/poco-app-flow.png" class="part-img">
+								</div>
+								<div class="col-sm-6 col-lg-6">
+									<img src="assets/img/poco-app-ia.png" class="part-img">	
+								</div>
+							</div>
+
+							<div>
+								<p><b>Here's an example of menu UI design:</b></p>
+								<p class="note-paragraph left-align">1. We drafted out it on paper to show and discuss the basic layout and content of 3D interface. After comparing between three designs, we decided to go with the arc-shaped menu, with the user standing in the middle.</p>
+
+								<img src="assets/img/poco-menu-flow.png" class="img-70 section">
+
+								<div class="row justify-content-center section">
+									<div class="col-sm-6 col-lg-6">
+										<img src="assets/img/poco-menu-hf.png" class="part-img">
+									</div>
+									<div class="col-sm-6 col-lg-6">
+										<p class="note-paragraph left-align">2. I used Photoshop to prototype the visual style of UI, and further specified the layout details.</p>	
+									</div>
+								</div>
+
+								<div class="row justify-content-center section">
+									<div class="col-sm-6 col-lg-6">
+										<p class="note-paragraph left-align">3. Through testing with VR equipment in Unity, we adjusted things that could not be tested on 2D plane such as distance and controller interaction to ensure a good VR experience.</p>
+									</div>
+									<div class="col-sm-6 col-lg-6">
+										<img src="assets/img/poco-menu.png" class="part-img">	
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section">
+						<p class="sub-title"><b> Usability and playability </b></p>
+						<p class="sub-big-title"> Testing & Iteration </p>
+						<div class="margin-50">
+							<div class="margin-50">
+								<p> Testing was done concurrently with development. We had both inner group and outer group testing.</p>
+							</div>
+							<div class="section">
+								<p><b>1/ Auto View-angle Adjustment</b></p>
+								<p>Previously, the orientation and viewing angle in VR was set completely flexible. This was because we wanted players to have more freedom to control their viewing angles. However, this did not work well when testing: sometimes when route was curving or precipitous, players could easily get lost and they were not given enough time to react promptly to the changing directions.</p>
+								<p>Thus, we implemented the auto orientation adjustment so that players’ horizontal line of sight would always be the tangent of the route. By doing so, although players might lose some control, it became easier for them to follow the beat route.</p>
+								<img src="assets/img/poco-orientation.png" class="part-img">
+							</div>
+
+							<div class="section">
+								<p><b>2/ Motion Adjustment</b></p>
+								<p>We adjusted the hitting distance of a note for several times, taking into account human’s arm length, reaction time and moving speed so as to create a more accurate match between music and motion.</p>
+								<p>However, when route was precipitous, extra work was needed to adjust note position. For example, we observed that when players were flying downward with the waterfall, players tended to stretch out their hands horizontally while squatting, but still could not reach notes. Additionally, they reported dizziness when traveling up and down fast. To improve the experience, we made the falling slope less abrupt and adjusted the position of notes to be nearer to players.</p>
+
+								<div class="row justify-content-center">
+									<div class="col-sm-8 col-lg-8">
+										<img src="assets/img/poco-test-motion1.png" class="part-img">
+									</div>
+									<div class="col-sm-4 col-lg-4">
+										<img src="assets/img/poco-test-motion2.png" class="part-img">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<p><b>3/ Controller Adjustment</b></p>
+							<p>We tested several controller feedback design, to see which ones gave a better feedback and interaction experience, and gathered feedback from players before we decided to go with the last design.</p>
+							<img src="assets/img/poco-controller.png" class="part-img">
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="big-part">
+				<div class="big-part-inner">
+					<div class="big-part-head">
+						<p class="big-part-title"> Final </p>
+						<!--<p class="big-part-sub-title"> How did we come here </p>-->
+					</div>
+					
+					<div class="section">
+						<p class="sub-big-title"> All Stages </p>
+						<img src="assets/img/poco-result-all.png" class="part-img">
+					</div>
+
+					<div class="section">
+						<p class="sub-big-title"> Video </p>
+						<div class="mid-font-content center-align">
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uEu2-PxSoTU" allowfullscreen> </iframe>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="big-part">
+				<div class="big-part-inner">
+					<div class="big-part-head">
+						<p class="big-part-title"> Reflection </p>
+						<!--<p class="big-part-sub-title"> How did we come here </p>-->
+					</div>
+					<div class="mid-font-content">
+						<p>It was a really special 3-month experience for me to get a taste of VR design and development, and I enjoyed leveraging my creativity to fuse classical music with visual and motion.</p>
+						<ul>
+							<li><b>Explore and experiment with technology:</b> Although I also read about VR experience and interface design online, a large portion of this project was done through iterative exploration and testing because there are not too many VR guidelines currently. I wished to learn some more professional approaches and frameworks to deal with VR design.</li>
+							<li><b>Design in 3D Space:</b> Designing in 3D space is very different and actually harder than on 2D-plane, especially when the design needs to be immersive: it becomes harder to mock up, harder to imagine and draft out everything using pen and paper, and needs to be tested in the real 3D environment frequently to make sure everything works fine.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
