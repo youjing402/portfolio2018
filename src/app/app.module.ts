@@ -1,16 +1,15 @@
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { TitleService } from './title.service'
 
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './/app-routing.module';
-
+import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
+
 import { StretchComponent } from './stretch/stretch.component';
 import { FitmiComponent } from './fitmi/fitmi.component';
 import { EchoesComponent } from './echoes/echoes.component';
@@ -37,9 +36,9 @@ import { Favicons } from "./favicons.service";
   imports: [
   BrowserModule,
   AppRoutingModule,
-  NgbModule,
-  AnimateOnScrollModule.forRoot(),
+  NgbModule.forRoot(),
   AngularFontAwesomeModule,
+  AnimateOnScrollModule.forRoot(),
   LightboxModule
   ],
   providers: [TitleService, 
