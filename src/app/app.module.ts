@@ -21,6 +21,8 @@ import { LightboxModule } from 'ngx-lightbox';
 import { BROWSER_FAVICONS_CONFIG } from "./favicons.service";
 import { BrowserFavicons } from "./favicons.service";
 import { Favicons } from "./favicons.service";
+import { ItaleComponent } from './itale/itale.component';
+import { DunhuangComponent } from './dunhuang/dunhuang.component';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { Favicons } from "./favicons.service";
   FitmiComponent,
   EchoesComponent,
   InvolvedComponent,
-  PocoComponent
+  PocoComponent,
+  ItaleComponent,
+  DunhuangComponent
   ],
   imports: [
   BrowserModule,

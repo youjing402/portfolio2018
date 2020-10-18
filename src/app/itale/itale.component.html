@@ -1,0 +1,405 @@
+<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lustria" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top my-navbar">
+	<a class="navbar-brand" href="#">Jing</a>
+	<button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
+		<ul class="navbar-nav mr-auto justify-content-end">
+			<li class="nav-item dropdown" ngbDropdown>
+				<a class="nav-link dropdown-toggle" id="id01" ngbDropdownToggle>Work</a>
+				<div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+					<a class="dropdown-item purple-text" href="projects/echoes">Echoes</a>
+					<a class="dropdown-item green-text" href="projects/stretch">Stretch</a>
+					<a class="dropdown-item coral-text" href="projects/involved">Involved</a>
+					<a class="dropdown-item blue-text" href="projects/poco">Poco A Poco</a>
+				</div>
+			</li>
+			<li class="nav-item navbar-right">
+				<a class="nav-link" id="id02" href="#">About</a>
+			</li>
+			<li class="nav-item navbar-right">
+				<a class="nav-link" id="id03" href="#">Resume</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<!--
+<div class="timeline" *ngIf="isScrolled1">
+	<a (click)="scrollToElement(bigpart1)">
+		<div class="container left" [ngClass]="(!isScrolled2 && isScrolled1) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Overview</p>
+		</div>
+	</a>
+	<a (click)="scrollToElement(bigpart2)">
+		<div class="container left" [ngClass]="(!isScrolled3 && isScrolled2) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Outcomes</p>
+		</div>
+	</a>
+	<a (click)="scrollToElement(bigpart3)">
+		<div class="container left" [ngClass]="(!isScrolled4 && isScrolled3) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Research</p>
+		</div>
+	</a>
+	<a (click)="scrollToElement(bigpart4)">
+		<div class="container left" [ngClass]="(!isScrolled5 && isScrolled4) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Ideation</p>
+		</div>
+	</a>
+	<a (click)="scrollToElement(bigpart5)">
+		<div class="container left" [ngClass]="(!isScrolled6 && isScrolled5) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Design & Testing</p>
+		</div>
+	</a>
+	<a (click)="scrollToElement(bigpart6)">
+		<div class="container left" [ngClass]="(isScrolled6) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Final</p>
+		</div>
+	</a>
+
+</div>
+-->
+
+
+<div class="itale-page page">
+	<div class="row banner justify-content-around">
+		<div class="titles col-lg-4 col-sm-4">
+			<p class="banner-title">
+				iTale
+			</p>
+			<p class="banner-subtitle margin-20">
+				A creative storytelling playground for children to tell their stories through visual story components.
+			</p>
+			<div class="attributes">
+				<div class="row attribute1">
+					<div class="col-lg-6 col-6">
+						<div class="attribute-title"><b>Duration</b></div>
+						<!--<fa name="calendar"></fa>-->
+						<div class="attribute-content">Oct 2019 ~ Apr 2020</div>
+					</div>
+					<div class="col-lg-6 col-6">
+						<div class="attribute-title"><b>Project</b></div>
+						<!--<fa name="user"></fa>-->
+						<div class="attribute-content">Product Design Intern</div>
+						<div class="attribute-content">Capstone Project</div>
+					</div>
+				</div>
+				<div class="row attribute2">
+					<div class="col-lg-6 col-6">
+						<div class="attribute-title"><b>Core Team</b></div>
+						<!--<fa name="cog" animation="spin"></fa>-->
+						<div class="attribute-content">1 Product Manager</div>
+						<div class="attribute-content">1 Product Designer</div>
+						<div class="attribute-content">2 Engineers</div>
+					</div>
+					<div class="col-lg-6 col-6">
+						<div class="attribute-title"><b>Contributions</b></div>
+						<!--<fa name="cog" animation="spin"></fa>-->
+						<div class="attribute-content">Product Design</div>
+						<div class="attribute-content">Design Strategy</div>
+						<div class="attribute-content">UX Research</div>
+						<div class="attribute-content">Design for Education</div>
+						<div class="attribute-content">Prototyping</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="col-lg-6 col-sm-6">
+			<img class="part-img" src="assets/img/itale-cover.png">
+		</div>
+	</div>
+
+	<div class="content-wrapper" #wrapper>
+
+		<div class="big-part">
+			<div class="big-part-inner">
+				<div class="mid-font-content">
+					<p>This project was done as a <b>remote</b> passion project with a small team in California. The cross-functional team consisted of a PM, 2 developers, 1 illustrator, and 2 marketers. I joined as the <b>solo designer</b>, and below are some of my key responsibilities:</p>
+					<div class="row">
+						<div class="col-lg-4">
+							<p>User Research</p>
+							<p>I got in touch with parents and educators, and used various research methods to collect and synthesize user data.</p>
+						</div>
+						<div class="col-lg-4">
+							<p>Strategy</p>
+							<p>I communicated and collaborated with the multi-functional team (mainly with PM) to discuss design strategy and feature priority.</p>
+						</div>
+						<div class="col-lg-4">
+							<p>Prototype</p>
+							<p>I built digital and physical prototypes to speed test the idea and design.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part big-part-1" id="big-part-1" #bigpart1>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Overview </p>
+				</div>
+				<div class="large-font-content">
+					<div class="section">
+						<p> Storytelling is a fun educational exercise that boosts children's imagination and literacy skills. When storytelling education shifts from classroom to home, new opportunities and issues emerge.</p>
+						<p>
+							On one hand, at-home storytelling comes with more flexibility and fun; on the other hand, without professional guidance, it's harder for children to effectively hone and broaden their storytelling skill sets.
+						</p>
+						<p>Key design challenges</p>
+						<div class="row">
+							<div class="col-sm-6">
+								<p>Product-wise</p>
+								<p>How to coordinate children's needs for fun experience and parents' expectations for visible educational values? </p>
+							</div>
+							<div class="col-sm-6">
+								<p>Experience-wise</p>
+								<p>How to help children overcome challenges, pick up key creative storytelling skills, and most importantly, enjoy the experience? </p>
+							</div>
+						</div>
+
+						<p>Solution Overview</p>
+						<p>A story playground enabling children to use illustration pieces of story elements to freely act out and record stories. Story frameworks and during-story guidance are integrated to help children get a better grasp of narrative flow and sparkle their creativity.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part big-part-2" id="big-part-2" #bigpart2>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> How the story began... </p>
+				</div>
+				<div class="large-font-content">
+					<p> Emma, our PM, has been a children story writer for years, and she has a 6-year-old son who loves reading and creating stories. Navigating between family and industry, she's always been thinking of digitizing storybook experience: what if we allow children to create their own story books too? </p>
+					<img src="assets/img/echoes-overview.png" class="img-70 section" id="echoes-overview" (click)="open('echoes-overview')">
+					<p> Next, I asked a few questions to deconstruct the prompt：</p>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part big-part-3" id="big-part-3" #bigpart3>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Research & Problem Framing </p>
+				</div>
+				<div class="mid-font-content">
+					<p>Guided by the questions I asked, I explored the problem space and conducted research. To see the full research process, please click [here]</p>
+
+					<p class="sub-title"><b> Challenge 1 - User Needs & Product Directions </b></p>
+					<p class="sub-big-title"> What do children and parents value, and how to coordinate their different needs? </p>
+					<div class="margin-50">
+						<div class="margin-50">
+							<p> How I researched: We conducted interview sessions with parents on their first-hand experience, and consulted education experts on children's mental development (to read more about research methods, click here).</p>
+
+							<p>We synthesized results by mapping out children’s and parents’ key motivations, goals, and beliefs on storytelling:</p>
+
+							[img] [img]
+
+							<p>What we learned?</p>
+							<div class="row">
+								<div class="col-lg-4">
+									<p>Fun > Education</p>
+									<p>Children focus primarily on the fun aspect and require emotional motives to stay engaged; Adults love to see visible long-term educational values and potential, along with the end result of children’s work. </p>
+									<p>Implication: We want to make sure the product is enjoyable in the first place, that children want to use it out of their own will, but also fulfills its educational goal.</p>
+								</div>
+
+								<div class="col-lg-4">
+									<p>Creativity > Hard Skills</p>
+									<p>Being carefree and creative is why children enjoy storytelling, and creativity is among the top lists of educational values that parents hope children to gain through storytelling.</p>
+									<p>Implication: Although other hard skills are also important to cover, story creativity will be the top focus of the product.</p>
+								</div>
+
+								<div class="col-lg-4">
+									<p>Individual use > Family use</p>
+									<p>Although most parents agreed that storytelling is important to family communication, many also admitted they don't always have time and energy to guide children through the storytelling process. </p>
+									<p>Implication: It's best for the product to primarily target children's individual use at home.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<p class="sub-title"><b> Challenge 2 - Experience & Education </b></p>
+					<p class="sub-big-title"> What are problems and opportunities in the current storytelling experience? </p>
+					<div class="margin-50">
+						<div class="margin-50">
+							<p> How I researched: We conducted interviews with parents and teachers about their observation and children's experience, collected stories created by children, and read about existing storytelling educational methods to understand the current storytelling experience and emotions behind.</p>
+
+							<div class="row">
+								<div class="col-lg-6">
+									<p>Analysis 1 - Comparing different storytelling forms</p>
+									<p>To get a more comprehensive understanding of what makes a good storytelling experience in general, we looked into different types of common storytelling practices that children have, and compared their attributes.</p>
+
+									[img]
+								</div>
+
+								<div class="col-lg-6">
+									<p>Analysis 2 - Comparing different storytelling products</p>
+									<p>To examine how competitors in the market were doing, we picked 3 major products to analyze features in terms of experience and education results to understand what worked and what didn't.</p>
+
+									[img]
+								</div>
+							</div>
+
+							<div>
+								<p>Analysis 3 - Going deep into the intended scenario</p>
+								<p>We further investigated the intended scenario (i.e. at-home individual storytelling) in detail and spot issues/opportunities in terms of educational values and fun experience:</p>
+								[img]
+							</div>
+
+							<p>What we learned?</p>
+							<div class="row">
+								<div class="col-lg-4">
+									<p>Freedom sparkles creativity, but that's not enough</p>
+									<p>Creativity is not always about inventing everything from scratch, but more about getting inspired and innovating. Proper amount of guidance (e.g. framework, prompts, etc.) greatly helps children expand imagination and organize their creative ideas. </p>
+									<p>Implication: Ensure enough freedom and provide guidance when needed</p>
+								</div>
+
+								<div class="col-lg-4">
+									<p>Children lack awareness of story flow and development</p>
+									<p>When telling stories on their own, many tend to go on and on without much overall control and focus on development (both depth and width). Once they get stuck, they lose interest easily, leaving many dimensions unexplored.</p>
+									<p>Implication: Provide both overall guidance and during-storytelling inspiration</p>
+								</div>
+
+								<div class="col-lg-4">
+									<p>Communication spices up the experience</p>
+									<p>Children love to share their stories with others. Conversations give them a sense of engagement, and they get more encouraged when being listened to and reacted by the audience actively. </p>
+									<p>Implication: Make the guidance conversation-like and provide social support</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part big-part-2" id="big-part-2" #bigpart2>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Vision </p>
+				</div>
+				<div class="large-font-content">
+					<p> In order to make at-home storytelling more engaging and educational for children, iTale is designed to be a playground where children are guided to better understand story elements and story flow, to think and craft more creatively, and to share. </p>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part big-part-4" id="big-part-4" #bigpart4>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Ideation & Key Strategy </p>
+					<!--<p class="big-part-sub-title"> How did we come here </p>-->
+				</div>
+				<div class="mid-font-content">
+					<p>For the MVP, we focused on the design of core storytelling mechanisms first.
+					Children need free space to experiment on their own, while being guided effectively both before and during storytelling. Therefore, we brainstormed and developed the basic storytelling tactic of building blocks + streetlights.</p>
+
+					<div>
+						<p class="sub-big-title"> <b> Building Blocks </b> </p>
+
+						<div class="margin-50">
+							<p class="margin-50">Building blocks are basic elements used to construct the story. Its primary goal here is for children to comprehend story elements and comfortably brainstorm plots.</p>
+							<p>We assessed common storytelling practices that children adopt, as well as various storytelling techniques on how a story is presented to children in an educational setting. To ensure both fun experience and educational values, we decided to go with visualizing Who-Where-What elements, and children can drag elements around and act out the story:</p>
+							<img src="assets/img/echoes-values.png" class="img-50" id="echoes-values" (click)="open('echoes-values')">
+							<!--<p class="note-paragraph"> How musicians and listeners value feedback </p> -->
+						</div>
+						<div class="margin-50">
+							<p class="margin-50">Streetlights are guidance throughout the process that helps children think about stories more thoroughly and creatively.</p>
+							<p>As the research showed, children lack overall control of storyflow and the skill to properly develop plot. Therefore, we decided to include both overall planning guidance and on-the-way guidance. After internal and external brainstorming sessions, we mapped out different types of guidance in different stages as following:</p>
+							<img src="assets/img/echoes-values.png" class="img-50" id="echoes-values" (click)="open('echoes-values')">
+							<!--<p class="note-paragraph"> How musicians and listeners value feedback </p> -->
+						</div>
+
+						<div >
+							<p>We are therefore looking for ways to ensure high quality feedback, yet not too hard for listeners to generate. Therefore, from our analysis, <b>music experience/story sharing</b> is the one with most potential. </p>
+							<img src="assets/img/echoes-scenario.png" class="img-70" id="echoes-scenario" (click)="open('echoes-scenario')">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="big-part big-part-5" id="big-part-5" #bigpart5>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Design </p>
+					<!--<p class="big-part-sub-title"> forms of feedback </p>-->
+				</div>
+				<div class="mid-font-content">
+					<div class="section">
+						<p class="sub-big-title"> Design Principles </p>
+						<p class="margin-50">To guide the design, we came up with 3 basic principles to follow:</p>
+						[img]
+						<p class="margin-50">Below are some major UX decisions about the storytelling process that we made :</p>
+
+					</div>
+
+					<div>
+						<div class="section">
+							<p class="sub-title"> <b> [Interaction & Layout] </b> </p>
+							<p class="sub-big-title"> <b> How to set up the scene and story elements </b> </p>
+						</div>
+
+						<div class="section">
+							<p class="sub-title"> <b> [Interaction] </b> </p>
+							<p class="sub-big-title"> <b> When & where to incorporate during-scene guidance </b> </p>
+						</div>
+
+						<div class="section">
+							<p class="sub-title"> <b> [Interaction] </b> </p>
+							<p class="sub-big-title"> <b> The right amount of planning </b> </p>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="big-part big-part-6" id="big-part-6" #bigpart6>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Testing & Iterations </p>
+					<!--<p class="big-part-sub-title"> How did we come here </p>-->
+				</div>
+				<div class="mid-font-content">
+					<p>To <b>validate our idea and ensure the usability of design</b>, we conducted testing sessions with 4 parents and 2 educators.</p>
+					<p>Due to the difficulty of prototyping the whole experience digitally, I divided the prototype into 2 parts: 1. digital prototype that demonstrates flow and basic UI interactions, 2. physical prototype that demonstrates complicated interaction such as drag-and-drop.</p>
+					<p>We received very positive feedback from both parents and educators:</p>
+					[img]
+
+					<p class="sub-big-title"> <b> UX Iterations </b> </p>
+					<p>There are also iterations to be made: aside from feature-related concerns that have been incorporated in the last part, some other general UX issues include:</p>
+
+					<p class="sub-big-title"> <b> Shooting down fancy ideas </b> </p>
+					<p>During the project, we explored design directions broadly via brainstorming, and not all ideas passed through due to factors such as technical concerns and UX concerns. This was an example demonstrating how we handled such situation in general:</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part">
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Reflection </p>
+					<!--<p class="big-part-sub-title"> How did we come here </p>-->
+				</div>
+				<div class="mid-font-content">
+					<ul>
+						<li><b>Think ahead and design for more flexibility:</b> As I joined the team at an early stage, it was an important job for me to learn to prioritize features with the team while also keeping an eye on what may possibly come next (e.g. marketing campaign) in order to design in a more flexible way to accommodate future changes.</li>
+						<li><b>Find alternative ways to deal with challenging user groups:</b> Children are surely one of the most unique and challenging user groups to conduct research on. To approach the problem differently, I tried to get more information and knowledge via reading and talking to professional educators and parents about their first-hand experience. They sometimes were able to explain children's behaviors and mentality even better than children themselves, which helped me greatly in understanding what I needed to design.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

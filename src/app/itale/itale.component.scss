@@ -1,0 +1,13 @@
+@import '../common-project';
+
+$theme-color: #F1AD3B;
+
+.banner {
+	background: $theme-color;
+}
+
+.banner-img-echoes {
+	max-height: 100vh;
+  top: -60px;
+  position: absolute;
+}

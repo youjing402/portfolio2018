@@ -8,14 +8,15 @@
 
 .page {
   //font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  //font-weight: 300;
   font-size: 17px;
   //padding: 40px;
-  -webkit-text-stroke: 0.45px;
-  -webkit-font-smoothing: antialiased;
-  text-stroke: 0.45px;
-  font-smoothing: antialiased;
+  //-webkit-text-stroke: 0.45px;
+  //-webkit-font-smoothing: antialiased;
+  //text-stroke: 0.45px;
+  //font-smoothing: antialiased;
   letter-spacing: 0.01rem;
+  //line-height: 1.6;
   //font-size: 24px;
 
   font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
@@ -23,6 +24,10 @@
   h1 {
   	font-style: bold;
   }
+}
+
+.normal-text {
+	font-size: 17px;
 }
 
 .section {
@@ -150,6 +155,14 @@
 	text-align: left;
 }
 
+.sub-text {
+	font-size: 14px;
+}
+
+.sub-text-title {
+	font-size: 16px;
+}
+
 .sub-title {
 	//font-weight: bold;
 	font-size: 14px;
@@ -226,6 +239,22 @@
 
 .margin-15 {
 	margin-bottom: 15px;
+}
+
+.margin-100 {
+	margin-bottom: 100px;
+}
+
+.margin-75 {
+	margin-bottom: 75px;
+}
+
+.margin-0 {
+	margin-bottom: 0px;
+}
+
+.padding-all-10{
+	padding: 10px;
 }
 
 .intext-emphasis {
@@ -347,6 +376,15 @@
 	padding-right: 10%;
 }
 
+.large-font {
+	font-size: 22px;
+}
+
+.text-70 {
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
 .mid-font-content {
 	padding-left: 10%;
 	padding-right: 10%;
@@ -367,6 +405,12 @@
 	//font-weight: bold;
 }
 
+.sub-big-sub-title {
+	font-weight: normal;
+	font-size: 17px;
+	//color: #aaa;
+}
+
 .margin-80 {
 	margin-bottom: 80px;
 }
@@ -376,9 +420,21 @@
 	margin-bottom: 50px;
 }
 
+.margin-150 {
+	margin-bottom: 150px;
+}
+
 .margin-20 {
 	//margin-top: 50px;
 	margin-bottom: 20px;
+}
+
+.margin-all-0 {
+	margin: 0px;
+}
+
+.margin-half-rm {
+	margin-bottom: .2rem;
 }
 
 .small-section {

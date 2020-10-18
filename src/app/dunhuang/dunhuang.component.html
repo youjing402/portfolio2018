@@ -1,0 +1,556 @@
+<link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lustria" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top my-navbar">
+	<a class="navbar-brand" href="#">Jing</a>
+	<button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
+		<ul class="navbar-nav mr-auto justify-content-end">
+			<li class="nav-item dropdown" ngbDropdown>
+				<a class="nav-link dropdown-toggle" id="id01" ngbDropdownToggle>Work</a>
+				<div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+					<a class="dropdown-item purple-text" href="projects/echoes">Echoes</a>
+					<a class="dropdown-item green-text" href="projects/stretch">Stretch</a>
+					<a class="dropdown-item coral-text" href="projects/involved">Involved</a>
+					<a class="dropdown-item blue-text" href="projects/poco">Poco A Poco</a>
+				</div>
+			</li>
+			<li class="nav-item navbar-right">
+				<a class="nav-link" id="id02" href="#">About</a>
+			</li>
+			<li class="nav-item navbar-right">
+				<a class="nav-link" id="id03" href="#">Resume</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<!--
+<div class="timeline" *ngIf="isScrolled1">
+	<a (click)="scrollToElement(bigpart1)">
+		<div class="container left" [ngClass]="(!isScrolled2 && isScrolled1) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Overview</p>
+		</div>
+	</a>
+	<a (click)="scrollToElement(bigpart2)">
+		<div class="container left" [ngClass]="(!isScrolled3 && isScrolled2) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Outcomes</p>
+		</div>
+	</a>
+	<a (click)="scrollToElement(bigpart3)">
+		<div class="container left" [ngClass]="(!isScrolled4 && isScrolled3) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Research</p>
+		</div>
+	</a>
+	<a (click)="scrollToElement(bigpart4)">
+		<div class="container left" [ngClass]="(!isScrolled5 && isScrolled4) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Ideation</p>
+		</div>
+	</a>
+	<a (click)="scrollToElement(bigpart5)">
+		<div class="container left" [ngClass]="(!isScrolled6 && isScrolled5) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Design & Testing</p>
+		</div>
+	</a>
+	<a (click)="scrollToElement(bigpart6)">
+		<div class="container left" [ngClass]="(isScrolled6) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Final</p>
+		</div>
+	</a>
+
+</div>
+-->
+
+
+<div class="itale-page page">
+	<div class="row banner justify-content-around">
+		<div class="titles col-lg-4 col-sm-4">
+			<p class="banner-title">
+				Light Up Dunhuang
+			</p>
+			<p class="banner-subtitle margin-20">
+				Experimenting the crossover between philanthropy and e-commerce: A creative e-philanthropy product that engages the young public to donate for traditional cultural heritage protection.
+			</p>
+			<div class="attributes">
+				<div class="row attribute1">
+					<div class="col-lg-6 col-6">
+						<div class="attribute-title"><b>Duration</b></div>
+						<!--<fa name="calendar"></fa>-->
+						<div class="attribute-content">Jun ~ Aug 2019 (5 weeks)</div>
+						<div class="attribute-content">UX Design Summer Intern @ Tencent</div>
+					</div>
+					<div class="col-lg-6 col-6">
+						<div class="attribute-title"><b>Stakeholders</b></div>
+						<!--<fa name="user"></fa>-->
+						<div class="attribute-content">Dunhuang Academy (NGO),</div>
+						<div class="attribute-content">Tencent Corporate Marketing Department,</div>
+						<div class="attribute-content">Tencent Charity</div>
+					</div>
+				</div>
+				<div class="row attribute2">
+					<div class="col-lg-6 col-6">
+						<div class="attribute-title"><b>Core Team</b></div>
+						<!--<fa name="cog" animation="spin"></fa>-->
+						<div class="attribute-content">1 UX Designer</div>
+						<div class="attribute-content">1 UI Designer</div>
+						<div class="attribute-content">1 Design Manager</div>
+						<div class="attribute-content">1 Engineer</div>
+					</div>
+					<div class="col-lg-6 col-6">
+						<div class="attribute-title"><b>Contributions</b></div>
+						<!--<fa name="cog" animation="spin"></fa>-->
+						<div class="attribute-content">UX Design</div>
+						<div class="attribute-content">Prototyping</div>
+						<div class="attribute-content">Mobile Design</div>
+						<div class="attribute-content">E-Charity / E-Commerce Design</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="col-lg-6 col-sm-6">
+			<img class="part-img" src="assets/img/dh-cover.png">
+		</div>
+	</div>
+
+	<div class="content-wrapper" #wrapper>
+
+		<div class="big-part">
+			<div class="big-part-inner">
+				<div class="mid-font-content">
+					<p>This project was done as a <b>remote</b> passion project with a small team in California. The cross-functional team consisted of a PM, 2 developers, 1 illustrator, and 2 marketers. I joined as the <b>solo designer</b>, and below are some of my key responsibilities:</p>
+					<div class="row">
+						<div class="col-lg-4">
+							<p>User Research</p>
+							<p>I got in touch with parents and educators, and used various research methods to collect and synthesize user data.</p>
+						</div>
+						<div class="col-lg-4">
+							<p>Strategy</p>
+							<p>I communicated and collaborated with the multi-functional team (mainly with PM) to discuss design strategy and feature priority.</p>
+						</div>
+						<div class="col-lg-4">
+							<p>Prototype</p>
+							<p>I built digital and physical prototypes to speed test the idea and design.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part big-part-1" id="big-part-1" #bigpart1>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Overview </p>
+				</div>
+				<div class="large-font-content">
+					<div class="section">
+						
+						<p> Tencent, as a large Internet company, has been in a long-term collaboration with Dunhuang Academy, one of the major cultural heritage protection organizations in China. The overall intention of this collaboration was to enhance the young public's awareness towards <b>cultural heritage protection</b>, yet, <b>past projects did not perform well at fundraising</b>. </p>
+
+						<p class="margin-50"> The team thus hoped to explore something different, to bring donors closer to Dunhuang...</p>
+
+						<img class="part-img margin-100" src="assets/img/dh-problem-overview.png">
+
+						<p class="sub-big-title"><b>Key design objectives</b></p>
+						<div class="row normal-text">
+							
+							<div class="col-sm-4">
+								<p><b>Promote Donation</b></p>
+							</div>
+							<div class="col-sm-4">
+								<p><b>Digitalize concepts in traditional arts and culture</b></p>
+							</div>
+							<div class="col-sm-4">
+								<p><b>Fuse e-philanthropy with e-commerce</b></p>
+							</div>
+						</div>
+
+						<div class="row normal-text">
+							<div class="col-sm-4">
+								<p>Understand donors' motivations and reasons why they don't donate for cultural heritage protection.</p>
+							</div>
+
+							<div class="col-sm-4">
+								<p>Explore ways philanthropy can be presented digitally in the context of traditional culture given all uniqueness. </p>
+							</div>
+
+							<div class="col-sm-4">
+								<p>Explore ways philanthropy can utilize e-commerce design tactics. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part big-part-2" id="big-part-2" #bigpart2>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Design Outcome </p>
+				</div>
+				<div class="large-font-content margin-75">
+					<p> We designed Lightup Dunhuang, enabling users to <b>virtually light up a unique piece</b> of wall painting in Dunhuang cave temples <b>upon each donation</b>, through a <b>spatial storytelling</b> experience that created a strong sense of <b>engagement</b>. </p>
+				</div>
+				<img class="part-img" src="assets/img/dh-storyline.png">
+				<div class="row">
+					<div class="col-lg-3 center-align stage-btn" [ngClass]="{'selected-stage-btn' : isSelected1}">
+						<span class="vertical-align-content">
+							Enter the spatial narrative
+						</span>
+						<span class="vertical-align-placeholder"></span>
+					</div>
+					<div class="col-lg-3 center-align stage-btn" [ngClass]="{'selected-stage-btn' : isSelected2}">
+						<span class="align-middle">
+							Explore
+						</span>
+					</div>
+					<div class="col-lg-3 center-align stage-btn" [ngClass]="{'selected-stage-btn' : isSelected3}">
+						<p class="align-middle">
+							Donate and get a candle 
+						</p>
+					</div>
+					<div class="col-lg-3 center-align stage-btn" [ngClass]="{'selected-stage-btn' : isSelected4}">
+						<p class="align-middle">
+							Light up a unique piece of wallpainting and share
+						</p>
+					</div>
+				</div>
+
+				<div class="mid-font-content">
+					<div class="row demo-section">
+						<div class="col-lg-4 col-sm-4 demo-frame">
+							<img src="assets/img/iphone8-silver.png" class="demo-iphone-bg">
+							<img src="assets/img/dh-flow-start.gif" class="demo-animation">
+						</div>
+						<div class="col-lg-1 col-sm-1"></div>
+						<div class="col-lg-6 col-sm-6 demo-intro">
+							<p class="demo-title"><b>Enter the panoramic cave space, and follow the narrative that brings you back to a thousand years ago.</b></p> 
+							<p class="demo-rationale-tag">Rationales</p>
+							<p class="demo-rationale">Connecting people with the space keep users engaged with the cultural heritage site. Also, the construction of narrative helps to guide users through the journey and provides a sense of ritual. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part big-part-3" id="big-part-3" #bigpart3>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Research </p>
+				</div>
+				<div class="mid-font-content">
+
+					<div class="row sub-text padding-50">
+						<div class="col-lg-3">
+							<img class="img-30 margin-15" src="assets/img/dh-research-user.png">
+							<p class="sub-text-title center-align"><b>User Interview</b></p>
+							<p>I interviewed 6 potential users, to understand their attitudes on cultural heritage and charity.</p>	
+						</div>
+						<div class="col-lg-3">
+							<img class="img-30 margin-15" src="assets/img/dh-research-report.png">
+							<p class="sub-text-title center-align"><b>Past Research Report</b></p>
+							<p>I synthesized key insights from Tencent Charity User Report and Millennials User Report.</p>
+						</div>
+						<div class="col-lg-3">
+							<img class="img-30 margin-15" src="assets/img/dh-research-stakeholder.png">
+							<p class="sub-text-title center-align"><b>Stakeholder Interview</b></p>
+							<p>I talked to both internal stakeholders and external stakeholders to clarify project scope.</p>
+						</div>
+						<div class="col-lg-3">
+							<img class="img-30 margin-15" src="assets/img/dh-research-product.png">
+							<p class="sub-text-title center-align"><b>Relevant Product Review</b></p>
+							<p>I examined past Dunhuang charity products and other creative charity products in the market.</p>
+						</div>
+					</div>
+
+					<div class="row sub-text" *ngIf="isExpanded">
+						<div class="col-lg-3">
+							<p class="margin-0"> - What are attractive to you about Dunhuang, or cultural heritage in general? </p>
+							<p> - Do you donate for cultural heritage protection? Why? </p>
+						</div>
+
+						<div class="col-lg-3">
+							<p class="margin-0"> - User segmentation in online philanthropy; </p>
+							<p> - General behaviors and preferences of millennials users on social media platform </p>
+						</div>
+
+						<div class="col-lg-3">
+							<p class="margin-0"> - What are the scope and goals of this project? </p>
+							<p> - How can this project fit into the long-term organizational-level collaboration? </p>
+						</div>
+
+						<div class="col-lg-3">
+							<p class="margin-0"> - What worked and didn't work for past products? </p>
+							<p> - What are some inspirations on how to make the charity product creative? </p>
+						</div>
+					</div>
+
+					<div class="margin-150">
+						<a role="button" (click)="expand()" class="btn btn-outline-theme float-right" *ngIf="!isExpanded">See more details</a>
+						<a role="button" (click)="expand()" class="btn btn-outline-theme float-right" *ngIf="isExpanded">See less details</a>
+					</div>
+
+					<p class="sub-title"><b> Challenge 1 - Understanding donors </b></p>
+					<p class="sub-big-title margin-50"> Who are the target users? Why do or don't they donate? How to motivate them? </p>
+					<div class="margin-50">
+						<div class="margin-50">
+							<p class="margin-50">To have a clearer picture who we're designing for throughout the project, I synthesized data that I gathered about potential users, discussed with the senior designer on the best target groups, and summarized them in persona.</p>
+
+							<div class="margin-50">
+								<p><b>Persona: The 2 types of potential donors</b></p>
+								<img class="part-img image-shadow" src="assets/img/dh-persona.png">
+							</div>
+
+							<div class="margin-100">
+								<p><b>Insight: The lack of connection leads to the lack of motivation to donate</b></p>
+								<div class="row">
+									<div class="col-lg-4">
+										<img class="img-50" src="assets/img/dh-reason-1.png">
+									</div>
+									<div class="col-lg-4">
+										<img class="img-50" src="assets/img/dh-reason-2.png">
+									</div>
+									<div class="col-lg-4">
+										<img class="img-50" src="assets/img/dh-reason-3.png">
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-lg-4">
+										<div class="filled-block center-align padding-all-10 margin-20">
+											<p class="margin-half-rm"><b>Relatability</b></p>
+											<p class="sub-text margin-all-0">"It doesn't matter to me"</p>
+										</div>
+										<p class="sub-text">This mainly happens to casual audience who haven't visited Dunhuang. Cultural heritage is by nature historically & geologically far away, involving large and serious topics that are hard to relate to.</p>
+									</div>
+
+									<div class="col-lg-4">
+										<div class="filled-block center-align padding-all-10 margin-20">
+											<p class="margin-half-rm"><b>Contribution</b></p>
+											<p class="sub-text margin-all-0">"I don't matter to it"</p>
+										</div>
+										<p class="sub-text">Unlike charity that helps real individuals out, it is unclear how one’s donation is going to make an impact to such a vague and large project, and the sense of contribution is thus low.</p>
+									</div>
+
+									<div class="col-lg-4">
+										<div class="filled-block center-align padding-all-10 margin-20">
+											<p class="margin-half-rm"><b>Perceived Rewards</b></p>
+											<p class="sub-text margin-all-0">"I'll be happier if I get something"</p>
+										</div>
+										<p class="sub-text">Traditional charity works one-way: it relies on donors giving away things selflessly. However, donors’ motivation increases significantly when certain degree of rewards are provided.</p>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+
+
+					<p class="sub-title"><b> Challenge 2 - Past Product Review </b></p>
+					<p class="sub-big-title"> What made existing charity products failed or successful? </p>
+					<div class="margin-100">
+						<div class="margin-50">
+							<p> We examined several existing online charity products in the market to learn about the general pattern, features that work well or not well under different context and topics. </p>
+
+							<p class="margin-50">The analysis mainly focused on examining solutions for building donor’s motivation based on the previous 3 dimensions: Relatability, contribution, and rewards. For projects that have data available, we also looked at the rough data (e.g. number of sharing, donation, etc.).</p>
+
+							<div class="margin-75">
+								<img class="img-70 margin-20" src="assets/img/dh-competitive-overview.png">
+								<p class="note-paragraph">Some e-charity products that we reviewed</p>
+							</div>
+
+							<p class="sub-title margin-15"> We learned that: </p>
+
+							<div class="row">
+								<div class="col-lg-6">
+									<p><b>✖️ Overemphasis on atmosphere building</b></p>
+									<p class="margin-50">Many products we reviewed focused too much on building atmosphere through storytelling. It's good for raising awareness, but the call for donation could be easily ignored by users. </p>
+									<img class="part-img" src="assets/img/dh-competitive-relatability.png">
+									
+								</div>
+
+								<div class="col-lg-6">
+									<p><b>✔️ Introduction of real-world values and connection</b></p>
+									<p>The sense of engagement in charity could be drastically enhanced through personalized rewards and real world impact.</p>
+									<img class="part-img" src="assets/img/dh-competitive-contribution.png">
+									<p class="note-paragraph"> A popular environmental protection charity app planted a tree in real world when users planted a virtual one </p>
+									
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<p class="sub-big-title theme-text"><b> 1st DESIGN DECISION was made: </b></p>
+					<p class="sub-big-title"> Draw donors closer to the cultural heritage: to give back donors something meaningful that connects them with real-world cultural heritage. </p>
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part big-part-2" id="big-part-2" #bigpart2>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p><b>How did we continue along that line?</b></p>
+					<p>⬇</p>
+					<p class="big-part-title"> Ideate </p>
+				</div>
+				<div class="mid-font-content">
+					<div class="row margin-75">
+						<div class="col-lg-8">
+							<img class="part-img margin-75" src="assets/img/dh-brainstorm.png">
+						</div>
+						<div class="col-lg-4">
+							<p>
+								We held <b>brainstorming sessions</b> both <b>internally</b> (with fellow UX/UI designers, brand designers, and PMs) and <b>externally</b> (with Dunhuang Academy) following the design direction and goals. 
+							</p>
+							<p>
+								We grouped ideas, analyzed patterns, and assessed them based on stakeholders' needs.
+							</p>
+						</div>
+					</div>
+
+					<p class="sub-title"><b> Challenge - Diverging and Converging  </b></p>
+					<p class="sub-big-title margin-50"> How to find the right thing to connect with donors in the right form? </p>
+
+					<div class="row">
+						<div class="col-lg-6">
+							<p><b>Right Connection</b></p>
+							<p class="margin-20">I researched Dunhuang arts and architecture and brainstormed a list of its <mark>sub-elements</mark> along with possible ways that the audience may <mark>connect</mark> with them.  </p>
+							<img class="part-img" src="assets/img/dh-concept-all.png">
+							
+						</div>
+
+						<div class="col-lg-6">
+							<p><b>Right Form</b></p>
+							<p class="margin-20"> In order to find the right form/metaphor to present the idea, we had to fulfill Dunhuang Academy's needs: to <mark>respect the artwork</mark> and make it less religious, and users' needs: to be <mark>easy to understand and relate to</mark>.</p>
+							<img class="part-img" src="assets/img/dh-concept-v0.png">
+
+						</div>
+
+					</div>
+
+					<div class="row margin-100">
+						<div class="col-lg-6">
+							<p class="note-paragraph"> Among all combinations, individuals collecting painting fragments is the one that establishes the strongest personal bond. </p>
+						</div>
+
+						<div class="col-lg-6">
+							<p class="note-paragraph"> One of our ideas turned down by Dunhuang Academy because it didn't show respect: it explicitly conveyed the idea of cutting through artwork and bringing a piece home. </p>
+						</div>
+					</div>
+
+
+					<p class="sub-big-title theme-text"><b> 2nd DESIGN DECISION was made: </b></p>
+					<p class="sub-big-title margin-50"> We decided to proceed with the candle lighting idea <span class="sub-big-sub-title">(upon every donation, a piece of Dunhuang artwork will be lighted up)</span> and developed tactics around it:  </p>
+
+					<img class="img-70 margin-50" src="assets/img/dh-ideation-result.png">
+
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part big-part-4" id="big-part-4" #bigpart4>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p><b>How did we bring the idea to life?</b></p>
+					<p>⬇</p>
+					<p class="big-part-title"> Design </p>
+					<!--<p class="big-part-sub-title"> How did we come here </p>-->
+				</div>
+				<div class="mid-font-content">
+
+					<div>
+						<p class="sub-title"><b> Set the product tone </b></p>
+						<p class="sub-big-title"> <b> Define Design Keywords </b> </p>
+
+						<div class="margin-50">
+							<p class="margin-50">To further develop the concept of lighting up Dunhuang, we analyze the features and strength of it, taking the design goals into consideration, and set the following design keywords to follow:</p>
+							
+							<img src="assets/img/dh-keywords.png" class="img-70">
+							<!--<p class="note-paragraph"> How musicians and listeners value feedback </p> -->
+						</div>
+					</div>
+
+
+					<div>
+						<p class="sub-title"><b> Connect narrative, user goals, emotion, and product features  </b></p>
+						<p class="sub-big-title"> <b> Map out Journey </b> </p>
+
+						<div class="margin-50">
+							<p class="margin-50">We mapped out the experience blueprint, from the starting touchpoint to sharing upon completion of donation. We paid attention to the user goals and emotion for each stage, in order to plan features and tasks to achieve both user goals and product goals, and to create a smoother and more complete experience.</p>
+							
+							<img src="assets/img/dh-journey.png" class="part-img">
+							<!--<p class="note-paragraph"> How musicians and listeners value feedback </p> -->
+						</div>
+					</div>
+
+					<p>Below are some key design decisions we made along with rationales behind when designing the 3 key stages: pre-donation, donation, and post-donation.</p>
+
+					<div>
+						<div class="section">
+							<p class="sub-title"> <b> Pre-Donation </b> </p>
+							<p class="sub-big-title"> <b> How to effectively build up tension and atmosphere? </b> </p>
+						</div>
+
+						<div class="section">
+							<p class="sub-title"> <b> Donation </b> </p>
+							<p class="sub-big-title"> <b> How to "push" users on the spot to donate?  </b> </p>
+						</div>
+
+						<div class="section">
+							<p class="sub-title"> <b> Post-Donation </b> </p>
+							<p class="sub-big-title"> <b> How to encourage users to share? </b> </p>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="big-part big-part-5" id="big-part-5" #bigpart5>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Results </p>
+					<!--<p class="big-part-sub-title"> forms of feedback </p>-->
+				</div>
+				<div class="mid-font-content">
+					<img src="assets/img/dh-all-screens.png" class="part-img">
+				</div>
+			</div>
+		</div>
+
+
+		<div class="big-part big-part-6" id="big-part-6" #bigpart6>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Testing & Iterations </p>
+					<!--<p class="big-part-sub-title"> How did we come here </p>-->
+				</div>
+				<div class="mid-font-content">
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part">
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Reflection </p>
+					<!--<p class="big-part-sub-title"> How did we come here </p>-->
+				</div>
+				<div class="mid-font-content">
+					<ul>
+						<li><b>Think ahead and design for more flexibility:</b> As I joined the team at an early stage, it was an important job for me to learn to prioritize features with the team while also keeping an eye on what may possibly come next (e.g. marketing campaign) in order to design in a more flexible way to accommodate future changes.</li>
+						<li><b>Find alternative ways to deal with challenging user groups:</b> Children are surely one of the most unique and challenging user groups to conduct research on. To approach the problem differently, I tried to get more information and knowledge via reading and talking to professional educators and parents about their first-hand experience. They sometimes were able to explain children's behaviors and mentality even better than children themselves, which helped me greatly in understanding what I needed to design.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,63 @@
+@import '../common-project';
+
+$theme-color: #c39126;
+$light-color: #fcf2d7;
+
+.banner {
+	background: $theme-color;
+}
+
+.filled-block{
+	background: $light-color;
+}
+
+.theme-text {
+	color: $theme-color !important;
+}
+
+.image-shadow {
+	box-shadow: 2px 2px 4px #aaa;
+}
+
+mark {
+	background-color: $light-color;
+}
+
+.btn-outline-theme {
+	color: $theme-color;
+	border-color: $theme-color;
+}
+
+.btn-outline-theme:hover {
+	background-color: $theme-color;
+	color: white;
+}
+
+.demo-rationale-tag[_ngcontent-c1] {
+	color: $theme-color;
+	font-weight: 700;
+	font-size: 15px;
+	padding-top: 50px;
+	margin-bottom: 5px;
+}
+
+.stage-btn {
+	background-color: #ddd;
+	//height: 100%;
+	//display:table;
+
+	span {
+		display:inline-block;
+		vertical-align:middle;
+		//height: 100%;
+	}
+}
+
+.vertical-align-placeholder {
+	//height: 100%;
+}
+
+.selected-stage-btn {
+	background-color: $theme-color;
+	color: white;
+}
