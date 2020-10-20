@@ -7,6 +7,10 @@ $light-color: #fcf2d7;
 	background: $theme-color;
 }
 
+.navbar {
+	background-color: $theme-color;
+}
+
 .filled-block{
 	background: $light-color;
 }
@@ -42,15 +46,22 @@ mark {
 }
 
 .stage-btn {
-	background-color: #ddd;
+	background-color: #eee;
 	//height: 100%;
 	//display:table;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	//margin-left: 20px;
+	border-bottom: 2px solid $theme-color;
+	cursor: pointer;
+}
 
-	span {
-		display:inline-block;
-		vertical-align:middle;
-		//height: 100%;
-	}
+.stage-btn:hover {
+	background-color: #ddd;
+}
+
+.stage-btn:first-of-type {
+	//margin-left: 0px;
 }
 
 .vertical-align-placeholder {
@@ -59,5 +70,14 @@ mark {
 
 .selected-stage-btn {
 	background-color: $theme-color;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	color: white;
+	font-weight: bold;
+	border-bottom: 2px solid $theme-color;
+	cursor: auto;
+}
+
+.selected-stage-btn:hover {
+	background-color: $theme-color;
 }

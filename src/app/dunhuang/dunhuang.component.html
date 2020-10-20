@@ -118,29 +118,6 @@
 	</div>
 
 	<div class="content-wrapper" #wrapper>
-
-		<div class="big-part">
-			<div class="big-part-inner">
-				<div class="mid-font-content">
-					<p>This project was done as a <b>remote</b> passion project with a small team in California. The cross-functional team consisted of a PM, 2 developers, 1 illustrator, and 2 marketers. I joined as the <b>solo designer</b>, and below are some of my key responsibilities:</p>
-					<div class="row">
-						<div class="col-lg-4">
-							<p>User Research</p>
-							<p>I got in touch with parents and educators, and used various research methods to collect and synthesize user data.</p>
-						</div>
-						<div class="col-lg-4">
-							<p>Strategy</p>
-							<p>I communicated and collaborated with the multi-functional team (mainly with PM) to discuss design strategy and feature priority.</p>
-						</div>
-						<div class="col-lg-4">
-							<p>Prototype</p>
-							<p>I built digital and physical prototypes to speed test the idea and design.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<div class="big-part big-part-1" id="big-part-1" #bigpart1>
 			<div class="big-part-inner">
 				<div class="big-part-head">
@@ -196,27 +173,34 @@
 					<p> We designed Lightup Dunhuang, enabling users to <b>virtually light up a unique piece</b> of wall painting in Dunhuang cave temples <b>upon each donation</b>, through a <b>spatial storytelling</b> experience that created a strong sense of <b>engagement</b>. </p>
 				</div>
 				<img class="part-img" src="assets/img/dh-storyline.png">
-				<div class="row">
-					<div class="col-lg-3 center-align stage-btn" [ngClass]="{'selected-stage-btn' : isSelected1}">
-						<span class="vertical-align-content">
-							Enter the spatial narrative
-						</span>
-						<span class="vertical-align-placeholder"></span>
+				<div class="row margin-20 no-lr-margin">
+					<div class="col-lg-3 no-padding">
+						<div class= "center-align stage-btn" [ngClass]="{'selected-stage-btn' : isSelected1}">
+							<span class="align-middle">
+								1. Enter spatial narrative
+							</span>
+						</div>
 					</div>
-					<div class="col-lg-3 center-align stage-btn" [ngClass]="{'selected-stage-btn' : isSelected2}">
-						<span class="align-middle">
-							Explore
-						</span>
+					<div class="col-lg-3 no-padding">
+						<div class="center-align stage-btn" [ngClass]="{'selected-stage-btn' : isSelected2}">
+							<span class="align-middle">
+								2. Explore
+							</span>
+						</div>
 					</div>
-					<div class="col-lg-3 center-align stage-btn" [ngClass]="{'selected-stage-btn' : isSelected3}">
-						<p class="align-middle">
-							Donate and get a candle 
-						</p>
+					<div class="col-lg-3 no-padding">
+						<div class="center-align stage-btn" [ngClass]="{'selected-stage-btn' : isSelected3}">
+							<span class="align-middle">
+								3. Donate and get a candle 
+							</span>
+						</div>
 					</div>
-					<div class="col-lg-3 center-align stage-btn" [ngClass]="{'selected-stage-btn' : isSelected4}">
-						<p class="align-middle">
-							Light up a unique piece of wallpainting and share
-						</p>
+					<div class="col-lg-3 no-padding">
+						<div class="center-align stage-btn" [ngClass]="{'selected-stage-btn' : isSelected4}">
+							<span class="align-middle">
+								4. Light up and share
+							</span>
+						</div>
 					</div>
 				</div>
 
@@ -228,7 +212,7 @@
 						</div>
 						<div class="col-lg-1 col-sm-1"></div>
 						<div class="col-lg-6 col-sm-6 demo-intro">
-							<p class="demo-title"><b>Enter the panoramic cave space, and follow the narrative that brings you back to a thousand years ago.</b></p> 
+							<p class="demo-title"><b>1. Enter the panoramic cave space, and follow the narrative that brings you back to a thousand years ago.</b></p> 
 							<p class="demo-rationale-tag">Rationales</p>
 							<p class="demo-rationale">Connecting people with the space keep users engaged with the cultural heritage site. Also, the construction of narrative helps to guide users through the journey and provides a sense of ritual. </p>
 						</div>
@@ -236,6 +220,20 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="big-part">
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Process </p>
+				</div>
+				<div class="mid-font-content">
+					<p>This project was done as a <b>remote</b> passion project with a small team in California. The cross-functional team consisted of a PM, 2 developers, 1 illustrator, and 2 marketers. I joined as the <b>solo designer</b>, and below are some of my key responsibilities:</p>
+
+					<img class="part-img" src="assets/img/dh-process.png">
+				</div>
+			</div>
+		</div>
+
 
 		<div class="big-part big-part-3" id="big-part-3" #bigpart3>
 			<div class="big-part-inner">
@@ -385,7 +383,7 @@
 						</div>
 					</div>
 
-					<p class="sub-big-title theme-text"><b> 1st DESIGN DECISION was made: </b></p>
+					<p class="sub-big-title theme-text"><b> DESIGN DECISION #1 was made: </b></p>
 					<p class="sub-big-title"> Draw donors closer to the cultural heritage: to give back donors something meaningful that connects them with real-world cultural heritage. </p>
 				</div>
 			</div>
@@ -444,7 +442,7 @@
 					</div>
 
 
-					<p class="sub-big-title theme-text"><b> 2nd DESIGN DECISION was made: </b></p>
+					<p class="sub-big-title theme-text"><b> DESIGN DECISION #2 was made: </b></p>
 					<p class="sub-big-title margin-50"> We decided to proceed with the candle lighting idea <span class="sub-big-sub-title">(upon every donation, a piece of Dunhuang artwork will be lighted up)</span> and developed tactics around it:  </p>
 
 					<img class="img-70 margin-50" src="assets/img/dh-ideation-result.png">
