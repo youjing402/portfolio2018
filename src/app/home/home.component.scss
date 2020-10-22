@@ -547,8 +547,8 @@ body {
     font-family: 'Lustria', serif;
     text-align: center;
     font-size: 30px;
-    margin-bottom: 100px;
     margin-top: 100px;
+    font-weight: bold;
   }
 
   .project-categories {
@@ -702,6 +702,41 @@ body {
     margin-bottom: 15px;
   }
 
+  .width-85 {
+    padding-left: 7%;
+    padding-right: 7%;
+
+    .project-title {
+      font-size: 20px;
+    }
+
+    .project-description {
+      font-size: 14px;
+    }
+  }
+
+  .width-70 {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+
+  .itale-row {
+    background-color: #ECA835;
+  }
+
+  .section-intro {
+    font-size: 18px;
+    font-family: 'Lustria', serif;
+    text-align: center;
+  }
+
+  .margin-15 {
+    margin-bottom: 15px;
+  }
+
+  .margin-50 {
+    margin-bottom: 50px;
+  }
 
 
 // 6 is the number of animation.

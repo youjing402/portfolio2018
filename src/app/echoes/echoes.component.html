@@ -1,4 +1,4 @@
-<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lustria" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,400" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
@@ -13,17 +13,19 @@
 			<li class="nav-item dropdown" ngbDropdown>
 				<a class="nav-link dropdown-toggle" id="id01" ngbDropdownToggle>Work</a>
 				<div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+					<a class="dropdown-item orange-text" href="projects/itale">iTale</a>
+					<a class="dropdown-item yellow-text" href="projects/dunhuang">Dunhuang</a>
 					<a class="dropdown-item purple-text" href="projects/echoes">Echoes</a>
 					<a class="dropdown-item green-text" href="projects/stretch">Stretch</a>
 					<a class="dropdown-item coral-text" href="projects/involved">Involved</a>
-					<a class="dropdown-item blue-text" href="projects/poco">Poco A Poco</a>
+					<!--<a class="dropdown-item blue-text" href="projects/poco">Poco A Poco</a>-->
 				</div>
 			</li>
 			<li class="nav-item navbar-right">
-				<a class="nav-link" id="id02" href="#">About</a>
+				<a class="nav-link" id="id02" href="">About</a>
 			</li>
 			<li class="nav-item navbar-right">
-				<a class="nav-link" id="id03" href="#">Resume</a>
+				<a class="nav-link" id="id03" href="assets/file/resume_jy-2020.pdf" target="_blank">Resume</a>
 			</li>
 		</ul>
 	</div>
@@ -113,7 +115,7 @@
 		</div>
 	</div>
 
-	<div class="content-wrapper" #wrapper>
+	<div class="content-wrapper margin-100" #wrapper>
 
 		<div class="big-part big-part-1" id="big-part-1" #bigpart1>
 			<div class="big-part-inner">
@@ -154,609 +156,678 @@
 										<li>
 											<b>Knowing listeners' support is very important</b> to both musicians' career development and sense of self-actualization that what they have been trying to achieve is affirmed.
 										</li>
-									<!--
+										<li>
+											Musicians hope their music can become a <b>two-way communication</b> that they hope to create a space not only for themselves, but also for listeners to <b>tell their feelings and stories</b>.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="sub-big-title"> Listeners say:</div>
+						<div class="row justify-content-center">
+							<div class="col-sm-3 col-lg-3">
+								<img src="assets/img/echoes-listener-line.png" class="part-img">
+							</div>
+							<div class="col-sm-8 col-lg-8">
+								<ul class="overall-insight-list">
 									<li>
-										Many musicians enjoy making music and performing music, but having them promoting for themselves all the time is awkward.
-									</li> -->
+										Listeners often do not think of writing feedback to musicians because: (1) they <b>lack motivation</b> to compose and share feedback under the current mechanism, (2) they find the current threshold of expressing the <b>abstract feelings</b> is too high.
+									</li>
 									<li>
-										Musicians hope their music can become a <b>two-way communication</b> that they hope to create a space not only for themselves, but also for listeners to <b>tell their feelings and stories</b>.
+										Yet, there is time when listeners do want to <b>share</b> music they like along with their feelings with others and <b>get resonance</b>.
 									</li>
 								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="sub-big-title"> Listeners say:</div>
-					<div class="row justify-content-center">
-						<div class="col-sm-3 col-lg-3">
-							<img src="assets/img/echoes-listener-line.png" class="part-img">
+				</div>
+
+				<div class="large-font-out-content separate-big-part">
+					<p class="emphasis center-align"> <b>"Feeling" is the keyword.</b>
+					</p>
+					<div class="row">
+						<div class="col-sm-2 col-lg-2 smaller-emphasis right-align">What if...</div>
+						<div class="col-sm-10 col-lg-10">
+							<div class="dev-question">expressing feelings of music is <i>easy, quick, and natural</i>?
+							</div>
+							<div class="dev-question">feelings of music is turned into a way to <i>share, promote, and discover</i> music?
+							</div>
+							<div class="dev-question">music is a space for <i>both musicians and listeners</i> to add in their understandings and communicate?
+							</div>
 						</div>
-						<div class="col-sm-8 col-lg-8">
-							<ul class="overall-insight-list">
-								<li>
-									Listeners often do not think of writing feedback to musicians because: (1) they <b>lack motivation</b> to compose and share feedback under the current mechanism, (2) they find the current threshold of expressing the <b>abstract feelings</b> is too high.
-								</li>
-								<li>
-									Yet, there is time when listeners do want to <b>share</b> music they like along with their feelings with others and <b>get resonance</b>.
-								</li>
-							</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div></div>
+
+		<div class="big-part big-part-2" id="big-part-2" #bigpart2>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Design Outcome </p>
+				</div>
+				<div class="large-font-content">
+					<p> We designed, Echoes, a music streaming platform that focuses on elicitating listeners' feelings of music and encouraging feeling-centered sharing between listeners and artists. </p>
+					<img src="assets/img/echoes-overview.png" class="img-70 section" id="echoes-overview" (click)="open('echoes-overview')">
+					<div class="row demo-section">
+						<div class="col-lg-4 col-sm-4 demo-frame">
+							<img src="assets/img/iphone8-silver.png" class="demo-iphone-bg">
+							<img src="assets/img/echoes-demo-post.gif" class="demo-animation">
+						</div>
+						<div class="col-lg-1 col-sm-1"></div>
+						<div class="col-lg-6 col-sm-6 demo-intro">
+							<p class="demo-subject">/for listeners</p>
+							<p class="demo-title"><b>Express your feelings of music in a natural and creative way with 2 possible levels</b></p> 
+							<p class="demo-subtitle">Visual "atmosphere" and verbal "thoughts"</p>
+							<p class="demo-description">When listening to music, listeners can easily select vibe stickers to express the overall impression of the music <b>atmosphere</b>. The visual captures their unique feelings, and also encourage them to write about <b>thoughts</b> in words.</p>
+							<p class="demo-rationale-tag">Rationales</p>
+							<p class="demo-rationale">Often time, it is not easy for listeners to express their feelings for music, even if they do have words to say. Finding the process of articulating abstract feelings interruptive, difficult, and unrewarding, many listeners would simply just give up. Therefore, we designed to lower such barrier, hoping to hear from more silent listeners. </p>
+						</div>
+					</div>
+
+					<div class="row demo-section">
+						<div class="col-lg-4 col-sm-4 demo-frame">
+							<img src="assets/img/iphone8-silver.png" class="demo-iphone-bg">
+							<img src="assets/img/echoes-demo-discover.gif" class="demo-animation">
+						</div>
+						<div class="col-lg-1 col-sm-1"></div>
+						<div class="col-lg-6 col-sm-6 demo-intro">
+							<p class="demo-subject">/for listeners</p>
+							<p class="demo-title"><b>Discover music through resonating with others' feelings</b></p> 
+							<p class="demo-subtitle">A new way to look at music: experience and read about what people feel of music </p>
+							<p class="demo-description">Every day, a list of songs will be recommended to users, using others' story as medium, for them to discover music and stories they feel resonant about. The discovery system is designed to better connect listeners with music and other listeners based on their previous reactions about music to recommend music.  </p>
+							<p class="demo-rationale-tag">Rationales</p>
+							<p class="demo-rationale">Listeners are fond of reading others' personal experiences and discover new music based on others' thoughts, compared to recommended by algorithms. Making music a co-created space by both artists and listeners add layers to the meaning of music, and motivate listeners to express more. </p>
+						</div>
+					</div>
+
+					<div class="row demo-section">
+						<div class="col-lg-4 col-sm-4 demo-frame">
+							<img src="assets/img/iphone8-silver.png" class="demo-iphone-bg">
+							<img src="assets/img/echoes-demo-diary.gif" class="demo-animation">
+						</div>
+						<div class="col-lg-1 col-sm-1"></div>
+						<div class="col-lg-6 col-sm-6 demo-intro">
+							<p class="demo-subject">/for listeners</p>
+							<p class="demo-title"><b>Keep your music memories in a diary</b></p> 
+							<p class="demo-subtitle">Discover yourself over time </p>
+							<p class="demo-description">All entries are kept in one's profile page, just like a music memory diary, for one to revisit and re-discover. </p>
+							<p class="demo-rationale-tag">Rationales</p>
+							<p class="demo-rationale">Listeners often attach memory to music they listen to in different period of time, and the bonding between them and music is strengthened when the memory is revisited over time. Making their music experiences into diary provides the inner motivation for them to express for themselves and record authentic feelings.</p>
+						</div>
+					</div>
+
+					<div class="row demo-section">
+						<div class="col-lg-4 col-sm-4 demo-frame">
+							<img src="assets/img/iphone8-silver.png" class="demo-iphone-bg">
+							<img src="assets/img/echoes-demo-reaction.png" class="demo-animation">
+						</div>
+						<div class="col-lg-1 col-sm-1"></div>
+						<div class="col-lg-6 col-sm-6 demo-intro">
+							<p class="demo-subject">/for artists & listeners</p>
+							<p class="demo-title"><b>Interact with artists and other listeners with shared feelings </b></p> 
+							<p class="demo-subtitle">Establish connections with everyone that treasures the piece you love</p>
+							<p class="demo-description">Both listeners and artists are able to react to others' feelings by liking the entry and adding thoughts easily. Besides, artists are able to add listeners' entries to their collections for bookmarking and showcasing. </p>
+							<p class="demo-rationale-tag">Rationales</p>
+							<p class="demo-rationale">One of the biggest reasons why listeners do not write feedback to music and artists is that they do not think artists will look into it. However, our research reveals the opposite: artists love reading about how people feel about music with their personal stories. Therefore, by providing the channel for artists to directly react to listeners' thoughts, the motivation for both side to communicate is increased.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="large-font-out-content separate-big-part">
-		<p class="emphasis center-align"> <b>"Feeling" is the keyword.</b>
-		</p>
-		<div class="row">
-			<div class="col-sm-2 col-lg-2 smaller-emphasis right-align">What if...</div>
-			<div class="col-sm-10 col-lg-10">
-				<div class="dev-question">expressing feelings of music is <i>easy, quick, and natural</i>?
+		<div class="big-part big-part-3" id="big-part-3" #bigpart3>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> How we got here </p>
+					<!--<p class="big-part-sub-title"> How did we come here </p>-->
 				</div>
-				<div class="dev-question">feelings of music is turned into a way to <i>share, promote, and discover</i> music?
-				</div>
-				<div class="dev-question">music is a space for <i>both musicians and listeners</i> to add in their understandings and communicate?
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div></div>
-
-	<div class="big-part big-part-2" id="big-part-2" #bigpart2>
-		<div class="big-part-inner">
-			<div class="big-part-head">
-				<p class="big-part-title"> Design Outcome </p>
-			</div>
-			<div class="large-font-content">
-				<p> We designed, Echoes, a music streaming platform that focuses on elicitating listeners' feelings of music and encouraging feeling-centered sharing between listeners and artists. </p>
-				<img src="assets/img/echoes-overview.png" class="img-70 section" id="echoes-overview" (click)="open('echoes-overview')">
-				<div class="row demo-section">
-					<div class="col-lg-4 col-sm-4 demo-frame">
-						<img src="assets/img/iphone8-silver.png" class="demo-iphone-bg">
-						<img src="assets/img/echoes-demo-post.gif" class="demo-animation">
-					</div>
-					<div class="col-lg-1 col-sm-1"></div>
-					<div class="col-lg-6 col-sm-6 demo-intro">
-						<p class="demo-subject">/for listeners</p>
-						<p class="demo-title"><b>Express your feelings of music in a natural and creative way with 2 possible levels</b></p> 
-						<p class="demo-subtitle">Visual "atmosphere" and verbal "thoughts"</p>
-						<p class="demo-description">When listening to music, listeners can easily select vibe stickers to express the overall impression of the music <b>atmosphere</b>. The visual captures their unique feelings, and also encourage them to write about <b>thoughts</b> in words.</p>
-						<p class="demo-rationale-tag">Rationales</p>
-						<p class="demo-rationale">Often time, it is not easy for listeners to express their feelings for music, even if they do have words to say. Finding the process of articulating abstract feelings interruptive, difficult, and unrewarding, many listeners would simply just give up. Therefore, we designed to lower such barrier, hoping to hear from more silent listeners. </p>
-					</div>
-				</div>
-
-				<div class="row demo-section">
-					<div class="col-lg-4 col-sm-4 demo-frame">
-						<img src="assets/img/iphone8-silver.png" class="demo-iphone-bg">
-						<img src="assets/img/echoes-demo-discover.gif" class="demo-animation">
-					</div>
-					<div class="col-lg-1 col-sm-1"></div>
-					<div class="col-lg-6 col-sm-6 demo-intro">
-						<p class="demo-subject">/for listeners</p>
-						<p class="demo-title"><b>Discover music through resonating with others' feelings</b></p> 
-						<p class="demo-subtitle">A new way to look at music: experience and read about what people feel of music </p>
-						<p class="demo-description">Every day, a list of songs will be recommended to users, using others' story as medium, for them to discover music and stories they feel resonant about. The discovery system is designed to better connect listeners with music and other listeners based on their previous reactions about music to recommend music.  </p>
-						<p class="demo-rationale-tag">Rationales</p>
-						<p class="demo-rationale">Listeners are fond of reading others' personal experiences and discover new music based on others' thoughts, compared to recommended by algorithms. Making music a co-created space by both artists and listeners add layers to the meaning of music, and motivate listeners to express more. </p>
-					</div>
-				</div>
-
-				<div class="row demo-section">
-					<div class="col-lg-4 col-sm-4 demo-frame">
-						<img src="assets/img/iphone8-silver.png" class="demo-iphone-bg">
-						<img src="assets/img/echoes-demo-diary.gif" class="demo-animation">
-					</div>
-					<div class="col-lg-1 col-sm-1"></div>
-					<div class="col-lg-6 col-sm-6 demo-intro">
-						<p class="demo-subject">/for listeners</p>
-						<p class="demo-title"><b>Keep your music memories in a diary</b></p> 
-						<p class="demo-subtitle">Discover yourself over time </p>
-						<p class="demo-description">All entries are kept in one's profile page, just like a music memory diary, for one to revisit and re-discover. </p>
-						<p class="demo-rationale-tag">Rationales</p>
-						<p class="demo-rationale">Listeners often attach memory to music they listen to in different period of time, and the bonding between them and music is strengthened when the memory is revisited over time. Making their music experiences into diary provides the inner motivation for them to express for themselves and record authentic feelings.</p>
-					</div>
-				</div>
-
-				<div class="row demo-section">
-					<div class="col-lg-4 col-sm-4 demo-frame">
-						<img src="assets/img/iphone8-silver.png" class="demo-iphone-bg">
-						<img src="assets/img/echoes-demo-reaction.png" class="demo-animation">
-					</div>
-					<div class="col-lg-1 col-sm-1"></div>
-					<div class="col-lg-6 col-sm-6 demo-intro">
-						<p class="demo-subject">/for artists & listeners</p>
-						<p class="demo-title"><b>Interact with artists and other listeners with shared feelings </b></p> 
-						<p class="demo-subtitle">Establish connections with everyone that treasures the piece you love</p>
-						<p class="demo-description">Both listeners and artists are able to react to others' feelings by liking the entry and adding thoughts easily. Besides, artists are able to add listeners' entries to their collections for bookmarking and showcasing. </p>
-						<p class="demo-rationale-tag">Rationales</p>
-						<p class="demo-rationale">One of the biggest reasons why listeners do not write feedback to music and artists is that they do not think artists will look into it. However, our research reveals the opposite: artists love reading about how people feel about music with their personal stories. Therefore, by providing the channel for artists to directly react to listeners' thoughts, the motivation for both side to communicate is increased.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="big-part big-part-3" id="big-part-3" #bigpart3>
-		<div class="big-part-inner">
-			<div class="big-part-head">
-				<p class="big-part-title"> How we got here </p>
-				<!--<p class="big-part-sub-title"> How did we come here </p>-->
-			</div>
-			<div class="mid-font-content">
-				<p class="sub-title"><b> Craving quality </b></p>
-				<p class="sub-big-title"> Musicians Want to Hear from Listeners </p>
-				<div class="margin-50">
+				<div class="mid-font-content">
+					<p class="sub-title"><b> Craving quality </b></p>
+					<p class="sub-big-title"> Musicians Want to Hear from Listeners </p>
 					<div class="margin-50">
-						<p> To learn about musicians' routines and the relationship between musicians and listeners, we began to conduct online secondary research and exemplar study, attend and observe local live music performance events, and interview musicians (also including music students and ex-musicians).</p>
-					</div>
-
-					<div class="row justify-content-center">
-						<div class="col-sm-5 col-lg-5">
-							<div class="inner-insights">
-								<p class="inner-insight-title"> They want to know about their listeners </p>
-								<p class="inner-insight-item">
-									<b>1/ To better promote work and develop career:</b> Many musicians are not only creating for themselves. To reach a larger audience and bond with the existing audience, it is important to learn about feedback to make adjustments, particularly for indie musicians who just start their careers.
-								</p>
-								<p class="inner-insight-item">
-									<b>2/ To achieve self-actualization as an artist:</b> "When you are an artist, it makes no sense if no one is listening to you." Almost all musicians have things to convey and achieve through music, and knowing how audience think and feel is an affirmation.
-								</p>
-								<p class="inner-insight-item">
-									<b>3/ Music as a way of mutual communication and co-creation:</b> "I’m not the only one that wants to create something. I believe that we are all meant to share our stories." Musicians believe their work shouldn't be the end, and that they hope to create a space where everyone's interpretation and feelings add value to the music.
-								</p>
-							</div>
+						<div class="margin-50">
+							<p> To learn about musicians' routines and the relationship between musicians and listeners, we began to conduct online secondary research and exemplar study, attend and observe local live music performance events, and interview musicians (also including music students and ex-musicians).</p>
 						</div>
 
-						<div class="col-sm-5 col-lg-5">
-							<div class="inner-insights">
-								<p class="inner-insight-title"> Current communication quality is not satisfying </p>
-								<p class="inner-insight-item">
-									<b>1/ Most impactful interactions happen in person:</b> Live performance is where musicians can directly interact with audience, see their reaction, and talk with them about feedback of music.
-								</p>
-								<p class="inner-insight-item">
-									<b>2/ Online communication sometimes are not as authentic and meaningful:</b> The potential of online music communication is not yet fully explored, where musicians do not receive enough information and thougtful feedback from listeners.
-								</p>
+						<div class="row justify-content-center">
+							<div class="col-sm-5 col-lg-5">
+								<div class="inner-insights">
+									<p class="inner-insight-title"> They want to know about their listeners </p>
+									<p class="inner-insight-item">
+										<b>1/ To better promote work and develop career:</b> Many musicians are not only creating for themselves. To reach a larger audience and bond with the existing audience, it is important to learn about feedback to make adjustments, particularly for indie musicians who just start their careers.
+									</p>
+									<p class="inner-insight-item">
+										<b>2/ To achieve self-actualization as an artist:</b> "When you are an artist, it makes no sense if no one is listening to you." Almost all musicians have things to convey and achieve through music, and knowing how audience think and feel is an affirmation.
+									</p>
+									<p class="inner-insight-item">
+										<b>3/ Music as a way of mutual communication and co-creation:</b> "I’m not the only one that wants to create something. I believe that we are all meant to share our stories." Musicians believe their work shouldn't be the end, and that they hope to create a space where everyone's interpretation and feelings add value to the music.
+									</p>
+								</div>
+							</div>
+
+							<div class="col-sm-5 col-lg-5">
+								<div class="inner-insights">
+									<p class="inner-insight-title"> Current communication quality is not satisfying </p>
+									<p class="inner-insight-item">
+										<b>1/ Most impactful interactions happen in person:</b> Live performance is where musicians can directly interact with audience, see their reaction, and talk with them about feedback of music.
+									</p>
+									<p class="inner-insight-item">
+										<b>2/ Online communication sometimes are not as authentic and meaningful:</b> The potential of online music communication is not yet fully explored, where musicians do not receive enough information and thougtful feedback from listeners.
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<img src="assets/img/echoes-field-study.png" class="part-img" id="echoes-field-study" (click)="open('echoes-field-study')">
+			<img src="assets/img/echoes-field-study.png" class="part-img" id="echoes-field-study" (click)="open('echoes-field-study')">
 
-		<div class="large-font-out-content separate-small-part section center-align">
-			<fa name="question-circle" class="icon1"></fa>
-			<div class="center-align"> Musicians are craving <b>high quality</b> feedback that <b>attaches meanings, shows one's true feelings, and comes from experiences</b>. </div>
-			<div class="center-align"> However, current online communication often does not satisfy this. Why?
+			<div class="large-font-out-content separate-small-part section center-align">
+				<fa name="question-circle" class="icon1"></fa>
+				<div class="center-align"> Musicians are craving <b>high quality</b> feedback that <b>attaches meanings, shows one's true feelings, and comes from experiences</b>. </div>
+				<div class="center-align"> However, current online communication often does not satisfy this. Why?
+				</div>
+			</div>
+			<div class="big-part-inner">
+				<div class="mid-font-content">
+					<div class="section">
+						<!--<p class="sub-title"> #1 Individuals in need </p> -->
+						<p class="sub-title"> <b> Ways to foster quality </b> </p>
+						<p class="sub-big-title"> <b> Gaps and Opportunities in Online Communication </b> </p>
+						<div class="section">
+							<p class="margin-50"> Clearly, listeners should not be the only one to hold responsibility: platform plays a big part in fostering feedback. To study existing channels and platforms for listeners to communicate their feedback to musicians, we conducted competitive analysis on 8 online channels and 2 offline (in person) channels based on the interactivity and quality of the listener feedback. </p>
+
+							<img src="assets/img/echoes-competitive.png" class="img-70 section" id="echoes-competitive" (click)="open('echoes-competitive')">
+
+							<p class="center-align big-question margin-50"><b>What leads to high quality online feedback?</b></p>
+							<div class="inner-insights row justify-content-center">
+								<div class="col-sm-4 col-lg-4">
+									<p class="inner-insight-title">Efforts and Barrier</p>
+									<p class="inner-insight-item">For online platforms, higher interactivity means lower barriers to leave comment, and it often leads to lower feedback quality, considering the Internet is a public and anonymous space where people do not invest much efforts.</p>
+								</div>
+								<div class="col-sm-4 col-lg-4">
+									<p class="inner-insight-title">Platform Culture</p>
+									<p class="inner-insight-item">The atmosphere and culture of the online platform determines the quality of content: platforms where irrelevant feedback is dominant (e.g. YouTube) tend to generate more low quality content, while platforms where quality content (e.g. NetEase Music) is advocated will encourage more high quality content.</p>
+								</div>
+								<div class="col-sm-4 col-lg-4">
+									<p class="inner-insight-title">Musician's Approachability</p>
+									<p class="inner-insight-item">The nearer and more approachable the musicians are to listeners, the more likely that high quality feedback will be generated.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="big-part-inner">
+				<div class="mid-font-content">
+
+					<div class="margin-50">
+						<p class="sub-title"> <b> Craving simplicity </b> </p>
+						<p class="sub-big-title"> <b> Yet... Many Listeners Stay Quiet Online </b> </p>
+
+						<div class="margin-50">
+							<p class="margin-50"> To learn about how listeners generate feedback, we conducted interviews, yet discovered that when listening to music online, many listeners seldom have serious attempts to write and think of writing music reactions due to <b>barriers</b> of both lack of motivation and lack of confidence to produce:</p>
+
+							<!--<p class="center-align big-question margin-50"><b>What hinder listeners from expressing feelings?</b></p>-->
+							<div class="inner-insights row justify-content-center margin-50">
+								<div class="col-sm-5 col-lg-5">
+									<p class="inner-insight-title">Lack of motivation</p>
+									<p class="inner-insight-item">Music often serves as <b>background music</b>. Thus, listeners generally don't take time to think.</p>
+									<p class="inner-insight-item">Even if they do take down something, they <b>don't know who to share with</b>: not in the comment section because nobody is talking about music there, not with musicians because they're sure musicians won't be interested, not with friends because it's hard to find someone who resonate with their music feelings.</p>
+								</div>
+								<div class="col-sm-5 col-lg-5">
+									<p class="inner-insight-title">Lack of confidence</p>
+									<p class="inner-insight-item">Staying aware and <b>articulating their abstract feelings of music is hard</b>. Often time, they do not where and how to start (particularly when there is no prompt), and fear that the <b>threshold</b> for publishing is too high.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="large-font-out-content separate-small-part section center-align">
+				<fa name="exclamation-circle" class="icon1"></fa>
+				<div class="center-align"> Despite these barriers, most listeners do have the "aha" moments when they feel strong they want to express and share.  </div>
+				<div class="center-align"> But in what way?
+				</div>
+			</div>
+
+			<div class="big-part-inner">
+				<div class="mid-font-content">
+					<p class="sub-title"> <b> Ways to lower barriers and provide motivators </b></p>
+					<p class="sub-big-title"> Envision Forms and Channels that Promote Feedback Sharing </p>
+					<p class="margin-50"> To further understand how to motivate listeners to compose and share music feedback, we conducted participatory design method to explore desired alternatives with both musicians and listeners. </p>
+					<div class="row section">
+						<div class="col-lg-6 col-sm-6">
+							<img src="assets/img/echoes-codesign.png" class="part-img" id="echoes-codesign" (click)="open('echoes-codesign')">
+						</div>
+						<div class="col-lg-6 col-sm-6">
+							<p class="method-title"> Participatory Design Workshop </p>
+							<p class="method-content"> We organized a co-design workshop with 5 participants, with one of them having musician background and all of them being active music listeners, to explore their ideal ways of expressing feelings and making connections as they listened to music. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--<img src="assets/img/echoes-expression.png" class="part-img margin-50"> -->
+
+			<div class="row">
+				<div class="col-sm-2 col-lg-2">
+					<img src="assets/img/echoes-expression-ver.png" class="part-img" id="echoes-expression-ver" (click)="open('echoes-expression-ver')">
+				</div>
+				<div class="col-sm-8 col-lg-8">
+					<div class="margin-50 inner-insights">
+						<p class="inner-insight-title center-align">< Forms & content of expression</p>	
+						<div>
+							<div class="row justify-content-center">
+								<div class="col-sm-2 col-lg-2">
+									<img src="assets/img/echoes-form.svg" class="icon1-pic">
+								</div>
+								<div class="col-sm-7 col-lg-7">
+									<p class="inner-insight-item"> Visualization and narration are often combined to convey the feeling of music, with <b>visualization prompting narration</b>. </p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-sm-2 col-lg-2">
+									<img src="assets/img/echoes-content.svg" class="icon1-pic">
+								</div>
+								<div class="col-sm-7 col-lg-7">
+									<p class="inner-insight-item"> Listeners relate to both concrete scenes (in memory or in imagination) and abstract experience. <b>Visual motivators</b> help them to hone and articulate both kinds of feelings. </p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="margin-50 inner-insights">
+						<p class="inner-insight-title center-align"> Motivations of sharing ></p>	
+						<div>
+							<div class="row justify-content-center">
+								<div class="col-sm-2 col-lg-2">
+									<img src="assets/img/echoes-diary.svg" class="icon1-pic">
+								</div>
+								<div class="col-sm-7 col-lg-7">
+									<p class="inner-insight-item"> Listeners get motivated to document their personal experiences and feelings related to music as a personal record for the purpose of <b>memory keeping</b>. </p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-sm-2 col-lg-2">
+									<img src="assets/img/echoes-resonance.svg" class="icon1-pic">
+								</div>
+								<div class="col-sm-7 col-lg-7">
+									<p class="inner-insight-item"> Listeners get motivated to read others’ personal experience and <b>gain resonance</b> by <b>new discovery of music</b> based on people’s thoughts instead of the analysis done by algorithms. </p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-sm-2 col-lg-2">
+									<img src="assets/img/echoes-rock.svg" class="icon1-pic">
+								</div>
+								<div class="col-sm-7 col-lg-7">
+									<p class="inner-insight-item"> Listeners get motivated to share their personal experiences and document their feelings if <b>musicians read and react to them</b>. </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2 col-lg-2">
+					<img src="assets/img/echoes-co-sketch-ver.png" class="part-img">
+				</div>
+			</div>
+
+			<div class="big-part-inner">
+				<div class="mid-font-content">
+
+
+				</div>
 			</div>
 		</div>
-		<div class="big-part-inner">
-			<div class="mid-font-content">
-				<div class="section">
-					<!--<p class="sub-title"> #1 Individuals in need </p> -->
-					<p class="sub-title"> <b> Ways to foster quality </b> </p>
-					<p class="sub-big-title"> <b> Gaps and Opportunities in Online Communication </b> </p>
+
+		<div class="big-part big-part-4" id="big-part-4" #bigpart4>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Ideation </p>
+					<!--<p class="big-part-sub-title"> How did we come here </p>-->
+				</div>
+				<div class="mid-font-content">
+					<div>
+						<p class="sub-title"> <b> Brainstorming possibilities </b> </p>
+						<p class="sub-big-title"> <b> Balancing effort and meaningfulness of feedback </b> </p>
+
+						<div class="margin-50">
+							<p class="margin-50">From the research, we synethsized and summarized the key value of musicians and listeners: what are most important to them in feedback generation and sharing. <b>Musicians are looking for feedback of high value and quality, while listeners are looking for low barrier and more motivations of producing feedback.</b></p>
+							<img src="assets/img/echoes-values.png" class="img-50" id="echoes-values" (click)="open('echoes-values')">
+							<!--<p class="note-paragraph"> How musicians and listeners value feedback </p> -->
+						</div>
+						<div class="margin-50">
+							<p class="margin-50">We brainstormed rounds of ideas regarding feedback generation and sharing mechanisms, and analyze them based on their value to musicians, and the perceived barrier of producing to listeners. </p>
+							<img src="assets/img/echoes-ideation.png" class="img-70 margin-50" id="echoes-ideation" (click)="open('echoes-ideation')">
+							<img src="assets/img/echoes-balance.png" class="img-70" id="echoes-balance" (click)="open('echoes-balance')">
+						</div>
+
+						<div >
+							<p>We are therefore looking for ways to ensure high quality feedback, yet not too hard for listeners to generate. Therefore, from our analysis, <b>music experience/story sharing</b> is the one with most potential. </p>
+							<img src="assets/img/echoes-scenario.png" class="img-70" id="echoes-scenario" (click)="open('echoes-scenario')">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="big-part big-part-5" id="big-part-5" #bigpart5>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Design </p>
+					<!--<p class="big-part-sub-title"> forms of feedback </p>-->
+				</div>
+				<div class="mid-font-content">
 					<div class="section">
-						<p class="margin-50"> Clearly, listeners should not be the only one to hold responsibility: platform plays a big part in fostering feedback. To study existing channels and platforms for listeners to communicate their feedback to musicians, we conducted competitive analysis on 8 online channels and 2 offline (in person) channels based on the interactivity and quality of the listener feedback. </p>
+						<p class="sub-title"> <b> Concept Validation </b> 
+						</p>
+						<p class="sub-big-title"> Validating the Core </p>
+						<p class="margin-50">We drafted out the wireframes capturing the core idea and flow of (1) listener composing feelings of music, (2) listener discovering others' feelings of music, (3) for musicians to react to listeners' feelings.</p>
+						<div class="section">
+							<img src="assets/img/echoes-wireframe.JPG" class="part-img" id="echoes-wireframe" (click)="open('echoes-wireframe')">
+							<p class="note-paragraph"> Whiteboard wireframes </p>
+						</div>
+						<div class="section">
+							<p>To test out the concept in a quick and dirty fashion, we wanted to know (1) Whether in practice, such planning method achieves the goal this product aims for: to save resources and to make people feel safe and in control as we expected, (2) What thoughts and problems people may have when following the plan. </p>
+						</div>
 
-						<img src="assets/img/echoes-competitive.png" class="img-70 section" id="echoes-competitive" (click)="open('echoes-competitive')">
+						<div class="row margin-50 justify-content-center">
+							<div class="col-sm-2 col-lg-2">
+								<img src="assets/img/echoes-musician-line.png" class="part-img">
+							</div>
+							<div class="col-sm-4 col-lg-4">
+								<p class="insight-title-medium"><b class="color-emphasis">"I would love to read that!"</b></p>
+								<p class="insight-content-medium">Musicians loved the idea of seeing different people's messages and interpretation of their music, that they <b>add meanings to the original music</b>, and they like to <b>listen to listeners' stories</b>.</p>
 
-						<p class="center-align big-question margin-50"><b>What leads to high quality online feedback?</b></p>
+							</div>
+
+							<div class="col-sm-4 col-lg-4">
+								<p class="insight-title-medium"><b class="color-emphasis">"There may be more ways to interact with these feedback"</b></p>
+								<p class="insight-content-medium">Expression being collected has great <b>potential to spread works and engage fans</b>. Therefore, from musicians' side, there are <b>many more things</b> to do with these data beside simply reading and "liking". </p>
+							</div>
+						</div>
+						<div class="row section justify-content-center">
+							<div class="col-sm-2 col-lg-2">
+								<img src="assets/img/echoes-listener-line.png" class="part-img">
+							</div>
+							<div class="col-sm-4 col-lg-4">
+								<p class="insight-title-medium"><b class="color-emphasis-neg">"Still needs to be simpler"</b></p>
+								<p class="insight-content-medium">For listeners, getting people to switch task to create the <b>seemingly high-demanded feedback</b> isn't easy, particularly when music is in the background. Throwing everything at once is overwhelming. </p>
+							</div>
+
+							<div class="col-sm-4 col-lg-4">
+								<p class="insight-title-medium"><b class="color-emphasis-neg">"Timing is important to be considered"</b></p>
+								<p class="insight-content-medium">Sometimes, the feeling of music <b>happens suddenly</b> yet one hasn't had time to record everything at that time; and sometimes the feeling <b>needs time to foster</b>.</p>
+							</div>
+						</div>
+
+					</div>
+
+					<div>
+						<div class="section">
+							<p class="sub-title"> <b> 2-Level Staircase Feeling Expression </b> </p>
+							<p class="sub-big-title"> <b> Design for Easier, More Motivative, and Less Interruptive Feedback Composition Experience </b> </p>
+							<p class="margin-50">As a content platform, <b>motivating people to share more and share better</b> is the most important thing. </p>
+							<p class="margin-50 sub-small-title">/Original version with users' feedback from the test</p>
+							<div class="section">
+								<img src="assets/img/echoes-wireframe-1.png" class="img-70 margin-50" id="echoes-wireframe-1" (click)="open('echoes-wireframe-1')">
+							</div>
+							<p class="center-align big-question margin-50"><b>How to simplify things yet provide options and space for expression?</b></p>
+							<p class="section"> Based on research and brainstorming, we worked on improving the flow of composing music feedback by considering <b>use cases</b>. We categorized the timing when a listener has strong feelings of music into 3 cases:</p>
+							<div class="row">
+								<div class="col-sm-1 col-lg-1">
+								</div>
+								<div class="col-sm-11 col-lg-11">
+									<div class="row inner-insights">
+										<div class="col-sm-4 col-lg-4">
+											<img src="assets/img/echoes-case-1.png" class="img-50">
+											<p class="inner-insight-title center-align without-margin">Listen and Feel</p>
+										</div>
+										<div class="col-sm-4 col-lg-4">
+											<img src="assets/img/echoes-case-2.png" class="img-50">
+											<p class="inner-insight-title center-align without-margin">Busy in Background</p>
+										</div>
+										<div class="col-sm-4 col-lg-4">
+											<img src="assets/img/echoes-case-3.png" class="img-50">
+											<p class="inner-insight-title center-align without-margin">Think of a Song</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-1 col-lg-1 hid-title">
+									Brief
+								</div>
+								<div class="col-sm-11 col-lg-11">
+									<div class="row justify-content-center inner-insights">
+										<div class="col-sm-4 col-lg-4">								
+											<p class="inner-insight-item">When listening to a song, the listener has feeling naturally and thinks of things he/she wants to express.</p>
+										</div>
+										<div class="col-sm-4 col-lg-4">		
+											<p class="inner-insight-item">Listener is busy doing other things with music in background, has the pulse to say something, but can't at the moment.</p>
+										</div>
+										<div class="col-sm-4 col-lg-4">		
+											<p class="inner-insight-item">Other things remind the listener of expressing about a song.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-sm-1 col-lg-1 hid-title">
+									Needs
+								</div>
+								<div class="col-sm-11 col-lg-11">
+									<div class="row justify-content-center inner-insights">
+										<div class="col-sm-4 col-lg-4">
+											<b>Natural and easy reactions</b>, support for guidance, fit into the music atmosphere
+										</div>
+										<div class="col-sm-4 col-lg-4">
+											<b>Quick reactions</b>, support for revisiting, keep the feelings alive
+										</div>
+										<div class="col-sm-4 col-lg-4">
+											Support for <b>rich emotion expression</b>, find the song and match the feeling
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<p class="margin-50 sub-small-title">/Proposed Expression Staircase Design</p>
+						<img src="assets/img/echoes-2stage-iteration.png" class="part-img margin-50" id="echoes-2stage-iteration" (click)="open('echoes-2stage-iteration')">		
+
+						<p class="margin-50"> To meet the needs of different cases and users, we simplified and broke the big feedback composition chunk into 1. Building atmosphere collage using provided vibe stickers, 2. Compose thoughts with visuals and lyrics as inspiration and prompts to faciliate natural experience. </p> 
+						<img src="assets/img/echoes-express-flow.png" class="img-50 margin-50" id="echoes-express-flow" (click)="open('echoes-express-flow')">
+
+					</div>
+
+				</div>
+				<img src="assets/img/echoes-high-flow-1.png" class="part-img section" id="echoes-high-flow-1" (click)="open('echoes-high-flow-1')">
+
+				<div class="mid-font-content">
+					<div class="section">
+						<p class="sub-title"> <b> Share and Discover for Resonance </b> </p>
+						<p class="sub-big-title"> <b> Design for Feeling Sharing </b> </p>
+						<p> Listeners read and write for resonance: we use feelings as the medium that carry music to people. Everyday, listeners wil receive a list of music for discovery that <b>match feelings expressed previously</b>.</p> 
+						<p class="margin-50">We design to use proper social features to encourage (1) expression sharing, and (2) feeling-centered music spreading, viewing, and searching. </p>
+						<img src="assets/img/echoes-high-flow-2.png" class="part-img" id="echoes-high-flow-2" (click)="open('echoes-high-flow-2')">
+					</div>
+
+					<div class="section">
+						<p class="sub-title"> <b> "Rock", Bookmark, and More </b> </p>
+						<p class="sub-big-title"> <b> Design for Musician Interaction </b> </p>
+						<p class="margin-50">For the musician interaction part, we design to <b>complete the feedback cycle</b> between musicians and listeners: (1) for musicians to show their thoughts, (2) for musicians to add listener feedback to collection for future usages, (3) and to provide incentives for listeners to engage more.  </p>
+						<img src="assets/img/echoes-high-flow-3.png" class="part-img" id="echoes-high-flow-3" (click)="open('echoes-high-flow-3')">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part">
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Future </p>
+				</div>
+				<div class="mid-font-content">
+					<div class="section">
+						<p class="sub-title"> <b> Extended use cases </b> </p>
+						<p class="sub-big-title"> Data for Impact </p>
+						<p class="margin-50">In the future, more work can be done on investigating how the valuable data we gathered in the app can be utilized in various ways. For example, for musicians, it provides them with <b>promotional resources</b>, just to name a few: </p>
 						<div class="inner-insights row justify-content-center">
 							<div class="col-sm-4 col-lg-4">
-								<p class="inner-insight-title">Efforts and Barrier</p>
-								<p class="inner-insight-item">For online platforms, higher interactivity means lower barriers to leave comment, and it often leads to lower feedback quality, considering the Internet is a public and anonymous space where people do not invest much efforts.</p>
+								<p class="inner-insight-title">Artist Website Plugin</p>
+								<p class="inner-insight-item">With a plug-in function, musicians can collect their favorite feedback to put on their websites for visitors to read. </p>
 							</div>
 							<div class="col-sm-4 col-lg-4">
-								<p class="inner-insight-title">Platform Culture</p>
-								<p class="inner-insight-item">The atmosphere and culture of the online platform determines the quality of content: platforms where irrelevant feedback is dominant (e.g. YouTube) tend to generate more low quality content, while platforms where quality content (e.g. NetEase Music) is advocated will encourage more high quality content.</p>
+								<p class="inner-insight-title">Digital Promotion Materials</p>
+								<p class="inner-insight-item">The data can be used for digital posters of live concerts or other materials, which can convey the messages in music to listeners indirectly.</p>
 							</div>
 							<div class="col-sm-4 col-lg-4">
-								<p class="inner-insight-title">Musician's Approachability</p>
-								<p class="inner-insight-item">The nearer and more approachable the musicians are to listeners, the more likely that high quality feedback will be generated.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="big-part-inner">
-			<div class="mid-font-content">
-
-				<div class="margin-50">
-					<p class="sub-title"> <b> Craving simplicity </b> </p>
-					<p class="sub-big-title"> <b> Yet... Many Listeners Stay Quiet Online </b> </p>
-
-					<div class="margin-50">
-						<p class="margin-50"> To learn about how listeners generate feedback, we conducted interviews, yet discovered that when listening to music online, many listeners seldom have serious attempts to write and think of writing music reactions due to <b>barriers</b> of both lack of motivation and lack of confidence to produce:</p>
-
-						<!--<p class="center-align big-question margin-50"><b>What hinder listeners from expressing feelings?</b></p>-->
-						<div class="inner-insights row justify-content-center margin-50">
-							<div class="col-sm-5 col-lg-5">
-								<p class="inner-insight-title">Lack of motivation</p>
-								<p class="inner-insight-item">Music often serves as <b>background music</b>. Thus, listeners generally don't take time to think.</p>
-								<p class="inner-insight-item">Even if they do take down something, they <b>don't know who to share with</b>: not in the comment section because nobody is talking about music there, not with musicians because they're sure musicians won't be interested, not with friends because it's hard to find someone who resonate with their music feelings.</p>
-							</div>
-							<div class="col-sm-5 col-lg-5">
-								<p class="inner-insight-title">Lack of confidence</p>
-								<p class="inner-insight-item">Staying aware and <b>articulating their abstract feelings of music is hard</b>. Often time, they do not where and how to start (particularly when there is no prompt), and fear that the <b>threshold</b> for publishing is too high.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="large-font-out-content separate-small-part section center-align">
-			<fa name="exclamation-circle" class="icon1"></fa>
-			<div class="center-align"> Despite these barriers, most listeners do have the "aha" moments when they feel strong they want to express and share.  </div>
-			<div class="center-align"> But in what way?
-			</div>
-		</div>
-
-		<div class="big-part-inner">
-			<div class="mid-font-content">
-				<p class="sub-title"> <b> Ways to lower barriers and provide motivators </b></p>
-				<p class="sub-big-title"> Envision Forms and Channels that Promote Feedback Sharing </p>
-				<!--
-				<p>To make sense of what listeners are thinking about when listening to music, and how they would like to express their feelings, we conducted mini workshops. We learned that: </p>
-
-				<p>1. Form: visualization and narration are often combined to convey the feeling, with <b>visualization prompting narration</b>; 2. Content: scenes in past memory and abstract experience are often evoked.</p> -->
-				<p class="margin-50"> To further understand how to motivate listeners to compose and share music feedback, we conducted participatory design method to explore desired alternatives with both musicians and listeners. </p>
-				<div class="row section">
-					<div class="col-lg-6 col-sm-6">
-						<img src="assets/img/echoes-codesign.png" class="part-img" id="echoes-codesign" (click)="open('echoes-codesign')">
-					</div>
-					<div class="col-lg-6 col-sm-6">
-						<p class="method-title"> Participatory Design Workshop </p>
-						<p class="method-content"> We organized a co-design workshop with 5 participants, with one of them having musician background and all of them being active music listeners, to explore their ideal ways of expressing feelings and making connections as they listened to music. </p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!--<img src="assets/img/echoes-expression.png" class="part-img margin-50"> -->
-
-		<div class="row">
-			<div class="col-sm-2 col-lg-2">
-				<img src="assets/img/echoes-expression-ver.png" class="part-img" id="echoes-expression-ver" (click)="open('echoes-expression-ver')">
-			</div>
-			<div class="col-sm-8 col-lg-8">
-				<div class="margin-50 inner-insights">
-					<p class="inner-insight-title center-align">< Forms & content of expression</p>	
-					<div>
-						<div class="row justify-content-center">
-							<div class="col-sm-2 col-lg-2">
-								<img src="assets/img/echoes-form.svg" class="icon1-pic">
-							</div>
-							<div class="col-sm-7 col-lg-7">
-								<p class="inner-insight-item"> Visualization and narration are often combined to convey the feeling of music, with <b>visualization prompting narration</b>. </p>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-sm-2 col-lg-2">
-								<img src="assets/img/echoes-content.svg" class="icon1-pic">
-							</div>
-							<div class="col-sm-7 col-lg-7">
-								<p class="inner-insight-item"> Listeners relate to both concrete scenes (in memory or in imagination) and abstract experience. <b>Visual motivators</b> help them to hone and articulate both kinds of feelings. </p>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="margin-50 inner-insights">
-					<p class="inner-insight-title center-align"> Motivations of sharing ></p>	
-					<div>
-						<div class="row justify-content-center">
-							<div class="col-sm-2 col-lg-2">
-								<img src="assets/img/echoes-diary.svg" class="icon1-pic">
-							</div>
-							<div class="col-sm-7 col-lg-7">
-								<p class="inner-insight-item"> Listeners get motivated to document their personal experiences and feelings related to music as a personal record for the purpose of <b>memory keeping</b>. </p>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-sm-2 col-lg-2">
-								<img src="assets/img/echoes-resonance.svg" class="icon1-pic">
-							</div>
-							<div class="col-sm-7 col-lg-7">
-								<p class="inner-insight-item"> Listeners get motivated to read others’ personal experience and <b>gain resonance</b> by <b>new discovery of music</b> based on people’s thoughts instead of the analysis done by algorithms. </p>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-sm-2 col-lg-2">
-								<img src="assets/img/echoes-rock.svg" class="icon1-pic">
-							</div>
-							<div class="col-sm-7 col-lg-7">
-								<p class="inner-insight-item"> Listeners get motivated to share their personal experiences and document their feelings if <b>musicians read and react to them</b>. </p>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-2 col-lg-2">
-				<img src="assets/img/echoes-co-sketch-ver.png" class="part-img">
-			</div>
-		</div>
-
-		<div class="big-part-inner">
-			<div class="mid-font-content">
-
-
-			</div>
-		</div>
-	</div>
-
-	<div class="big-part big-part-4" id="big-part-4" #bigpart4>
-		<div class="big-part-inner">
-			<div class="big-part-head">
-				<p class="big-part-title"> Ideation </p>
-				<!--<p class="big-part-sub-title"> How did we come here </p>-->
-			</div>
-			<div class="mid-font-content">
-				<div>
-					<p class="sub-title"> <b> Brainstorming possibilities </b> </p>
-					<p class="sub-big-title"> <b> Balancing effort and meaningfulness of feedback </b> </p>
-
-					<div class="margin-50">
-						<p class="margin-50">From the research, we synethsized and summarized the key value of musicians and listeners: what are most important to them in feedback generation and sharing. <b>Musicians are looking for feedback of high value and quality, while listeners are looking for low barrier and more motivations of producing feedback.</b></p>
-						<img src="assets/img/echoes-values.png" class="img-50" id="echoes-values" (click)="open('echoes-values')">
-						<!--<p class="note-paragraph"> How musicians and listeners value feedback </p> -->
-					</div>
-					<div class="margin-50">
-						<p class="margin-50">We brainstormed rounds of ideas regarding feedback generation and sharing mechanisms, and analyze them based on their value to musicians, and the perceived barrier of producing to listeners. </p>
-						<img src="assets/img/echoes-ideation.png" class="img-70 margin-50" id="echoes-ideation" (click)="open('echoes-ideation')">
-						<img src="assets/img/echoes-balance.png" class="img-70" id="echoes-balance" (click)="open('echoes-balance')">
-					</div>
-
-					<div >
-						<p>We are therefore looking for ways to ensure high quality feedback, yet not too hard for listeners to generate. Therefore, from our analysis, <b>music experience/story sharing</b> is the one with most potential. </p>
-						<img src="assets/img/echoes-scenario.png" class="img-70" id="echoes-scenario" (click)="open('echoes-scenario')">
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-
-	<div class="big-part big-part-5" id="big-part-5" #bigpart5>
-		<div class="big-part-inner">
-			<div class="big-part-head">
-				<p class="big-part-title"> Design </p>
-				<!--<p class="big-part-sub-title"> forms of feedback </p>-->
-			</div>
-			<div class="mid-font-content">
-				<div class="section">
-					<p class="sub-title"> <b> Concept Validation </b> 
-					</p>
-					<p class="sub-big-title"> Validating the Core </p>
-					<p class="margin-50">We drafted out the wireframes capturing the core idea and flow of (1) listener composing feelings of music, (2) listener discovering others' feelings of music, (3) for musicians to react to listeners' feelings.</p>
-					<div class="section">
-						<img src="assets/img/echoes-wireframe.JPG" class="part-img" id="echoes-wireframe" (click)="open('echoes-wireframe')">
-						<p class="note-paragraph"> Whiteboard wireframes </p>
-					</div>
-					<div class="section">
-						<p>To test out the concept in a quick and dirty fashion, we wanted to know (1) Whether in practice, such planning method achieves the goal this product aims for: to save resources and to make people feel safe and in control as we expected, (2) What thoughts and problems people may have when following the plan. </p>
-					</div>
-
-					<div class="row margin-50 justify-content-center">
-						<div class="col-sm-2 col-lg-2">
-							<img src="assets/img/echoes-musician-line.png" class="part-img">
-						</div>
-						<div class="col-sm-4 col-lg-4">
-							<p class="insight-title-medium"><b class="color-emphasis">"I would love to read that!"</b></p>
-							<p class="insight-content-medium">Musicians loved the idea of seeing different people's messages and interpretation of their music, that they <b>add meanings to the original music</b>, and they like to <b>listen to listeners' stories</b>.</p>
-							
-						</div>
-
-						<div class="col-sm-4 col-lg-4">
-							<p class="insight-title-medium"><b class="color-emphasis">"There may be more ways to interact with these feedback"</b></p>
-							<p class="insight-content-medium">Expression being collected has great <b>potential to spread works and engage fans</b>. Therefore, from musicians' side, there are <b>many more things</b> to do with these data beside simply reading and "liking". </p>
-						</div>
-					</div>
-					<div class="row section justify-content-center">
-						<div class="col-sm-2 col-lg-2">
-							<img src="assets/img/echoes-listener-line.png" class="part-img">
-						</div>
-						<!--
-						<div class="col-sm-4 col-lg-4">
-							<p class="insight-title-medium"><b class="color-emphasis-neg">"Love the concept of knowing music by reading people's stories"</b></p>
-							<p class="insight-content-medium">Listeners affirmed that the social aspect of music is interesting and motivating if the platform culture is fostered properly.</p>
-						</div> -->
-
-						<div class="col-sm-4 col-lg-4">
-							<p class="insight-title-medium"><b class="color-emphasis-neg">"Still needs to be simpler"</b></p>
-							<p class="insight-content-medium">For listeners, getting people to switch task to create the <b>seemingly high-demanded feedback</b> isn't easy, particularly when music is in the background. Throwing everything at once is overwhelming. </p>
-						</div>
-
-						<div class="col-sm-4 col-lg-4">
-							<p class="insight-title-medium"><b class="color-emphasis-neg">"Timing is important to be considered"</b></p>
-							<p class="insight-content-medium">Sometimes, the feeling of music <b>happens suddenly</b> yet one hasn't had time to record everything at that time; and sometimes the feeling <b>needs time to foster</b>.</p>
-						</div>
-					</div>
-
-				</div>
-
-				<div>
-					<div class="section">
-						<p class="sub-title"> <b> 2-Level Staircase Feeling Expression </b> </p>
-						<p class="sub-big-title"> <b> Design for Easier, More Motivative, and Less Interruptive Feedback Composition Experience </b> </p>
-						<p class="margin-50">As a content platform, <b>motivating people to share more and share better</b> is the most important thing. </p>
-						<p class="margin-50 sub-small-title">/Original version with users' feedback from the test</p>
-						<div class="section">
-							<img src="assets/img/echoes-wireframe-1.png" class="img-70 margin-50" id="echoes-wireframe-1" (click)="open('echoes-wireframe-1')">
-						</div>
-						<p class="center-align big-question margin-50"><b>How to simplify things yet provide options and space for expression?</b></p>
-						<p class="section"> Based on research and brainstorming, we worked on improving the flow of composing music feedback by considering <b>use cases</b>. We categorized the timing when a listener has strong feelings of music into 3 cases:</p>
-						<div class="row">
-							<div class="col-sm-1 col-lg-1">
-							</div>
-							<div class="col-sm-11 col-lg-11">
-								<div class="row inner-insights">
-									<div class="col-sm-4 col-lg-4">
-										<img src="assets/img/echoes-case-1.png" class="img-50">
-										<p class="inner-insight-title center-align without-margin">Listen and Feel</p>
-									</div>
-									<div class="col-sm-4 col-lg-4">
-										<img src="assets/img/echoes-case-2.png" class="img-50">
-										<p class="inner-insight-title center-align without-margin">Busy in Background</p>
-									</div>
-									<div class="col-sm-4 col-lg-4">
-										<img src="assets/img/echoes-case-3.png" class="img-50">
-										<p class="inner-insight-title center-align without-margin">Think of a Song</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-1 col-lg-1 hid-title">
-								Brief
-							</div>
-							<div class="col-sm-11 col-lg-11">
-								<div class="row justify-content-center inner-insights">
-									<div class="col-sm-4 col-lg-4">								
-										<p class="inner-insight-item">When listening to a song, the listener has feeling naturally and thinks of things he/she wants to express.</p>
-									</div>
-									<div class="col-sm-4 col-lg-4">		
-										<p class="inner-insight-item">Listener is busy doing other things with music in background, has the pulse to say something, but can't at the moment.</p>
-									</div>
-									<div class="col-sm-4 col-lg-4">		
-										<p class="inner-insight-item">Other things remind the listener of expressing about a song.</p>
-									</div>
-								</div>
+								<p class="inner-insight-title">Live Performance Add-Ons</p>
+								<p class="inner-insight-item">Live performance is a great place for musicians to strengthen bonds with listeners. By printing feelings collected on tickets, gifts, or displaying them on the wall, listeners become more engaged with the mutual communication.</p>
 							</div>
 						</div>
 
 						<div class="row">
-							<div class="col-sm-1 col-lg-1 hid-title">
-								Needs
-							</div>
-							<div class="col-sm-11 col-lg-11">
-								<div class="row justify-content-center inner-insights">
-									<div class="col-sm-4 col-lg-4">
-										<b>Natural and easy reactions</b>, support for guidance, fit into the music atmosphere
-									</div>
-									<div class="col-sm-4 col-lg-4">
-										<b>Quick reactions</b>, support for revisiting, keep the feelings alive
-									</div>
-									<div class="col-sm-4 col-lg-4">
-										Support for <b>rich emotion expression</b>, find the song and match the feeling
-									</div>
-								</div>
+							<div class="col-sm-4 col-lg-4">
 							</div>
 						</div>
-
+						<p>With a deeper understanding of musicians, listeners are more likely to support them, which can help upcoming musicians to build an audience base. These usages all have the potential to help both the music and musicians themselves gain popularity in a way that do not require compromises in music-making for commercial purposes and, thus, can improve both the mental and financial well-being of musicians.</p>
 					</div>
 
-					<p class="margin-50 sub-small-title">/Proposed Expression Staircase Design</p>
-					<img src="assets/img/echoes-2stage-iteration.png" class="part-img margin-50" id="echoes-2stage-iteration" (click)="open('echoes-2stage-iteration')">		
-
-					<p class="margin-50"> To meet the needs of different cases and users, we simplified and broke the big feedback composition chunk into 1. Building atmosphere collage using provided vibe stickers, 2. Compose thoughts with visuals and lyrics as inspiration and prompts to faciliate natural experience. </p> 
-					<img src="assets/img/echoes-express-flow.png" class="img-50 margin-50" id="echoes-express-flow" (click)="open('echoes-express-flow')">
-					
-				</div>
-
-			</div>
-			<img src="assets/img/echoes-high-flow-1.png" class="part-img section" id="echoes-high-flow-1" (click)="open('echoes-high-flow-1')">
-
-			<div class="mid-font-content">
-				<div class="section">
-					<p class="sub-title"> <b> Share and Discover for Resonance </b> </p>
-					<p class="sub-big-title"> <b> Design for Feeling Sharing </b> </p>
-					<p> Listeners read and write for resonance: we use feelings as the medium that carry music to people. Everyday, listeners wil receive a list of music for discovery that <b>match feelings expressed previously</b>.</p> 
-					<p class="margin-50">We design to use proper social features to encourage (1) expression sharing, and (2) feeling-centered music spreading, viewing, and searching. </p>
-					<img src="assets/img/echoes-high-flow-2.png" class="part-img" id="echoes-high-flow-2" (click)="open('echoes-high-flow-2')">
-				</div>
-
-				<div class="section">
-					<p class="sub-title"> <b> "Rock", Bookmark, and More </b> </p>
-					<p class="sub-big-title"> <b> Design for Musician Interaction </b> </p>
-					<p class="margin-50">For the musician interaction part, we design to <b>complete the feedback cycle</b> between musicians and listeners: (1) for musicians to show their thoughts, (2) for musicians to add listener feedback to collection for future usages, (3) and to provide incentives for listeners to engage more.  </p>
-					<img src="assets/img/echoes-high-flow-3.png" class="part-img" id="echoes-high-flow-3" (click)="open('echoes-high-flow-3')">
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="big-part">
-		<div class="big-part-inner">
-			<div class="big-part-head">
-				<p class="big-part-title"> Future </p>
-			</div>
-			<div class="mid-font-content">
-				<div class="section">
-					<p class="sub-title"> <b> Extended use cases </b> </p>
-					<p class="sub-big-title"> Data for Impact </p>
-					<p class="margin-50">In the future, more work can be done on investigating how the valuable data we gathered in the app can be utilized in various ways. For example, for musicians, it provides them with <b>promotional resources</b>, just to name a few: </p>
-					<div class="inner-insights row justify-content-center">
-						<div class="col-sm-4 col-lg-4">
-							<p class="inner-insight-title">Artist Website Plugin</p>
-							<p class="inner-insight-item">With a plug-in function, musicians can collect their favorite feedback to put on their websites for visitors to read. </p>
-						</div>
-						<div class="col-sm-4 col-lg-4">
-							<p class="inner-insight-title">Digital Promotion Materials</p>
-							<p class="inner-insight-item">The data can be used for digital posters of live concerts or other materials, which can convey the messages in music to listeners indirectly.</p>
-						</div>
-						<div class="col-sm-4 col-lg-4">
-							<p class="inner-insight-title">Live Performance Add-Ons</p>
-							<p class="inner-insight-item">Live performance is a great place for musicians to strengthen bonds with listeners. By printing feelings collected on tickets, gifts, or displaying them on the wall, listeners become more engaged with the mutual communication.</p>
-						</div>
+					<div class="section">
+						<p class="sub-title"> <b> Immersive design </b> </p>
+						<p class="sub-big-title"> Experience for Impact </p>	
+						<p class="margin-50">We also envisioned the scenarios where the visual experience crafted by listeners can be enpowered by <b>tangible experience devices</b> such as projectors. <b>Designing for immersive experience</b> to maximize the impact of users' atmospheres to inspire and engage more people into music enjoying and expression. </p>
+						<img src="assets/img/echoes-physical.png" class="part-img" id="echoes-physical" (click)="open('echoes-physical')">	
 					</div>
+				</div>
+			</div>
+		</div>
 
-					<div class="row">
-						<div class="col-sm-4 col-lg-4">
-						</div>
+		<div class="big-part big-part-6" id="big-part-6" #bigpart6>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Final </p>
+					<!--<p class="big-part-sub-title"> How did we come here </p>-->
+				</div>
+				<div class="mid-font-content center-align">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/klTHbCDVQLE"> </iframe>
 					</div>
-					<p>With a deeper understanding of musicians, listeners are more likely to support them, which can help upcoming musicians to build an audience base. These usages all have the potential to help both the music and musicians themselves gain popularity in a way that do not require compromises in music-making for commercial purposes and, thus, can improve both the mental and financial well-being of musicians.</p>
-				</div>
-
-				<div class="section">
-					<p class="sub-title"> <b> Immersive design </b> </p>
-					<p class="sub-big-title"> Experience for Impact </p>	
-					<p class="margin-50">We also envisioned the scenarios where the visual experience crafted by listeners can be enpowered by <b>tangible experience devices</b> such as projectors. <b>Designing for immersive experience</b> to maximize the impact of users' atmospheres to inspire and engage more people into music enjoying and expression. </p>
-					<img src="assets/img/echoes-physical.png" class="part-img" id="echoes-physical" (click)="open('echoes-physical')">	
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="big-part big-part-6" id="big-part-6" #bigpart6>
-		<div class="big-part-inner">
-			<div class="big-part-head">
-				<p class="big-part-title"> Final </p>
-				<!--<p class="big-part-sub-title"> How did we come here </p>-->
-			</div>
-			<div class="mid-font-content center-align">
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/klTHbCDVQLE"> </iframe>
+		<div class="big-part">
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Reflection </p>
+					<!--<p class="big-part-sub-title"> How did we come here </p>-->
+				</div>
+				<div class="mid-font-content">
+					<ul>
+						<li><b>Design with people, not for people</b> Designers don't know everything and shouldn't pretend or try too hard to know everything. Be a humble learner, talk with people, get them involved in the process (not just interviews at the start or testing in the end), and let them design things.</li>
+						<li><b>Just do it:</b> In this project, we've gone through a long research process and discussed a lot on the concept- and system-level before deiciding to move on to a particular path. Next time, it would be better if we can start the rapid prototyping process earlier to get more time to polish the actual design.</li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="big-part">
-		<div class="big-part-inner">
-			<div class="big-part-head">
-				<p class="big-part-title"> Reflection </p>
-				<!--<p class="big-part-sub-title"> How did we come here </p>-->
+	<div>
+		<hr class="page-divider">
+		<p class="more-project-title">More Projects</p>
+		<div class="row justify-content-center width-85">
+			<div class="col-lg-3 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
+				<div class="thumb-image square">
+					<div class="crop-img">
+						<a href="projects/dunhuang">
+							<img src="assets/img/projectthumb-05.png">
+						</a>
+					</div>
+				</div>
+				<p class="project-categories">
+					/Education Design /Startup /Product Design 
+				</p>
+				<p class="project-title">
+					iTale - Internship @iTale
+				</p>
+				<p class="project-description">
+					A playground for children to tell creative stories
+				</p>
 			</div>
-			<div class="mid-font-content">
-				<ul>
-					<li><b>Design with people, not for people</b> Designers don't know everything and shouldn't pretend or try too hard to know everything. Be a humble learner, talk with people, get them involved in the process (not just interviews at the start or testing in the end), and let them design things.</li>
-					<li><b>Just do it:</b> In this project, we've gone through a long research process and discussed a lot on the concept- and system-level before deiciding to move on to a particular path. Next time, it would be better if we can start the rapid prototyping process earlier to get more time to polish the actual design.</li>
-				</ul>
+
+			<div class="col-lg-3 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
+				<div class="thumb-image square">
+					<div class="crop-img">
+						<a href="projects/dunhuang">
+							<img src="assets/img/projectthumb-00.png">
+						</a>
+					</div>
+				</div>
+				<p class="project-categories">
+					/Charity Design /Commercialization /Culture /UX Design 
+				</p>
+				<p class="project-title">
+					Light Up Dunhuang - Internship @Tencent
+				</p>
+				<p class="project-description">
+					A creative e-charity product that engages the public to donate for traditional cultural heritage
+				</p>
+			</div>
+
+			<div class="col-lg-3 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
+				<div class="thumb-image square">
+					<div class="crop-img">
+						<a href="projects/involved">
+							<img src="assets/img/projectthumb-03.png">
+						</a>
+					</div>
+				</div>
+				<p class="project-categories">
+					/7-day Design Challenge /UX Design /UX Research /Mobile App Design
+				</p>
+				<p class="project-title">
+					Involved - Google Design Exercise 2019
+				</p>
+				<p class="project-description">
+					Socializing the experience for new students to find the right organizations to engage with
+				</p>
 			</div>
 		</div>
 	</div>
-</div>
+
+	<div class="foot">
+		<p class="copyright center-align">Designed and hand-coded by Jing You © 2020 💡</p>
+		<div class="row width-40 justify-content-center">
+			<div class="col-lg-1">
+				<a href="https://www.linkedin.com/in/jing-you-b823b4132/" target="_blank" class="sm-link">
+					<fa name="linkedin" class="sm-icon"></fa>
+				</a>
+			</div>
+			<div class="col-lg-1">
+				<a href="https://github.com/youjing402/" target="_blank" class="sm-link">
+					<fa name="github" class="sm-icon"></fa>
+				</a>
+			</div>
+			<div class="col-lg-1">
+				<a href="mailto:youjing402@gmail.com" class="sm-link">
+					<fa name="envelope" class="sm-icon"></fa>
+				</a>
+			</div>
+		</div>
+	</div>
 </div>

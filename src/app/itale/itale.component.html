@@ -13,17 +13,19 @@
 			<li class="nav-item dropdown" ngbDropdown>
 				<a class="nav-link dropdown-toggle" id="id01" ngbDropdownToggle>Work</a>
 				<div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+					<a class="dropdown-item orange-text" href="projects/itale">iTale</a>
+					<a class="dropdown-item yellow-text" href="projects/dunhuang">Dunhuang</a>
 					<a class="dropdown-item purple-text" href="projects/echoes">Echoes</a>
 					<a class="dropdown-item green-text" href="projects/stretch">Stretch</a>
 					<a class="dropdown-item coral-text" href="projects/involved">Involved</a>
-					<a class="dropdown-item blue-text" href="projects/poco">Poco A Poco</a>
+					<!--<a class="dropdown-item blue-text" href="projects/poco">Poco A Poco</a>-->
 				</div>
 			</li>
 			<li class="nav-item navbar-right">
-				<a class="nav-link" id="id02" href="#">About</a>
+				<a class="nav-link" id="id02" href="">About</a>
 			</li>
 			<li class="nav-item navbar-right">
-				<a class="nav-link" id="id03" href="#">Resume</a>
+				<a class="nav-link" id="id03" href="assets/file/resume_jy-2020.pdf" target="_blank">Resume</a>
 			</li>
 		</ul>
 	</div>
@@ -115,7 +117,7 @@
 		</div>
 	</div>
 
-	<div class="content-wrapper" #wrapper>
+	<div class="content-wrapper margin-100" #wrapper>
 
 		<div class="big-part">
 			<div class="big-part-inner">
@@ -151,14 +153,29 @@
 							On one hand, at-home storytelling comes with more flexibility and fun; on the other hand, without professional guidance, it's harder for children to effectively hone and broaden their storytelling skill sets.
 						</p>
 
-						<div class="margin-100">
-							<p class="sub-big-title"><b>Key design challenges</b></p>
-							<p><b>Product-wise:</b> How to coordinate children's needs for fun experience and parents' expectations for visible educational values?</p>
-							<p><b>Experience-wise:</b> How to help children overcome challenges, pick up key creative storytelling skills, and most importantly, enjoy the experience?</p>
+						<p class="sub-big-title"><b>Key design challenges</b></p>
+						<div class="row">
+							
+							<div class="col-sm-6">
+								<p><b>Product-wise</b></p>
+							</div>
+							<div class="col-sm-6">
+								<p><b>Experience-wise</b></p>
+							</div>
+						</div>
+
+						<div class="row margin-100">
+							<div class="col-sm-6">
+								<p>How to <mark>coordinate</mark> children's needs for fun experience and parents' expectations for visible educational values?</p>
+							</div>
+
+							<div class="col-sm-6">
+								<p>How to help children <mark>overcome</mark> challenges, pick up key creative storytelling skills, and <mark>enjoy</mark> the experience? </p>
+							</div>
 						</div>
 
 						<p class="sub-big-title">Solution Overview</p>
-						<p>A story playground enabling children to use illustration pieces of story elements to freely act out and record stories. Story frameworks and during-story guidance are integrated to help children get a better grasp of narrative flow and sparkle their creativity.</p>
+						<p>A story playground enabling children to use <mark>story element illustrations</mark> (e.g. characters, items) to act out and record stories. Story <mark>frameworks</mark> and during-story <mark>guidance</mark> are integrated to help children get a better grasp of narrative flow and sparkle their creativity.</p>
 					</div>
 				</div>
 			</div>
@@ -171,9 +188,9 @@
 				</div>
 				<div class="mid-font-content">
 					<p> Emma, our PM, has been a children story writer for years, and she has a 6-year-old son who loves reading and creating stories. Navigating between family and industry, she's always been thinking of digitizing storybook experience: </p>
-					<img src="assets/img/itale-begin.png" class="part-img">
+					<img src="assets/img/itale-begin.png" class="img-80">
 					<p> Next, I asked a few questions to deconstruct the prompt：</p>
-					<img src="assets/img/itale-question.png" class="img-70">
+					<img src="assets/img/itale-question.png" class="img-60">
 				</div>
 			</div>
 		</div>
@@ -462,6 +479,13 @@
 							<img src="assets/img/itale-decision-3.png" class="margin-50 img-70">
 						</div>
 
+						<div class="section">
+							<p class="sub-title"> <b> [Layout] </b> </p>
+							<p class="sub-big-title"> <b> Laying out information in story detail page </b> </p>
+							<img src="assets/img/itale-story-detail.png" class="margin-50 img-70">
+						</div>
+
+
 					</div>
 
 				</div>
@@ -503,7 +527,7 @@
 
 					<p class="sub-big-title"> <b> Shooting down fancy ideas </b> </p>
 					<p>During the project, we explored design directions broadly via brainstorming, and not all ideas passed through due to factors such as technical concerns and UX concerns. This was an example demonstrating how we handled such situation in general:</p>
-					<img class="part-img margin-5" src="assets/img/itale-workaround.png">
+					<img class="img-70 margin-5" src="assets/img/itale-workaround.png">
 				</div>
 			</div>
 		</div>
@@ -523,6 +547,32 @@
 			</div>
 		</div>
 
+		<div class="big-part big-part-7" id="big-part-7" #bigpart7>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Future Expansion </p>
+					<!--<p class="big-part-sub-title"> How did we come here </p>-->
+				</div>
+				<div class="mid-font-content">
+					<p class="margin-75">Zooming out from the core feature, we wanted to enhance the product competitiveness in the longer term. We conducted more competitive analysis on product features and invited some parents over to co-design and rate features/directions they liked the most. I further take feasibility and impact into considerations, discussed with PM and marketers on business potentials, and decided on 3 major directions of product expansion:</p>
+					<div class="row">
+						<div class="col-lg-4">
+							<p><b>Enriching Content</b></p>
+							<p>The storytelling feature can be greatly expanded if more story modes, frameworks, and story element packages are included. They will fit into more diverse needs and expand areas for users to explore over time. Also, it has the potential to become paid content.</p>
+						</div>
+						<div class="col-lg-4">
+							<p><b>Community Support</b></p>
+							<p>Building community enables users to share their stories, read others' stories, have fun and learn from communication. In the meanwhile, maintaining a community makes our product and campaign promotion easier.</p>
+						</div>
+						<div class="col-lg-4">
+							<p><b>Incentive System</b></p>
+							<p>There are many fun ways to keep children engaged in the long run, including building an achievement system and organizing themed storytelling events where children can submit their own work.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="big-part">
 			<div class="big-part-inner">
 				<div class="big-part-head">
@@ -538,4 +588,106 @@
 			</div>
 		</div>
 	</div>
+
+	<div>
+		<hr class="page-divider">
+		<p class="more-project-title">More Projects</p>
+		<div class="row justify-content-center width-85">
+			<div class="col-lg-3 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
+				<div class="thumb-image square">
+					<div class="crop-img">
+						<a href="projects/dunhuang">
+							<img src="assets/img/projectthumb-00.png">
+						</a>
+					</div>
+				</div>
+				<p class="project-categories">
+					/Charity Design /Commercialization /Culture /UX Design 
+				</p>
+				<p class="project-title">
+					Light Up Dunhuang - Internship @Tencent
+				</p>
+				<p class="project-description">
+					A creative e-charity product that engages the public to donate for traditional cultural heritage
+				</p>
+			</div>
+
+			<div class="col-lg-3 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
+				<div class="thumb-image square">
+					<div class="crop-img">
+						<a href="projects/involved">
+							<img src="assets/img/projectthumb-03.png">
+						</a>
+					</div>
+				</div>
+				<p class="project-categories">
+					/7-day Design Challenge /UX Design /UX Research /Mobile App Design
+				</p>
+				<p class="project-title">
+					Involved - Google Design Exercise 2019
+				</p>
+				<p class="project-description">
+					Socializing the experience for new students to find the right organizations to engage with
+				</p>
+			</div>
+
+			<div class="col-lg-3 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
+				<div class="thumb-image square" >
+					<div class="crop-img">
+						<a href="projects/echoes">
+							<img src="assets/img/projectthumb-01.png">
+						</a>
+					</div>
+				</div>
+				<p class="project-categories">
+					/UX Design /UX Research /Platform Design /Design Competition
+				</p>
+				<p class="project-title">
+					Echoes - CHI Student Design Competition
+				</p>
+				<p class="project-description">
+					A Feeling-Centered music experience that connects listeners and artists
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="foot">
+		<p class="copyright center-align">Designed and hand-coded by Jing You © 2020 💡</p>
+		<div class="row width-40 justify-content-center">
+			<div class="col-lg-1">
+				<a href="https://www.linkedin.com/in/jing-you-b823b4132/" target="_blank" class="sm-link">
+					<fa name="linkedin" class="sm-icon"></fa>
+				</a>
+			</div>
+			<div class="col-lg-1">
+				<a href="https://github.com/youjing402/" target="_blank" class="sm-link">
+					<fa name="github" class="sm-icon"></fa>
+				</a>
+			</div>
+			<div class="col-lg-1">
+				<a href="mailto:youjing402@gmail.com" class="sm-link">
+					<fa name="envelope" class="sm-icon"></fa>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!--
+	<div class="padding-lr-30">
+		<a class="float-left">
+			<table style="height: 100px;">
+				<td class="align-middle"><fa name="angle-left" class="prev-icon"></fa></td>
+				<td class="align-middle"><span class="align-middle jump-text">Previous: iTale</span></td>
+			</table>
+		</a>
+
+		<div class="float-right">
+			<table style="height: 100px;">
+				<td class="align-middle"><span class="align-middle jump-text">Next: Light Up Dunhuang</span></td>
+				<td class="align-middle"><fa name="angle-right" class="next-icon"></fa></td>
+			</table>
+		</div>
+	</div>
+-->
 </div>

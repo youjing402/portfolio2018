@@ -19,7 +19,7 @@
 				<a class="nav-link" id="id02" href="#">About</a>
 			</li>
 			<li class="nav-item navbar-right">
-				<a class="nav-link" id="id03" href="assets/file/resume-jy.pdf" target="_blank">Resume</a>
+				<a class="nav-link" id="id03" href="assets/file/resume_jy-2020.pdf" target="_blank">Resume</a>
 			</li>
 		</ul>
 	</div>
@@ -62,7 +62,7 @@
 				<div class="col-sm-6 col-xs-12 text-block">
 					<div class="name hide-on-init animated fadeOutBig" [ngClass]="{'smaller-name': isScrolled1}" [style.opacity] = "isScrolled1? transparentFontOpacity : 1">
 						<p class="light-font">Hi, I'm Jing,</p>
-						<p class="bold-font">a <a class="_primary-link">Product Designer</a></p>
+						<p class="bold-font">a <b>Product Designer</b></p>
 					</div>
 					<div class="intro-1 hide-on-init animated fadeInUp delay-1s">
 						<p>who believes that <span class="emphasis-1">design</span> is all about <span class="emphasis-1">connections</span> between things around us, <span class="intro-2 hide-on-init animated fadeInUp" *ngIf="isScrolled3 && hasScrolled3Passed">and between us.</span></p>
@@ -81,84 +81,128 @@
 		<div class="ocean2 hide-on-init animated fadeInUp delay-2s">
 			<div class="wave2"> </div>
 		</div>
-		-->
-		<div #worksection class="section-title" id="workSection">Work</div>
-		<div class="row justify-content-center">
-			<div class="col-lg-5 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
-				<div class="thumb-image square" >
-					<div class="crop-img">
-						<a href="projects/echoes">
-							<img src="assets/img/projectthumb-01.png">
-						</a>
-					</div>
+	-->
+	<div #worksection class="section-title margin-15" id="workSection" animateOnScroll animationName="animated fadeIn">Intern Projects</div>
+	<p class="section-intro margin-50" animateOnScroll animationName="animated fadeIn">I had UX / product design experience in both small startup and large corporation. Check out my favorite works here:</p> 
+	<div class="row justify-content-around width-70">
+		<div class="col-lg-6 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
+			<div class="thumb-image square" >
+				<div class="crop-img">
+					<a href="projects/itale">
+						<img src="assets/img/projectthumb-05.png">
+					</a>
 				</div>
-				<p class="project-categories">
-					/UX Design /UX Research /Platform Design /Design Competition
-				</p>
-				<p class="project-title">
-					Echoes - CHI Student Design Competition
-				</p>
-				<p class="project-description">
-					A Feeling-Centered music experience that connects listeners and artists
-				</p>
+			</div>
+			<p class="project-categories">
+				/Education Design /Startup /Product Design 
+			</p>
+			<p class="project-title">
+				iTale - Internship @iTale
+			</p>
+			<p class="project-description">
+				A playground for children to tell creative stories
+			</p>
 
-			</div>
-			<div class="col-lg-5 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
-				<div class="thumb-image square">
-					<div class="crop-img">
-						<a href="projects/stretch">
-							<img src="assets/img/projectthumb-02.png">
-						</a>
-					</div>
-				</div>
-				<p class="project-categories">
-					/UX Design /UX Research /Mobile App Design
-				</p>
-				<p class="project-title">
-					Stretch - the Invisible Food Insecurity
-				</p>
-				<p class="project-description">
-					A mobile meal planner that optimizes use of time, budget, and resources
-				</p>
-			</div>
+		</div>
 
-			<div class="col-lg-5 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
-				<div class="thumb-image square">
-					<div class="crop-img">
-						<a href="projects/involved">
-							<img src="assets/img/projectthumb-03.png">
-						</a>
-					</div>
+		<div class="col-lg-6 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
+			<div class="thumb-image square" >
+				<div class="crop-img">
+					<a href="projects/dunhuang">
+						<img src="assets/img/projectthumb-00.png">
+					</a>
 				</div>
-				<p class="project-categories">
-					/7-day Design Challenge /UX Design /UX Research /Mobile App Design
-				</p>
-				<p class="project-title">
-					Involved - Google Design Exercise 2019
-				</p>
-				<p class="project-description">
-					Socializing the experience for new students to find the right organizations to engage with
-				</p>
 			</div>
+			<p class="project-categories">
+				/Charity Design /Commercialization /Culture /UX Design 
+			</p>
+			<p class="project-title">
+				Light Up Dunhuang - Internship @Tencent
+			</p>
+			<p class="project-description">
+				A creative e-charity product that engages the public to donate for traditional cultural heritage
+			</p>
 
-			<div class="col-lg-5 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
-				<div class="thumb-image square">
-					<div class="crop-img">
-						<a href="projects/poco">
-							<img src="assets/img/projectthumb-04.png">
-						</a>
-					</div>
+		</div>
+	</div>
+
+	<div #projectsection class="section-title margin-50" id="projectSection" animateOnScroll animationName="animated fadeIn">Other Projects</div>
+	<div class="row justify-content-center width-85">
+		<div class="col-lg-3 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
+			<div class="thumb-image square">
+				<div class="crop-img">
+					<a href="projects/involved">
+						<img src="assets/img/projectthumb-03.png">
+					</a>
 				</div>
-				<p class="project-categories">
-					/VR Design /Game Design /Game Development /UX Design
-				</p>
-				<p class="project-title">
-					Poco A Poco - VR Rhythm Game
-				</p>
-				<p class="project-description">
-					A VR immersive experience to enjoy classical music
-				</p>
 			</div>
+			<p class="project-categories">
+				/7-day Design Challenge /UX Design /UX Research /Mobile App Design
+			</p>
+			<p class="project-title">
+				Involved - Google Design Exercise 2019
+			</p>
+			<p class="project-description">
+				Socializing the experience for new students to find the right organizations to engage with
+			</p>
+		</div>
+
+		<div class="col-lg-3 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
+			<div class="thumb-image square" >
+				<div class="crop-img">
+					<a href="projects/echoes">
+						<img src="assets/img/projectthumb-01.png">
+					</a>
+				</div>
+			</div>
+			<p class="project-categories">
+				/UX Design /UX Research /Platform Design /Design Competition
+			</p>
+			<p class="project-title">
+				Echoes - CHI Student Design Competition
+			</p>
+			<p class="project-description">
+				A Feeling-Centered music experience that connects listeners and artists
+			</p>
+
+		</div>
+		<div class="col-lg-3 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
+			<div class="thumb-image square">
+				<div class="crop-img">
+					<a href="projects/stretch">
+						<img src="assets/img/projectthumb-02.png">
+					</a>
+				</div>
+			</div>
+			<p class="project-categories">
+				/UX Design /UX Research /Mobile App Design
+			</p>
+			<p class="project-title">
+				Stretch - the Invisible Food Insecurity
+			</p>
+			<p class="project-description">
+				A mobile meal planner that optimizes use of time, budget, and resources
+			</p>
+		</div>
+
+		<div class="col-lg-3 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
+			<div class="thumb-image square">
+				<div class="crop-img">
+					<a href="projects/poco">
+						<img src="assets/img/projectthumb-04.png">
+					</a>
+				</div>
+			</div>
+			<p class="project-categories">
+				/VR Design /Game Design /Game Development /UX Design
+			</p>
+			<p class="project-title">
+				Poco A Poco - VR Rhythm Game
+			</p>
+			<p class="project-description">
+				A VR immersive experience to enjoy classical music
+			</p>
+		</div>
 
 			<!--
 			<div class="col-lg-5 col-sm-12 project">
@@ -272,6 +316,6 @@
 	</div>
 </div>
 <div *ngIf="isOpened" class="foot">
-	<p class="copyright center-align">Designed and hand-coded by Jing You © 2019 💡</p>
+	<p class="copyright center-align">Designed and hand-coded by Jing You © 2020 💡</p>
 </div>
 </div>

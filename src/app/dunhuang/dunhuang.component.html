@@ -13,17 +13,19 @@
 			<li class="nav-item dropdown" ngbDropdown>
 				<a class="nav-link dropdown-toggle" id="id01" ngbDropdownToggle>Work</a>
 				<div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+					<a class="dropdown-item orange-text" href="projects/itale">iTale</a>
+					<a class="dropdown-item yellow-text" href="projects/dunhuang">Dunhuang</a>
 					<a class="dropdown-item purple-text" href="projects/echoes">Echoes</a>
 					<a class="dropdown-item green-text" href="projects/stretch">Stretch</a>
 					<a class="dropdown-item coral-text" href="projects/involved">Involved</a>
-					<a class="dropdown-item blue-text" href="projects/poco">Poco A Poco</a>
+					<!--<a class="dropdown-item blue-text" href="projects/poco">Poco A Poco</a>-->
 				</div>
 			</li>
 			<li class="nav-item navbar-right">
-				<a class="nav-link" id="id02" href="#">About</a>
+				<a class="nav-link" id="id02" href="">About</a>
 			</li>
 			<li class="nav-item navbar-right">
-				<a class="nav-link" id="id03" href="#">Resume</a>
+				<a class="nav-link" id="id03" href="assets/file/resume_jy-2020.pdf" target="_blank">Resume</a>
 			</li>
 		</ul>
 	</div>
@@ -73,7 +75,7 @@
 				Light Up Dunhuang
 			</p>
 			<p class="banner-subtitle margin-20">
-				Experimenting the crossover between philanthropy and e-commerce: A creative e-philanthropy product that engages the young public to donate for traditional cultural heritage protection.
+				Experimenting the crossover between charity and e-commerce: engaging the young public to donate for traditional cultural heritage preservation.
 			</p>
 			<div class="attributes">
 				<div class="row attribute1">
@@ -117,7 +119,7 @@
 		</div>
 	</div>
 
-	<div class="content-wrapper" #wrapper>
+	<div class="content-wrapper margin-100" #wrapper>
 		<div class="big-part big-part-1" id="big-part-1" #bigpart1>
 			<div class="big-part-inner">
 				<div class="big-part-head">
@@ -126,9 +128,9 @@
 				<div class="large-font-content">
 					<div class="section">
 						
-						<p> Tencent, as a large Internet company, has been in a long-term collaboration with Dunhuang Academy, one of the major cultural heritage protection organizations in China. The overall intention of this collaboration was to enhance the young public's awareness towards <b>cultural heritage protection</b>, yet, <b>past projects did not perform well at fundraising</b>. </p>
+						<p> Tencent, as a large Internet company, has been in a long-term collaboration with Dunhuang Academy, one of the major cultural heritage preservation organizations in China. The overall intention of this collaboration was to enhance the young public's awareness towards <b>cultural heritage preservation</b>, yet, <b>past projects did not perform well at fundraising</b>. </p>
 
-						<p class="margin-50"> The team thus hoped to explore something different, to bring donors closer to Dunhuang...</p>
+						<p class="margin-50"> Our team at Tencent CDC (an internal design agency) thus hoped to experiment with something different, to bring donors closer to Dunhuang...</p>
 
 						<img class="part-img margin-100" src="assets/img/dh-problem-overview.png">
 
@@ -142,21 +144,21 @@
 								<p><b>Digitalize concepts in traditional arts and culture</b></p>
 							</div>
 							<div class="col-sm-4">
-								<p><b>Fuse e-philanthropy with e-commerce</b></p>
+								<p><b>Fuse e-charity with e-commerce</b></p>
 							</div>
 						</div>
 
 						<div class="row normal-text">
 							<div class="col-sm-4">
-								<p>Understand donors' motivations and reasons why they don't donate for cultural heritage protection.</p>
+								<p>Understand donors' motivations and reasons why they don't donate for cultural heritage preservation.</p>
 							</div>
 
 							<div class="col-sm-4">
-								<p>Explore ways philanthropy can be presented digitally in the context of traditional culture given all uniqueness. </p>
+								<p>Explore ways charity can be presented digitally in the context of traditional culture given all uniqueness. </p>
 							</div>
 
 							<div class="col-sm-4">
-								<p>Explore ways philanthropy can utilize e-commerce design tactics. </p>
+								<p>Explore ways charity can utilize e-commerce design tactics. </p>
 							</div>
 						</div>
 					</div>
@@ -268,11 +270,11 @@
 					<div class="row sub-text" *ngIf="isExpanded">
 						<div class="col-lg-3">
 							<p class="margin-0"> - What are attractive to you about Dunhuang, or cultural heritage in general? </p>
-							<p> - Do you donate for cultural heritage protection? Why? </p>
+							<p> - Do you donate for cultural heritage preservation? Why? </p>
 						</div>
 
 						<div class="col-lg-3">
-							<p class="margin-0"> - User segmentation in online philanthropy; </p>
+							<p class="margin-0"> - User segmentation in online charity; </p>
 							<p> - General behaviors and preferences of millennials users on social media platform </p>
 						</div>
 
@@ -570,7 +572,27 @@
 					<!--<p class="big-part-sub-title"> How did we come here </p>-->
 				</div>
 				<div class="mid-font-content">
-					
+					<p class="sub-big-title"><b>Talking to users</b></p>
+					<p>Due to the confidentiality of this project, I was not allowed to show the idea to people outside of the organization, so I present the design to some colleagues that could be potential users, and here was some quotes I collected:</p>
+					<img src="assets/img/dh-feedback.png" class="part-img margin-20">
+
+					<p class="sub-title margin-15"> We learned that: </p>
+					<div class="row margin-100">
+						<div class="col-lg-6">
+							<p><b>Is it worthy to donate?</b></p>
+							<p>Most participants found the idea intriguing and claimed to be more willing to donate. However, many were still very cautious with the actual payment and needed time to figure out if it's really worthy, particularly for users that are not super fans of traditional culture. </p>
+						</div>
+						<div class="col-lg-6">
+							<p><b>Offline trip and souvenir</b></p>
+							<p>Participants' willingness to donate significantly increase if they were to be shown this app during their trip to Dunhuang, and this opened new possibility of offline collaboration with Dunhuang.</p>
+						</div>
+					</div>
+
+					<p class="sub-big-title"><b>Talking to developers and visual designers</b></p>
+					<p class="margin-100">As the interaction designer, I needed to communicate with visual designers and front-end developers to carry the project forward. The most important thing we discussed was the animation and atmosphere building. We discussed technical constraints (e.g. how to locate a piece of painting, how many pieces are there in a cave, etc.), as well as the ideal artstyle and user experience. </p>
+
+					<p class="sub-big-title"><b>Talking to stakeholders</b></p>
+					<p>During the project, I presented the prototype to people in charge of Tencent-Dunhuang collaboration, from both Tencent and Dunhuang Academy. The feedback I got was mostly positive, and they would like to see more directions before making a decision, so I continued exploring other ideas to keep the conversation going.</p>
 				</div>
 			</div>
 		</div>
@@ -583,10 +605,95 @@
 				</div>
 				<div class="mid-font-content">
 					<ul>
-						<li><b>Think ahead and design for more flexibility:</b> As I joined the team at an early stage, it was an important job for me to learn to prioritize features with the team while also keeping an eye on what may possibly come next (e.g. marketing campaign) in order to design in a more flexible way to accommodate future changes.</li>
-						<li><b>Find alternative ways to deal with challenging user groups:</b> Children are surely one of the most unique and challenging user groups to conduct research on. To approach the problem differently, I tried to get more information and knowledge via reading and talking to professional educators and parents about their first-hand experience. They sometimes were able to explain children's behaviors and mentality even better than children themselves, which helped me greatly in understanding what I needed to design.</li>
+						<li><b>Impress your users quickly:</b> The most special thing about this project is, the touchpoint between users and the product is extremely short, that it's almost like an advertisement to convince customers into making purchase right away. Therefore, although the flow may look short, careful effort was put into the choice and distillation of information and interactions. We strived to utilize the short amount of time to provoke the right emotion and motivation.</li>
+						<li><b>Minding your company's business:</b> Particularly in big organizations, designers shouldn't make a product for the sake of the product. They have to think about the meaning of the product from a larger landscape: What values can this little product bring to the larger project? How may it affect the project/team/company from a long run? What type of image does it create for the company for audience to see?</li>
+						<li><b>Not everyone is going to like your design, and that’s totally normal:</b> I was a bit frustrated when I received more feedback saying they probably won’t donate than I expected. I then came to realize that especially for a B2C product, it’s simply impossible to design something that caters to everyone’s taste and need. My mentor told me that phenomenal products were very rare, but if I manage to make 1% more people donate and 5% more people aware of the issue (of cultural heritage preservation), it’s considered a great success!</li>
 					</ul>
 				</div>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<hr class="page-divider">
+		<p class="more-project-title">More Projects</p>
+		<div class="row justify-content-center width-85">
+			<div class="col-lg-3 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
+				<div class="thumb-image square">
+					<div class="crop-img">
+						<a href="projects/dunhuang">
+							<img src="assets/img/projectthumb-05.png">
+						</a>
+					</div>
+				</div>
+				<p class="project-categories">
+					/Education Design /Startup /Product Design 
+				</p>
+				<p class="project-title">
+					iTale - Internship @iTale
+				</p>
+				<p class="project-description">
+					A playground for children to tell creative stories
+				</p>
+			</div>
+			
+			<div class="col-lg-3 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
+				<div class="thumb-image square">
+					<div class="crop-img">
+						<a href="projects/involved">
+							<img src="assets/img/projectthumb-03.png">
+						</a>
+					</div>
+				</div>
+				<p class="project-categories">
+					/7-day Design Challenge /UX Design /UX Research /Mobile App Design
+				</p>
+				<p class="project-title">
+					Involved - Google Design Exercise 2019
+				</p>
+				<p class="project-description">
+					Socializing the experience for new students to find the right organizations to engage with
+				</p>
+			</div>
+
+			<div class="col-lg-3 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
+				<div class="thumb-image square">
+					<div class="crop-img">
+						<a href="projects/stretch">
+							<img src="assets/img/projectthumb-02.png">
+						</a>
+					</div>
+				</div>
+				<p class="project-categories">
+					/UX Design /UX Research /Mobile App Design
+				</p>
+				<p class="project-title">
+					Stretch - the Invisible Food Insecurity
+				</p>
+				<p class="project-description">
+					A mobile meal planner that optimizes use of time, budget, and resources
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="foot">
+		<p class="copyright center-align">Designed and hand-coded by Jing You © 2020 💡</p>
+		<div class="row width-40 justify-content-center">
+			<div class="col-lg-1">
+				<a href="https://www.linkedin.com/in/jing-you-b823b4132/" target="_blank" class="sm-link">
+					<fa name="linkedin" class="sm-icon"></fa>
+				</a>
+			</div>
+			<div class="col-lg-1">
+				<a href="https://github.com/youjing402/" target="_blank" class="sm-link">
+					<fa name="github" class="sm-icon"></fa>
+				</a>
+			</div>
+			<div class="col-lg-1">
+				<a href="mailto:youjing402@gmail.com" class="sm-link">
+					<fa name="envelope" class="sm-icon"></fa>
+				</a>
 			</div>
 		</div>
 	</div>

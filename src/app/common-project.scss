@@ -96,6 +96,14 @@
 	width: 100%;
 }
 
+.img-80 {
+	width: 70%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
 .img-70 {
 	width: 70%;
 	text-align: center;
@@ -738,6 +746,7 @@ ul.navbar-nav li.dropdown > .dropdown-menu {
 	min-width: 0px;
 	border-radius: 0px;
 	border: 0px solid transparent;
+	top:45px;
 }
 
 
@@ -781,6 +790,14 @@ ul.navbar-nav li.dropdown > .dropdown-menu {
 		.blue-text:hover {
 			color: #6991C6;
 		}
+
+		.orange-text:hover {
+			color: #F1AD3B;
+		}
+
+		.yellow-text:hover {
+			color: #c39126;
+		}
 	}
 }
 
@@ -815,4 +832,120 @@ ul.navbar-nav li.dropdown > .dropdown-menu {
 	.navbar-dark .navbar-toggler {
 		border: 0px solid transparent;
 	}
+}
+
+.padding-lr-30 {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.prev-icon {
+	margin-right: 15px;
+	font-size: 50px;
+}
+
+.next-icon {
+	margin-left: 15px;
+	font-size: 40px;
+}
+
+.jump-text {
+	font-family: 'GFS Didot', serif;
+	font-style: italic;
+	font-size: 22px;
+}
+
+.project-categories {
+	color: #999;
+	font-size: 12px;
+}
+
+.project-title {
+    //color: #999;
+    font-size: 18px;
+    font-family: 'Lustria', serif;
+    font-weight: bold;
+}
+
+.project-description {
+	font-size: 12px;
+	font-family: 'Lustria', serif;
+}
+
+.project {
+	margin-bottom: 80px;
+}
+
+.square {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.square:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+.thumb-image {
+  //min-width: 50%;
+  //margin-bottom: 50px;
+  margin-bottom: 20px;
+  img {
+    //max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 37.125px 40px -12.125px rgba(255,126,141,0.2);
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
+}
+img:hover {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+}
+
+.crop-img {
+	object-fit: cover;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.more-project-title {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 70px;
+}
+
+.page-divider {
+	text-align: center;
+	border-width: 4px;
+	width: 8%;
+}
+
+.foot {
+	background-color: #eee;
+	padding-bottom: 20px;
+
+	.copyright {
+		margin-bottom: 5px;
+		padding-top: 20px;
+		font-size: 12px;
+	}
+}
+
+.width-40 {
+	padding-left: 32%;
+    padding-right: 32%;
+}
+
+.sm-link {
+	color: black;
+}
+
+.sm-link:hover {
+	color: #222;
 }
