@@ -22,4 +22,21 @@ export class DunhuangComponent implements OnInit {
 		this.isExpanded = !this.isExpanded;
 	}
 
+	selectStage(id: number) {
+		this.isSelected1 = false;
+		this.isSelected2 = false;
+		this.isSelected3 = false;
+		this.isSelected4 = false;
+
+		if (id == 1) {
+			this.isSelected1 = true;
+		} else if (id == 2) {
+			this.isSelected2 = true;
+		} else if (id == 3) {
+			this.isSelected3 = true;
+		} else if (id == 4) {
+			this.isSelected4 = true;
+		}
+	}
+
 }
