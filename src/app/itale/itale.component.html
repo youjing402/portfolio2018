@@ -117,7 +117,7 @@
 	</div>
 
 	<div class="content-wrapper margin-100" #wrapper>
-
+		<div class="big-part no-height-part"></div>
 		<div class="big-part big-part-1 margin-5 padding-b-0" id="big-part-1" #bigpart1>
 			<div class="big-part-inner">
 				<div class="big-part-head">
@@ -126,57 +126,10 @@
 				<div class="large-font-content">
 					<div>
 						<p class="margin-150"> Storytelling is a fun educational exercise that boosts children's imagination and literacy skills. Compared to classroom story education, <mark>at-home storytelling</mark> comes with more flexibility and fun, but without professional guidance, it's harder for children to effectively hone and broaden their storytelling skill sets.</p>
-
-						<p class="sub-big-title margin-20">Solution Overview</p>
-						<p class="margin-75">A story playground enabling children to use <mark>story element illustrations</mark> (e.g. characters, items) to act out and record stories. Story <mark>frameworks</mark> and during-story <mark>guidance</mark> are integrated to help children get a better grasp of narrative flow and sparkle their creativity:</p>
-
-						<div class="row margin-150">
-							<div class="col-lg-4">
-								<div>
-									<a class="screen-btn" [ngClass]="{'selected-screen-btn' : isScreen1}" (click)="selectScreen(1)"><p><span *ngIf="isScreen1">▶ </span><span *ngIf="!isScreen1" class="transparent-content">▷ </span>Open a storybook</p></a>
-									<p *ngIf="isScreen1" class="margin-35 scene-description">Children may start a story by picking a storytelling mode and a protagonist.</p>
-								</div>
-								<div>
-									<a class="screen-btn" [ngClass]="{'selected-screen-btn' : isScreen2}" (click)="selectScreen(2)"><p><span *ngIf="isScreen2">▶ </span><span *ngIf="!isScreen2" class="transparent-content">▷ </span>Create a scene</p></a>
-									<p *ngIf="isScreen2" class="margin-35 scene-description">Following the story flow, children may proceed to the scene creation: play around with story elements on the canvas, and record the scene.</p>
-								</div>
-								<div>
-									<a class="screen-btn" [ngClass]="{'selected-screen-btn' : isScreen3}" (click)="selectScreen(3)"><p><span *ngIf="isScreen3">▶ </span><span *ngIf="!isScreen3" class="transparent-content">▷ </span>Get new inspiration</p></a>
-									<p *ngIf="isScreen3" class="margin-35 scene-description">The inspiration assistance will provide children with diffrent types of inspirations when they feel stuck or bored.</p>
-								</div>
-								<div>
-									<a class="screen-btn" [ngClass]="{'selected-screen-btn' : isScreen4}" (click)="selectScreen(4)"><p><span *ngIf="isScreen4">▶ </span><span *ngIf="!isScreen4" class="transparent-content">▷ </span>Complete a storybook</p></a>
-									<p *ngIf="isScreen4" class="margin-35 scene-description">After all scenes are done, children may finish up the storybook creation and share it with the community.</p>
-								</div>
-							</div>
-							<div class="col-lg-8">
-								<img src="assets/img/itale-outcome-begin.gif" class="part-img" *ngIf="isScreen1">
-								<img src="assets/img/itale-outcome-scene.gif" class="part-img" *ngIf="isScreen2">
-								<img src="assets/img/itale-outcome-guidance.gif" class="part-img" *ngIf="isScreen3">
-								<img src="assets/img/itale-outcome-finish.gif" class="part-img" *ngIf="isScreen4">
-							</div>
-						</div>
 					</div>
 				</div>
 
 				<div class="mid-font-content">
-					<p class="sub-big-title"><b>My contributions</b></p>
-					<p>This project was done as a <b>remote</b> passion project with a small team in California. The cross-functional team consisted of a PM, 2 developers, 1 illustrator, and 2 marketers. I joined as the <b>solo designer</b>, and below are some of my key responsibilities:</p>
-					<div class="row margin-150">
-						<div class="col-lg-4">
-							<p><b>User Research</b></p>
-							<p>I got in touch with parents and educators, and used various research methods to collect and synthesize user data.</p>
-						</div>
-						<div class="col-lg-4">
-							<p><b>Strategy</b></p>
-							<p>I communicated and collaborated with the multi-functional team (mainly with PM) to discuss design strategy and feature priority.</p>
-						</div>
-						<div class="col-lg-4">
-							<p><b>Prototype</b></p>
-							<p>I built digital and physical prototypes to speed test the idea and design.</p>
-						</div>
-					</div>
-
 					<p class="sub-big-title"><b>Key design challenges</b></p>
 					<div class="row">
 
@@ -194,6 +147,53 @@
 
 						<div class="col-sm-6">
 							<p>How to help children <mark>overcome</mark> challenges, pick up key creative storytelling skills, and <mark>enjoy</mark> the experience? </p>
+						</div>
+					</div>
+
+					<p class="sub-big-title margin-20">Solution Overview</p>
+					<p class="margin-75">A story playground enabling children to use <mark>story element illustrations</mark> (e.g. characters, items) to act out and record stories. Story <mark>frameworks</mark> and during-story <mark>guidance</mark> are integrated to help children get a better grasp of narrative flow and sparkle their creativity:</p>
+
+					<div class="row margin-150">
+						<div class="col-lg-4">
+							<div>
+								<a class="screen-btn" [ngClass]="{'selected-screen-btn' : isScreen1}" (click)="selectScreen(1)"><p><span *ngIf="isScreen1">▶ </span><span *ngIf="!isScreen1" class="transparent-content">▷ </span>Open a storybook</p></a>
+								<p *ngIf="isScreen1" class="margin-35 scene-description">Children may start a story by picking a storytelling mode and a protagonist.</p>
+							</div>
+							<div>
+								<a class="screen-btn" [ngClass]="{'selected-screen-btn' : isScreen2}" (click)="selectScreen(2)"><p><span *ngIf="isScreen2">▶ </span><span *ngIf="!isScreen2" class="transparent-content">▷ </span>Create a scene</p></a>
+								<p *ngIf="isScreen2" class="margin-35 scene-description">Following the story flow, children may proceed to the scene creation: play around with story elements on the canvas, and record the scene.</p>
+							</div>
+							<div>
+								<a class="screen-btn" [ngClass]="{'selected-screen-btn' : isScreen3}" (click)="selectScreen(3)"><p><span *ngIf="isScreen3">▶ </span><span *ngIf="!isScreen3" class="transparent-content">▷ </span>Get new inspiration</p></a>
+								<p *ngIf="isScreen3" class="margin-35 scene-description">The inspiration assistance will provide children with diffrent types of inspirations when they feel stuck or bored.</p>
+							</div>
+							<div>
+								<a class="screen-btn" [ngClass]="{'selected-screen-btn' : isScreen4}" (click)="selectScreen(4)"><p><span *ngIf="isScreen4">▶ </span><span *ngIf="!isScreen4" class="transparent-content">▷ </span>Complete a storybook</p></a>
+								<p *ngIf="isScreen4" class="margin-35 scene-description">After all scenes are done, children may finish up the storybook creation and share it with the community.</p>
+							</div>
+						</div>
+						<div class="col-lg-8">
+							<img src="assets/img/itale-outcome-begin.gif" class="part-img screen-img" *ngIf="isScreen1">
+							<img src="assets/img/itale-outcome-scene.gif" class="part-img screen-img" *ngIf="isScreen2">
+							<img src="assets/img/itale-outcome-guidance.gif" class="part-img screen-img" *ngIf="isScreen3">
+							<img src="assets/img/itale-outcome-finish.gif" class="part-img screen-img" *ngIf="isScreen4">
+						</div>
+					</div>
+
+					<p class="sub-big-title"><b>My contributions</b></p>
+					<p>This project was done as a <b>remote</b> passion project with a small team in California. The cross-functional team consisted of a PM, 2 developers, 1 illustrator, and 2 marketers. I joined as the <b>solo designer</b>, and below are some of my key responsibilities:</p>
+					<div class="row margin-150">
+						<div class="col-lg-4">
+							<p><b>User Research</b></p>
+							<p>I got in touch with parents and educators, and used various research methods to collect and synthesize user data.</p>
+						</div>
+						<div class="col-lg-4">
+							<p><b>Strategy</b></p>
+							<p>I communicated and collaborated with the multi-functional team (mainly with PM) to discuss design strategy and feature priority.</p>
+						</div>
+						<div class="col-lg-4">
+							<p><b>Prototype</b></p>
+							<p>I built digital and physical prototypes to speed test the idea and design.</p>
 						</div>
 					</div>
 
@@ -538,7 +538,7 @@
 							</ol>
 						</div>
 					</div>		
-					
+
 					<p class="sub-big-title"> <b> Overall Feedback </b> </p>
 					<p>We received very positive feedback from both parents and educators, and here are some quotes from them:</p>
 					<img class="part-img margin-75" src="assets/img/itale-feedback.png">

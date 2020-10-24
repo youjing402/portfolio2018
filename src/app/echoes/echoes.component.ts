@@ -54,14 +54,10 @@ export class EchoesComponent implements OnInit {
   		this._albums.push(albumEntry);
   		this._ids.push(image.id);
   	}
-    console.log(images);
-    console.log(this._albums);
-    console.log(this._ids);
   }
 
   open(id: string): void {
   	let index = this._ids.indexOf(id);
-  	console.log(index);
   	this._lightbox.open(this._albums, index);
   }
 
@@ -125,16 +121,9 @@ export class EchoesComponent implements OnInit {
     if (scrollPosition < sideScroll6) {
       this.isScrolled6 = false;
     }
-
-
-    console.log(scrollPosition);
-    console.log("1" + this.isScrolled1);
-     console.log("22" + sideScroll2);
-    console.log("2" + this.isScrolled2);
   }
 
   scrollToElement($element): void {
-    console.log($element);
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 

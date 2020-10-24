@@ -27,7 +27,6 @@ export class ItaleComponent implements OnInit {
   }
 
   scrollToElement($element): void {
-    console.log($element);
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 
@@ -103,12 +102,6 @@ export class ItaleComponent implements OnInit {
     if (scrollPosition < sideScroll6) {
       this.isScrolled6 = false;
     }
-
-
-    console.log(scrollPosition);
-    console.log("1" + this.isScrolled1);
-     console.log("22" + sideScroll2);
-    console.log("2" + this.isScrolled2);
   }
 
 }

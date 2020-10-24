@@ -18,17 +18,21 @@ $light-color: #fcf2d7;
 }
 
 .scene-description {
-	font-size: 18px;
+	font-size: 14px;
 	padding-left: 25px;
 	font-family: 'Roboto Slab', sans-serif;
 	font-weight: 100;
 }
 
 .screen-btn {
-	font-size: 20px;
+	font-size: 18px;
 	font-family: 'Roboto Slab', sans-serif;
 	color: black;
 	cursor: pointer;
+}
+
+.screen-img {
+	box-shadow: 0px 0px 8px #aaa;
 }
 
 .selected-screen-btn {
