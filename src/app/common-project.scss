@@ -177,7 +177,7 @@
 }
 
 .margin-5 {
-	margin-bottom: 5px;
+	margin-bottom: 5px !important;
 }
 
 .left-align{
@@ -954,4 +954,12 @@ img:hover {
 
 .sm-link:hover {
 	color: #222;
+}
+
+.margin-35 {
+	margin-bottom: 35px;
+}
+
+.transparent-content {
+	color: transparent;
 }

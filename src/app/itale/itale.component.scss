@@ -1,6 +1,7 @@
 @import '../common-project';
 
 $theme-color: #F1AD3B;
+$light-color: #fcf2d7;
 
 .banner {
 	background: $theme-color;
@@ -14,4 +15,44 @@ $theme-color: #F1AD3B;
 
 .navbar {
 	background-color: $theme-color;
+}
+
+.scene-description {
+	font-size: 18px;
+	padding-left: 25px;
+	font-family: 'Roboto Slab', sans-serif;
+	font-weight: 100;
+}
+
+.screen-btn {
+	font-size: 20px;
+	font-family: 'Roboto Slab', sans-serif;
+	color: black;
+	cursor: pointer;
+}
+
+.selected-screen-btn {
+	font-weight: bold;
+	color: $theme-color;
+}
+
+.demo-devision {
+	margin-bottom: 15px;
+	text-align: center;
+	border-width: 4px;
+	width: 30%;
+}
+
+.demo-section {
+	background-color: $light-color;
+}
+
+.demo-wrapper {
+	padding-left: 7%;
+	padding-right: 7%;
+
+	.row {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
 }

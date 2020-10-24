@@ -31,7 +31,6 @@
 	</div>
 </nav>
 
-<!--
 <div class="timeline" *ngIf="isScrolled1">
 	<a (click)="scrollToElement(bigpart1)">
 		<div class="container left" [ngClass]="(!isScrolled2 && isScrolled1) ? 'selected' : 'not-selected'">
@@ -40,32 +39,32 @@
 	</a>
 	<a (click)="scrollToElement(bigpart2)">
 		<div class="container left" [ngClass]="(!isScrolled3 && isScrolled2) ? 'selected' : 'not-selected'">
-			<p class="menu-section-title">Outcomes</p>
+			<p class="menu-section-title">Research</p>
 		</div>
 	</a>
 	<a (click)="scrollToElement(bigpart3)">
 		<div class="container left" [ngClass]="(!isScrolled4 && isScrolled3) ? 'selected' : 'not-selected'">
-			<p class="menu-section-title">Research</p>
+			<p class="menu-section-title">Ideation & Strategy</p>
 		</div>
 	</a>
 	<a (click)="scrollToElement(bigpart4)">
 		<div class="container left" [ngClass]="(!isScrolled5 && isScrolled4) ? 'selected' : 'not-selected'">
-			<p class="menu-section-title">Ideation</p>
+			<p class="menu-section-title">Design</p>
 		</div>
 	</a>
 	<a (click)="scrollToElement(bigpart5)">
 		<div class="container left" [ngClass]="(!isScrolled6 && isScrolled5) ? 'selected' : 'not-selected'">
-			<p class="menu-section-title">Design & Testing</p>
+			<p class="menu-section-title">Testing & Iterations</p>
 		</div>
 	</a>
+
 	<a (click)="scrollToElement(bigpart6)">
 		<div class="container left" [ngClass]="(isScrolled6) ? 'selected' : 'not-selected'">
-			<p class="menu-section-title">Final</p>
+			<p class="menu-section-title">Final Screens</p>
 		</div>
 	</a>
 
 </div>
--->
 
 
 <div class="itale-page page">
@@ -119,11 +118,51 @@
 
 	<div class="content-wrapper margin-100" #wrapper>
 
-		<div class="big-part">
+		<div class="big-part big-part-1 margin-5 padding-b-0" id="big-part-1" #bigpart1>
 			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Overview </p>
+				</div>
+				<div class="large-font-content">
+					<div>
+						<p class="margin-150"> Storytelling is a fun educational exercise that boosts children's imagination and literacy skills. Compared to classroom story education, <mark>at-home storytelling</mark> comes with more flexibility and fun, but without professional guidance, it's harder for children to effectively hone and broaden their storytelling skill sets.</p>
+
+						<p class="sub-big-title margin-20">Solution Overview</p>
+						<p class="margin-75">A story playground enabling children to use <mark>story element illustrations</mark> (e.g. characters, items) to act out and record stories. Story <mark>frameworks</mark> and during-story <mark>guidance</mark> are integrated to help children get a better grasp of narrative flow and sparkle their creativity:</p>
+
+						<div class="row margin-150">
+							<div class="col-lg-4">
+								<div>
+									<a class="screen-btn" [ngClass]="{'selected-screen-btn' : isScreen1}" (click)="selectScreen(1)"><p><span *ngIf="isScreen1">▶ </span><span *ngIf="!isScreen1" class="transparent-content">▷ </span>Open a storybook</p></a>
+									<p *ngIf="isScreen1" class="margin-35 scene-description">Children may start a story by picking a storytelling mode and a protagonist.</p>
+								</div>
+								<div>
+									<a class="screen-btn" [ngClass]="{'selected-screen-btn' : isScreen2}" (click)="selectScreen(2)"><p><span *ngIf="isScreen2">▶ </span><span *ngIf="!isScreen2" class="transparent-content">▷ </span>Create a scene</p></a>
+									<p *ngIf="isScreen2" class="margin-35 scene-description">Following the story flow, children may proceed to the scene creation: play around with story elements on the canvas, and record the scene.</p>
+								</div>
+								<div>
+									<a class="screen-btn" [ngClass]="{'selected-screen-btn' : isScreen3}" (click)="selectScreen(3)"><p><span *ngIf="isScreen3">▶ </span><span *ngIf="!isScreen3" class="transparent-content">▷ </span>Get new inspiration</p></a>
+									<p *ngIf="isScreen3" class="margin-35 scene-description">The inspiration assistance will provide children with diffrent types of inspirations when they feel stuck or bored.</p>
+								</div>
+								<div>
+									<a class="screen-btn" [ngClass]="{'selected-screen-btn' : isScreen4}" (click)="selectScreen(4)"><p><span *ngIf="isScreen4">▶ </span><span *ngIf="!isScreen4" class="transparent-content">▷ </span>Complete a storybook</p></a>
+									<p *ngIf="isScreen4" class="margin-35 scene-description">After all scenes are done, children may finish up the storybook creation and share it with the community.</p>
+								</div>
+							</div>
+							<div class="col-lg-8">
+								<img src="assets/img/itale-outcome-begin.gif" class="part-img" *ngIf="isScreen1">
+								<img src="assets/img/itale-outcome-scene.gif" class="part-img" *ngIf="isScreen2">
+								<img src="assets/img/itale-outcome-guidance.gif" class="part-img" *ngIf="isScreen3">
+								<img src="assets/img/itale-outcome-finish.gif" class="part-img" *ngIf="isScreen4">
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<div class="mid-font-content">
+					<p class="sub-big-title"><b>My contributions</b></p>
 					<p>This project was done as a <b>remote</b> passion project with a small team in California. The cross-functional team consisted of a PM, 2 developers, 1 illustrator, and 2 marketers. I joined as the <b>solo designer</b>, and below are some of my key responsibilities:</p>
-					<div class="row">
+					<div class="row margin-150">
 						<div class="col-lg-4">
 							<p><b>User Research</b></p>
 							<p>I got in touch with parents and educators, and used various research methods to collect and synthesize user data.</p>
@@ -137,51 +176,32 @@
 							<p>I built digital and physical prototypes to speed test the idea and design.</p>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
 
-		<div class="big-part big-part-1" id="big-part-1" #bigpart1>
-			<div class="big-part-inner">
-				<div class="big-part-head">
-					<p class="big-part-title"> Overview </p>
-				</div>
-				<div class="large-font-content">
-					<div class="section">
-						<p> Storytelling is a fun educational exercise that boosts children's imagination and literacy skills. When storytelling education shifts from classroom to home, new opportunities and issues emerge.</p>
-						<p class="margin-100">
-							On one hand, at-home storytelling comes with more flexibility and fun; on the other hand, without professional guidance, it's harder for children to effectively hone and broaden their storytelling skill sets.
-						</p>
+					<p class="sub-big-title"><b>Key design challenges</b></p>
+					<div class="row">
 
-						<p class="sub-big-title"><b>Key design challenges</b></p>
-						<div class="row">
-							
-							<div class="col-sm-6">
-								<p><b>Product-wise</b></p>
-							</div>
-							<div class="col-sm-6">
-								<p><b>Experience-wise</b></p>
-							</div>
+						<div class="col-sm-6">
+							<p><b>Product-wise</b></p>
 						</div>
-
-						<div class="row margin-100">
-							<div class="col-sm-6">
-								<p>How to <mark>coordinate</mark> children's needs for fun experience and parents' expectations for visible educational values?</p>
-							</div>
-
-							<div class="col-sm-6">
-								<p>How to help children <mark>overcome</mark> challenges, pick up key creative storytelling skills, and <mark>enjoy</mark> the experience? </p>
-							</div>
+						<div class="col-sm-6">
+							<p><b>Experience-wise</b></p>
 						</div>
-
-						<p class="sub-big-title">Solution Overview</p>
-						<p>A story playground enabling children to use <mark>story element illustrations</mark> (e.g. characters, items) to act out and record stories. Story <mark>frameworks</mark> and during-story <mark>guidance</mark> are integrated to help children get a better grasp of narrative flow and sparkle their creativity.</p>
 					</div>
+					<div class="row margin-100">
+						<div class="col-sm-6">
+							<p>How to <mark>coordinate</mark> children's needs for fun experience and parents' expectations for visible educational values?</p>
+						</div>
+
+						<div class="col-sm-6">
+							<p>How to help children <mark>overcome</mark> challenges, pick up key creative storytelling skills, and <mark>enjoy</mark> the experience? </p>
+						</div>
+					</div>
+
 				</div>
-			</div>
+			</div>		
 		</div>
 
-		<div class="big-part big-part-2" id="big-part-2" #bigpart2>
+		<div class="big-part">
 			<div class="big-part-inner">
 				<div class="big-part-head">
 					<p class="big-part-title"> Where the story began... </p>
@@ -195,7 +215,7 @@
 			</div>
 		</div>
 
-		<div class="big-part big-part-3" id="big-part-3" #bigpart3>
+		<div class="big-part big-part-2" id="big-part-2" #bigpart2>
 			<div class="big-part-inner">
 				<div class="big-part-head">
 					<p><b>See where these questions led to</b></p>
@@ -216,7 +236,7 @@
 							<p> 
 								I visited <b>local elementary schools</b> in both California and Indiana to talk to <b>children, parents and educators</b>. 
 							</p>
-							<p>To see the full research process, please click [here].
+							<p>To see the full research process, please click <a href="https://docs.google.com/presentation/d/1itQp5PNIPIxPuz0b0vSOun4jEak3G5E6kQUoiUzKYO8/edit" target="_blank">here</a>.
 							</p>
 						</div>
 					</div>
@@ -346,7 +366,7 @@
 			</div>
 		</div>
 
-		<div class="big-part big-part-2" id="big-part-2" #bigpart2>
+		<div class="big-part">
 			<div class="big-part-inner">
 				<div class="big-part-head">
 					<p><b>How did we translate research insights into product direction?</b></p>
@@ -360,7 +380,7 @@
 			</div>
 		</div>
 
-		<div class="big-part big-part-4" id="big-part-4" #bigpart4>
+		<div class="big-part big-part-3" id="big-part-3" #bigpart3>
 			<div class="big-part-inner">
 				<div class="big-part-head">
 					<p><b>How did we come up with the core idea following the vision?</b></p>
@@ -376,19 +396,13 @@
 						</div>
 						<div class="col-lg-4">
 							<p>
-								To help the team decide the <b>general product direction</b>, I explored the problem space and conducted research guided by the questions I asked.
-							</p>
-							<p> 
-								I visited <b>local elementary schools</b> in both California and Indiana to talk to <b>children, parents and educators</b>. 
-							</p>
-							<p>To see the full research process, please click [here].
+								To kick off the MVP development, PM and I discussed MVP strategy and decided to focus on the design of <b>core storytelling mechanisms</b> first, so that we can quickly tested ideas out and showcase to potential investors.
 							</p>
 						</div>
 					</div>
 
-					<p class="sub-big-title"> <b> MVP Strategy </b> </p>
+					<p class="sub-big-title"> <b> Core Storytelling Strategy </b> </p>
 					<p>
-						For the MVP, we focused on the design of <b>core storytelling mechanisms</b> first.
 						We learned that children need free space to experiment on their own, while being guided effectively both before and during storytelling. Therefore, we brainstormed and developed the basic storytelling tactic of <b>building blocks + streetlights</b>:
 					</p>
 					<img src="assets/img/itale-strategy.png" class="img-70 margin-50">
@@ -428,7 +442,7 @@
 		</div>
 
 
-		<div class="big-part big-part-5" id="big-part-5" #bigpart5>
+		<div class="big-part big-part-4" id="big-part-4" #bigpart4>
 			<div class="big-part-inner">
 				<div class="big-part-head">
 					<p><b>How did we turn the core idea into actual design?</b></p>
@@ -445,7 +459,7 @@
 						<p class="sub-big-title"> Task Flow</p>
 						<p> We mapped out the major task flow as the MVP design blueprint: </p>
 						<img src="assets/img/itale-taskflow.png" class="margin-50 part-img">
-						<p>Wireframes and final screens can be found <a (click)="scrollToElement(bigpart7)" class="clickable">here</a>. Below are some major UX decisions that we made along the happy path of storytelling process:</p>
+						<p>Wireframes and final screens can be found <a (click)="scrollToElement(bigpart6)" class="clickable">here</a>. Below are some major UX decisions that we made along the happy path of storytelling process:</p>
 
 					</div>
 
@@ -481,8 +495,15 @@
 
 						<div class="section">
 							<p class="sub-title"> <b> [Layout] </b> </p>
-							<p class="sub-big-title"> <b> Laying out information in story detail page </b> </p>
-							<img src="assets/img/itale-story-detail.png" class="margin-50 img-70">
+							<p class="sub-big-title margin-50"> <b> Laying out information in story detail page </b> </p>
+							<div class="row">
+								<div class="col-lg-4">
+									<img src="assets/img/itale-layout.png" class="margin-50 part-img">
+								</div>
+								<div class="col-lg-8">
+									<img src="assets/img/itale-story-detail.png" class="margin-50 part-img">
+								</div>
+							</div>
 						</div>
 
 
@@ -493,7 +514,7 @@
 		</div>
 
 
-		<div class="big-part big-part-6" id="big-part-6" #bigpart6>
+		<div class="big-part big-part-5" id="big-part-5" #bigpart5>
 			<div class="big-part-inner">
 				<div class="big-part-head">
 					<p class="big-part-title"> Testing & Iterations </p>
@@ -529,7 +550,7 @@
 						<div class="col-lg-8">
 							<img class="part-img" src="assets/img/itale-iteration-1.png">
 						</div>
-						<div class="col-lg-4">
+						<div class="col-lg-4 sub-text">
 							From how participants naturally interacted with the physical prototype, we discovered some useful interactions to be included (e.g. zooming, moving 2 pieces at the same time). We also included visual guidance to make sure users will learn about these interactions. 
 						</div>
 					</div>
@@ -538,18 +559,18 @@
 					<div class="row margin-75">
 						<div class="col-lg-4">
 							<img class="part-img margin-5" src="assets/img/itale-iteration-2-1.png">
-							<p class="note-paragraph left-align padding-b-"> ✖️ Text is long in order to look more like real conversations, but this will put unnecessary cognitive burden on children. Also, the abrupt use of emoji can be misleading.</p>
+							<p class="note-paragraph left-align"> ✖️ Text is long in order to look more like real conversations, but this will put unnecessary cognitive burden on children. Also, the abrupt use of emoji can be misleading.</p>
 						</div>
 						<div class="col-lg-4">
 							<img class="part-img margin-5" src="assets/img/itale-iteration-2-2.png">
 							<p class="note-paragraph left-align"> ✅ Concise, unambiguous</p> 
 						</div>
-						<div class="col-lg-4">
+						<div class="col-lg-4 sub-text">
 							<p>Parents and teachers provided many insights on how to talk to children:</p>
 							<ul>
-								<li>don't use too much text</li>
-								<li>use simple language</li>
-								<li>be concise and clear.</li>
+								<li class="margin-5">don't use too much text</li>
+								<li class="margin-5">use simple language</li>
+								<li class="margin-5">be concise and clear.</li>
 							</ul> 
 						</div>
 					</div>
@@ -561,22 +582,22 @@
 			</div>
 		</div>
 
-		<div class="big-part big-part-7" id="big-part-7" #bigpart7>
+		<div class="big-part big-part-6" id="big-part-6" #bigpart6>
 			<div class="big-part-inner">
 				<div class="big-part-head">
-					<p class="big-part-title"> Screens </p>
+					<p class="big-part-title"> Final Screens </p>
 					<!--<p class="big-part-sub-title"> How did we come here </p>-->
 				</div>
 				<div class="mid-font-content">
 					<p class="sub-big-title"> <b> Wireframes </b> </p>
-					<img src="assets/img/itale-wireframe.png" class="margin-50 part-img">
+					<img src="assets/img/itale-wireframe.png" class="margin-100 part-img">
 					<p class="sub-big-title"> <b> Final Screens </b> </p>
-					<img src="assets/img/itale-final.png" class="margin-50 part-img">
+					<img src="assets/img/itale-final.png" class="margin-100 part-img">
 				</div>
 			</div>
 		</div>
 
-		<div class="big-part big-part-7" id="big-part-7" #bigpart7>
+		<div class="big-part">
 			<div class="big-part-inner">
 				<div class="big-part-head">
 					<p class="big-part-title"> Future Expansion </p>
