@@ -23,6 +23,7 @@ import { BrowserFavicons } from "./favicons.service";
 import { Favicons } from "./favicons.service";
 import { ItaleComponent } from './itale/itale.component';
 import { DunhuangComponent } from './dunhuang/dunhuang.component';
+import { JbComponent } from './jb/jb.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { DunhuangComponent } from './dunhuang/dunhuang.component';
   InvolvedComponent,
   PocoComponent,
   ItaleComponent,
-  DunhuangComponent
+  DunhuangComponent,
+  JbComponent
   ],
   imports: [
   BrowserModule,

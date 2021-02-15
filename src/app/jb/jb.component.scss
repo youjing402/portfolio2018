@@ -1,0 +1,82 @@
+@import '../common-project';
+
+$theme-color: #0070D2;
+$light-color: #D8EDFF;
+
+mark {
+	background-color: $light-color;
+}
+
+.banner {
+	background: $theme-color;
+}
+
+.banner-img-echoes {
+	max-height: 100vh;
+  top: -60px;
+  position: absolute;
+}
+
+.navbar {
+	background-color: $theme-color;
+}
+
+.scene-description {
+	font-size: 14px;
+	padding-left: 25px;
+	font-family: 'Roboto Slab', sans-serif;
+	font-weight: 100;
+}
+
+.screen-btn {
+	font-size: 18px;
+	font-family: 'Roboto Slab', sans-serif;
+	color: black;
+	cursor: pointer;
+}
+
+.screen-img {
+	box-shadow: 0px 0px 8px #aaa;
+}
+
+.selected-screen-btn {
+	font-weight: bold;
+	color: $theme-color;
+}
+
+.demo-devision {
+	margin-bottom: 15px;
+	text-align: center;
+	border-width: 4px;
+	width: 30%;
+}
+
+.demo-section {
+	background-color: $light-color;
+}
+
+.demo-wrapper {
+	padding-left: 7%;
+	padding-right: 7%;
+
+	.row {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
+
+.decision-section {
+	background-color: $theme-color;
+	color: white;
+	text-align: center;
+	padding: 70px 100px 70px 100px;
+}
+
+.mid-title {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.p-half {
+	margin-bottom: 0.25em !important;
+}

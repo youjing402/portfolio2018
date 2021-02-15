@@ -1,0 +1,640 @@
+<link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lustria" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top my-navbar">
+	<a class="navbar-brand" href="#">Jing</a>
+	<button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
+		<ul class="navbar-nav mr-auto justify-content-end">
+			<li class="nav-item dropdown" ngbDropdown>
+				<a class="nav-link dropdown-toggle" id="id01" ngbDropdownToggle>Work</a>
+				<div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+					<a class="dropdown-item orange-text" href="projects/itale">iTale</a>
+					<a class="dropdown-item yellow-text" href="projects/dunhuang">Dunhuang</a>
+					<a class="dropdown-item purple-text" href="projects/echoes">Echoes</a>
+					<a class="dropdown-item green-text" href="projects/stretch">Stretch</a>
+					<a class="dropdown-item coral-text" href="projects/involved">Involved</a>
+					<!--<a class="dropdown-item blue-text" href="projects/poco">Poco A Poco</a>-->
+				</div>
+			</li>
+			<li class="nav-item navbar-right">
+				<a class="nav-link" id="id02" href="">About</a>
+			</li>
+			<li class="nav-item navbar-right">
+				<a class="nav-link" id="id03" href="assets/file/resume_jy-2020.pdf" target="_blank">Resume</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="timeline" *ngIf="isScrolled1">
+	<a (click)="scrollToElement(bigpart1)">
+		<div class="container left" [ngClass]="(!isScrolled2 && isScrolled1) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Overview</p>
+		</div>
+	</a>
+	<a (click)="scrollToElement(bigpart2)">
+		<div class="container left" [ngClass]="(!isScrolled3 && isScrolled2) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Research</p>
+		</div>
+	</a>
+	<a (click)="scrollToElement(bigpart3)">
+		<div class="container left" [ngClass]="(!isScrolled4 && isScrolled3) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Ideation & Strategy</p>
+		</div>
+	</a>
+	<a (click)="scrollToElement(bigpart4)">
+		<div class="container left" [ngClass]="(!isScrolled5 && isScrolled4) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Design</p>
+		</div>
+	</a>
+	<a (click)="scrollToElement(bigpart5)">
+		<div class="container left" [ngClass]="(!isScrolled6 && isScrolled5) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Testing & Iterations</p>
+		</div>
+	</a>
+
+	<a (click)="scrollToElement(bigpart6)">
+		<div class="container left" [ngClass]="(isScrolled6) ? 'selected' : 'not-selected'">
+			<p class="menu-section-title">Final Screens</p>
+		</div>
+	</a>
+
+</div>
+
+
+<div class="itale-page page">
+	<div class="row banner justify-content-around">
+		<div class="titles col-lg-6 col-sm-6">
+			<p class="banner-title">
+				Journey Builder Smart Testing
+			</p>
+			<p class="banner-subtitle margin-20">
+				Redesigning the testing feature of Salesforce Journey Builder to boost marketers' confidence.
+			</p>
+			<div class="attributes">
+				<div class="row attribute1">
+					<div class="col-lg-6 col-6">
+						<div class="attribute-title"><b>Duration</b></div>
+						<!--<fa name="calendar"></fa>-->
+						<div class="attribute-content">Oct 2019 ~ Dec 2019</div>
+					</div>
+					<div class="col-lg-6 col-6">
+						<div class="attribute-title"><b>Project</b></div>
+						<!--<fa name="user"></fa>-->
+						<div class="attribute-content">Client-Sponsored Project</div>
+					</div>
+				</div>
+				<div class="row attribute2">
+					<div class="col-lg-6 col-6">
+						<div class="attribute-title"><b>Team</b></div>
+						<!--<fa name="cog" animation="spin"></fa>-->
+						<div class="attribute-content">2 UX Researchers</div>
+						<div class="attribute-content">2 UX Designers</div>
+						<div class="attribute-content">Sr. Designers from Salesforce</div>
+					</div>
+					<div class="col-lg-6 col-6">
+						<div class="attribute-title"><b>Contributions</b></div>
+						<!--<fa name="cog" animation="spin"></fa>-->
+						<div class="attribute-content">Problem Framing</div>
+						<div class="attribute-content">Ideation</div>
+						<div class="attribute-content">UX/UI Design</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="col-lg-6 col-sm-6">
+			<img class="part-img" src="assets/img/jb-cover.png">
+		</div>
+	</div>
+
+	<div class="content-wrapper margin-100" #wrapper>
+		<div class="big-part no-height-part"></div>
+		<div class="big-part big-part-1 margin-5 padding-b-0" id="big-part-1" #bigpart1>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Overview </p>
+				</div>
+				<div class="large-font-content">
+					<div class="margin-150">
+						<p> In this client-sponsored project, we, a team of 4, collaborated with UX designers and researchers from Salesforce to improve and re-imagine the user experience of one of their most successful digital marketing tool: Journey Builder.
+						</p>
+						<p>
+							As marketing campaigns become more complex and personalized, marketers have to deal with more uncertainty, because a small mistake can lead to frustration of a large audience.	
+						</p>
+						<p>
+							The challenge now is: <b>how do we increase marketers' confidence when they activate a marketing campaign in Journey Builder?</b>
+						</p>
+					</div>
+				</div>
+
+				<div class="mid-font-content">
+					<p class="sub-big-title"><b>Highlights</b></p>
+					<div class="row margin-150">
+
+						<div class="col-sm-4">
+							<p>Through the use of <b>mapping tools</b>, understand the service and user journey to identify problems systematically.</p>
+						</div>
+						<div class="col-sm-4">
+							<p>Develop design based on <b>existing design system, product features, and product goals</b>.</p>
+						</div>
+						<div class="col-sm-4">
+							<p><b>Communicate with clients and users</b> to iterate on design ideas and prototypes.</p>
+						</div>
+					</div>
+
+					<p class="sub-big-title margin-20">Solution Overview</p>
+					<p class="margin-50">In short, we chose to focus on the redesign of the journey testing feature and made following improvements:</p>
+
+					<div class="margin-150">
+						<p><b>Testing Progress Tracking</b></p>
+						<p>To ensure easy and systematic testing, a progress tracking system is introduced. Test cases can be automatically generated to test uncovered routes.</p>
+					</div>
+
+					<div>
+						<p><b>In-App Test Message Preview</b></p>
+						<p>Instead of sending messages to different email accounts and going through each of them, marketers can now check the content display in local testing results.</p>
+					</div>
+
+				</div>
+			</div>		
+		</div>
+
+		<div class="big-part big-part-2" id="big-part-2" #bigpart2>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p><b>See how we got here:</b></p>
+					<p>⬇</p>
+					<p class="big-part-title"> Research </p>
+				</div>
+				<div class="mid-font-content">
+
+					<p class="sub-title"><b> Challenge 1 - Understanding Users and Workflow </b></p>
+					<p class="sub-big-title"> What does "confidence" mean to marketers? </p>
+					<div>
+						<div>
+							<p class="margin-50"> We conducted interview with parents on their first-hand experience, and consulted education experts on children's mental development (to read more about research methods, click here).</p>
+
+							<p class="sub-title margin-15">What did we do?</p>
+							<div class="row margin-75">
+								<div class="col-lg-6 margin-50">
+									<p><b>User Research & Interview</b></p>
+									<p class="margin-20">As a team, we <mark>intereviewed</mark> 3 marketers to learn about their experience in marketing campaigns. We also did <mark>online research</mark> to learn about detailed Journey Builder use cases.</p>
+									<img class="part-img" src="assets/img/jb-research.png">
+								</div>
+
+								<div class="col-lg-6 margin-50">
+									<p><b> Competitive Analysis</b></p>
+									<p class="margin-20">To learn about current trends and technologies, we collected over 50 relevant products in the market and highlighted their advantages.</p>
+									<img class="part-img" src="assets/img/jb-collection.png">
+								</div>
+
+								<div class="col-lg-6">
+									<p><b>Experience & Mental Model Map</b></p>
+									<p class="margin-20">We synthesized research results by mapping out marketers’ <mark>tasks, tools used, emotions, and pain points</mark> throughout different stages of a marketing campaign.</p>
+									<img class="part-img" src="assets/img/jb-exp-map.png">
+								</div>
+
+								<div class="col-lg-6">
+									<p><b> Salesforce Marketing Cloud Research</b></p>
+									<p class="margin-20">To help us better understand how marketers navigate through the Marketing Cloud ecosystem to achive theier goals, we conducted further Salesforce product research. </p>
+									<img class="part-img" src="assets/img/jb-mkt-cloud.png">
+								</div>
+
+							</div>
+
+							<p class="sub-title margin-15">What did we learn?</p>
+
+							<p><b>1. Factors that influence marketers' confidence</b></p>
+							<p>What marketers are trying to do can be summarized into 3 core elements: Making sure to send the <mark>right message</mark> to the <mark>right people</mark> at the <mark>right time</mark>. Other than that, they also have to deal with other external factors, such as collaboration, software complexity, KPI, etc. </p>
+							<p>Their gain confidence mainly from gaining <mark>sense of control</mark>: know what they want to achieve, what they can achieve, and what they have achieved. </p>
+							<img src="assets/img/jb-core.png" class="margin-50 img-60">
+
+							<p><b>2. Marketers' confidence fluctuation throughout a campaign</b></p>
+							<p>Markers' confidence drops significantly when they're into the campaign execution stage because (1) Unlike the highly collaborative pre-execution stage, marketers now need to take sole responsibility during the execution stage; (2) More uncertainty and variants are introduced during the actual execution. </p>
+							<img src="assets/img/jb-stages.png" class="part-img">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part">
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p><b>How did we narrow down problem space and find the "right" problem to solve?</b></p>
+					<p>⬇</p>
+					<p class="big-part-title"> Problem Framing & Ideation </p>
+				</div>
+				<div class="mid-font-content">
+					<div>
+						<p class="sub-title">Diverging and Converging</p>
+						<p class="sub-big-title"> Exploring problem space </p>
+						<p class="margin-50"> After having a basic understanding of major problems marketers faced during the campaign as well as what make them confident/unconfident, we explored the problem space by further brainstorming, expanding, and regrouping ideas.</p>
+						<p class="sub-title margin-15">What did we do?</p>
+						<div class="row margin-50">
+							<div class="col-lg-6">
+								<p><b>Design Charrettes</b></p>
+								<p class="margin-20">As a team, we went through 3 rounds of design charrettes: Brainstormed ideas -> Sketched -> Explained ideas to each other and refined them -> Grouping similar ideas into themes.</p>
+								<img class="img-70" src="assets/img/jb-brainstorm.png">
+							</div>
+							<div class="col-lg-6">
+								<p><b>Analysis & Prioritization</b></p>
+								<p class="margin-20">For the 5 big problem themes we identified, we filtered and prioritized them based on their <mark>impact and effort</mark>, as well as how <mark>compatible</mark> they are with the current product direction.</p>
+								<img class="part-img" src="assets/img/jb-priority.png">
+							</div>
+						</div>
+						<p><b>Co-Design Session</b></p>
+						<div>
+							<p class="margin-20">We also organized a co-design session with a marketer to discuss potential design concepts. We learned that <mark>accuracy</mark> is her team's top priority when it comes to journey implementation, yet currently, quality assurance is not well-supported by Journey Builder.</p>
+						</div>
+						<div>
+							<img class="img-70 margin-5" src="assets/img/jb-codesign.png">
+							<p class="note-paragraph"> Brainstorming new ideas using physical prototypes during the co-design session with a marketer.</p>
+						</div>
+						<div class="row">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="decision-section">
+			<p class="sub-mid-title"><b> DESIGN DECISION #1 was made: </b></p>
+			<p class="sub-big-title margin-50">Marketer's feedback validated our problem assumptions, and we decided to focus on the redesign of <mark>testing feature</mark> onwards.</p>
+			<img class="img-10 margin-20" src="assets/img/jb-test-icon.png">
+		</div>
+
+		<div class="big-part">
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p><b>How did we narrow down problem space and find the "right" problem to solve?</b></p>
+					<p>⬇</p>
+				</div>
+				<div class="mid-font-content">
+					<div>
+						<p class="sub-title">Pain Points: Zooming into the experience</p>
+						<p class="sub-big-title"> Why do marketers feel insecure right before activating campaigns?</p>
+						<p class="sub-title margin-15"></p>
+						<p> We conducted further interviews with 2 marketers regarding their feelings and experience right before campaign activation and learned that marketers' biggest insecurity comes from not being in control.</p>
+						<p> Specifically, it becomes harder to make sure everything is accurate, and more stressful to think about the consequence caused by small mistakes: </p>
+						<div class="row margin-75">
+							<div class="col-lg-6 margin-50">
+								<p><b>Mistakes can be Scaled up</b></p>
+								<p class="margin-20">Even one small mistake in the journey diagram can lead to thousands of <mark>real users</mark> receiving the wrong message, and that causes exponential amount of anxiety.</p>
+								<img class="part-img" src="assets/img/jb-scale.png">
+							</div>
+							<div class="col-lg-6 margin-50">
+								<p><b>Journey can Grow Crazy</b></p>
+								<p class="margin-20">A journey can easily become huge and complex with tens and hundreds of <mark>possible routes</mark>. The fearsome of missing out small details adds to marketers' sense of insecurity.</p>
+								<img class="part-img" src="assets/img/jb-complex.png">
+							</div>
+						</div>
+
+						<p class="sub-title">Pain Points: Zooming into the product</p>
+						<p class="sub-big-title">Why did the existing testing feature fail to address such insecurity?</p>
+						
+						<p> Following the line, we took a closer look at the testing feature and mark out relevant pain points at each step.</p>
+						<img class="part-img margin-50" src="assets/img/jb-existing.png">
+
+						<p class="sub-title margin-15">What did we learn?</p>
+						<div class="row margin-75">
+							<div class="col-lg-6 margin-50">
+								<p><b>Uncertain about the final look of messages</b></p>
+								<p class="margin-20">Marketers are only able to see the message template in content editor, and there's no way to check how messages will end up be like on users' device during testing unless they send test messages with real email accounts.</p>
+								<!-- <img class="part-img" src="assets/img/jb-no-preview.png"> -->
+							</div>
+							<div class="col-lg-6 margin-50">
+								<p><b>Tests are independent and not trackable</b></p>
+								<p class="margin-20">Currently, each test is independent from each other, and markters can only test up to 10 contacts at a time, which can become tedious if the journey grows huge. Also, it's hard for marketers to keep track of overall testing progress without the help of external tools.</p>
+								<!-- <img class="part-img" src="assets/img/jb-no-track.png"> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part big-part-4" id="big-part-4" #bigpart4>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p><b>How did we turn the core idea into actual design?</b></p>
+					<p>⬇</p>
+					<p class="big-part-title"> Design </p>
+					<!--<p class="big-part-sub-title"> forms of feedback </p>-->
+				</div>
+				<div class="mid-font-content">
+					<div class="section">
+						<p class="sub-big-title"> Design Goals </p>
+						<p class="margin-50">We came up with the overall idea to tackle pain points that we identified about the current design, and defined design goals accordigly:</p>
+						<img src="assets/img/jb-big-concept.png" class="margin-20 img-60">
+						<p><b>1. Systematic Testing System:</b> To maintain a trackable testing system that helps marketers test journey <mark>thoroughly</mark> and gain more <mark>control</mark> over the testing process.</p>
+						<p><b>2. Test Result Preview:</b> To make it more <mark>efficient</mark> for marketers to check the accuracy of journey logics and message content.</p>
+					</div>
+
+					<div>
+						<div class="section">
+							<p class="sub-title"> <b> [Mechanism] </b> </p>
+							<p class="sub-big-title margin-50"> <b> Systematic: How to ensure everything is tested in an efficient manner? </b> </p>
+
+							<p class="mid-title margin-15"> 1. OVERALL MECHANISM</p>
+							
+							<img src="assets/img/jb-systematic-old.png" class="part-img margin-15">
+							<p><b>👎 Before: Contact-First Approach is inefficient, tedious, and risky</b></p>
+							<p class="margin-15">A journey typically has many branches, and different contacts will go through different path according to their attribute configuration. Thus, to ensure test coverage, marketers now have to configure, select and record contacts carefully on their own. </p>
+
+							<!--
+							<p>⬇</p>
+							<p><b>💡 Since marketers' ultimate goal is to test every path in the journey, why don't we switch to...</b></p>
+							-->
+							<p>⬇</p>
+
+							<img src="assets/img/jb-systematic-new.png" class="part-img margin-15">	
+							<p><b>👍 After: Path-First Approach helps marketers focus on more important tasks</b></p>
+							<p class="margin-50">We decided to make this process more automated by focusing on the <mark>path coverage</mark>: marketers only have to take care of which paths they want to test, and the system will pick the right group of contacts to cover those paths.</p>
+							<hr class="margin-50">
+
+							<p class="mid-title margin-15"> 2. TEST CASE GENERATION</p>
+							<div class="margin-50 row">
+								<div class="col-lg-6 margin-50">
+									<img src="assets/img/jb-path-1.png" class="part-img margin-15">
+									<p><b>Option A: Drag and Select Area to Test</b></p>
+									<p class="p-half">✖️ Bad for batch-testing if the journey is large</p>
+									<p class="p-half">✖️ Not always easy for users to accurately select what they want</p>
+									<p>☑️ Good testing flexibility</p>
+	
+								</div>
+
+								<div class="col-lg-6 margin-50">
+									<img src="assets/img/jb-path-2.png" class="part-img margin-15">
+									<p><b>Option B: Set Condition Filters for Paths</b></p>
+									<p class="p-half">✖️ Not intuitive for users to select paths</p>
+									<p>✖️ May become too complex for users to learn and use</p>
+								</div>
+
+								<div class="col-lg-6">
+									<img src="assets/img/jb-path-3.png" class="part-img">
+								</div>
+
+								<div class="col-lg-6">
+									<p><b>[Final] Option C: Auto-Test Uncovered Paths</b></p>
+									<p class="p-half">☑️ Efficient, avoid testing repetitively even in large journey</p>
+									<p class="p-half">☑️ Intuitive, low cognitive burden</p>
+									<p>😅 Sacrifice part of flexibility for simplicity</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<p class="sub-title"> <b> [Flow & Interaction] </b> </p>
+							<p class="sub-big-title"> <b> How to merge the tracking system with the existing flow? </b> </p>
+
+							<p></p>
+
+							<p class="margin-15 mid-title"><b>Task Flow & Wireframes</b></p>
+							<p class="margin-50">We first intuitively mapped out the general flow of the concept, and sketched down some key screens along the way:</p>
+							<img src="assets/img/jb-systematic-flow.png" class="part-img margin-20">	
+							<img src="assets/img/jb-systematic-wireframe.png" class="part-img margin-100">
+
+							<p class="margin-15 mid-title"><b>Interaction Flow</b></p>
+							<p class="margin-50">We studied the flow of the current testing feature. For the sake of product <mark>consistency and compatibility</mark>, we decided not to make huge changes to the basic structure. Although we did clean up the flow and interface, we still kept the entrance of some old features (e.g. selecting contacts to test).</p>
+							<img src="assets/img/jb-systematic-interfaces.png" class="part-img">
+
+							<!--
+							<p><b>Key Screens</b></p>
+							<img src="assets/img/jb-layout-annotation.png" class="margin-15 part-img">
+							<img src="assets/img/jb-layout-annotation.png" class="margin-15 part-img">
+							-->
+						</div>
+
+						<div class="section">
+							<p class="sub-title"> <b> [Visual] </b> </p>
+							<p class="sub-big-title"> <b> How to represent test case status intuitively?</b> </p>
+							<p>We designed a set of 4 test case status in total, with the following goals in mind:</p>
+							<p class="p-half"><b>1. Efficient:</b> Status should speed up test case checking process</p>
+							<p><b>2. Intuitive:</b> Status should not be complicated and confusing to users</p>
+
+							<img src="assets/img/jb-status.png" class="margin-15 part-img">
+
+							<p>Colors of status icons correspond to colors of paths in the journey editor:</p>
+							<img src="assets/img/jb-status-demo.png" class="margin-15 part-img">
+							
+						</div>
+
+						<div class="section">
+							<p class="sub-title"> <b> [Layout & Interaction] </b> </p>
+							<p class="sub-big-title"> <b> How to help users check through path logics and content smoothly?</b> </p>
+							<p class="margin-50">We decided that users should be able to check through the journey content step by step, and therefore came up with 3 versions of layout:</p>
+							<div class="row">
+								<div class="col-lg-6">
+									<p><b>V1: Integrate invesigator (modal) with test result list screen</b></p> 
+									<img src="assets/img/jb-layout-1.png" class="margin-15 part-img">
+									
+									<p>✖️ Too many windows, confusing</p>
+									<p>✖️ Tasks are not focused</p>
+								</div>
+								<div class="col-lg-6 margin-50">
+									<p><b>V2: Independent test case detail screen + floating content previewer</b></p> 
+									<img src="assets/img/jb-layout-2.png" class="margin-15 part-img">
+									<p class="p-half">☑️ More focused and intuitive</p>
+									<p class="p-half">✖️ Overrides existing interactions (left click) in Journey Editor</p>
+									<p>✖️ Inconsistent with Salesforce UI styles</p>
+								</div>
+								<div class="col-lg-7">
+									<img src="assets/img/jb-layout-3.png" class="margin-15 part-img">
+								</div>
+								<div class="col-lg-5">
+									<p><b>[Final] V3: Independent test case detail screen + separate previewer from journey editor</b></p> 
+									<p class="p-half">☑️ Compatible and consistent</p>
+									<p class="p-half">☑️ Focused and clear</p>
+									<p>🤔 Less intuitive: requires extra efforts to connect the content previewer with journey editor</p>
+								</div>
+							</div>
+							
+						</div>
+
+					</div>
+
+				</div>
+
+				<img src="assets/img/jb-layout-annotation.png" class="margin-15 part-img">
+			</div>
+		</div>
+
+
+		<div class="big-part big-part-5" id="big-part-5" #bigpart5>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Testing & Iterations </p>
+					<!--<p class="big-part-sub-title"> How did we come here </p>-->
+				</div>
+				<div class="mid-font-content">	
+
+					<img class="part-img" src="assets/img/jb-iteration-overall.png">
+
+					<p class="sub-big-title"> <b> Iteration 1: Regrouping UI elements</b> </p>
+					<p>1. According to users, the placement of prev/next button was not intuitive. We therefore re-examined buttons in the bottom navigation bar, and replaced unnecessary ones with prev/next buttons. It's neater and more logical.</p>
+					<p class="margin-15">2. Switching between status was inflexible and confusing through text. We designed a dropdown that enables users to easily switch between different status.</p>
+					<img class="img-80 margin-100" src="assets/img/jb-iteration-1.png">
+					
+					<p class="sub-big-title"> <b> Iteration 2: Change the style of path event panel </b> </p>
+					<p>1. In the first version, we were trying to be more consistent with the visual design in journey editor and thus designed panel in the style of timeline.</p>
+					<p>2. However, users were confused which event was selected in the panel, as the highlight waas not clear enough.</p>
+					<p>3. We thus replaced the timeline with buttons.</p>
+					<img class="part-img" src="assets/img/jb-iteration-2.png">
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part big-part-6" id="big-part-6" #bigpart6>
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Final Results </p>
+					<!--<p class="big-part-sub-title"> How did we come here </p>-->
+				</div>
+				<div class="mid-font-content">
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part">
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Impact & Measurement </p>
+					<!--<p class="big-part-sub-title"> How did we come here </p>-->
+				</div>
+				<div class="mid-font-content">
+					<ul>
+						<li><b>Think ahead and design for more flexibility:</b> As I joined the team at an early stage, it was an important job for me to learn to prioritize features with the team while also keeping an eye on what may possibly come next (e.g. marketing campaign) in order to design in a more flexible way to accommodate future changes.</li>
+						<li><b>Find alternative ways to deal with challenging user groups:</b> Children are surely one of the most unique and challenging user groups to conduct research on. To approach the problem differently, I tried to get more information and knowledge via reading and talking to professional educators and parents about their first-hand experience. They sometimes were able to explain children's behaviors and mentality even better than children themselves, which helped me greatly in understanding what I needed to design.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="big-part">
+			<div class="big-part-inner">
+				<div class="big-part-head">
+					<p class="big-part-title"> Reflection </p>
+					<!--<p class="big-part-sub-title"> How did we come here </p>-->
+				</div>
+				<div class="mid-font-content">
+					<ul>
+						<li><b>Think ahead and design for more flexibility:</b> As I joined the team at an early stage, it was an important job for me to learn to prioritize features with the team while also keeping an eye on what may possibly come next (e.g. marketing campaign) in order to design in a more flexible way to accommodate future changes.</li>
+						<li><b>Find alternative ways to deal with challenging user groups:</b> Children are surely one of the most unique and challenging user groups to conduct research on. To approach the problem differently, I tried to get more information and knowledge via reading and talking to professional educators and parents about their first-hand experience. They sometimes were able to explain children's behaviors and mentality even better than children themselves, which helped me greatly in understanding what I needed to design.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<hr class="page-divider">
+		<p class="more-project-title">More Projects</p>
+		<div class="row justify-content-center width-85">
+			<div class="col-lg-3 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
+				<div class="thumb-image square">
+					<div class="crop-img">
+						<a href="projects/dunhuang">
+							<img src="assets/img/projectthumb-00.png">
+						</a>
+					</div>
+				</div>
+				<p class="project-categories">
+					/Charity Design /Commercialization /Culture /UX Design 
+				</p>
+				<p class="project-title">
+					Light Up Dunhuang - Internship @Tencent
+				</p>
+				<p class="project-description">
+					A creative e-charity product that engages the public to donate for traditional cultural heritage
+				</p>
+			</div>
+
+			<div class="col-lg-3 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
+				<div class="thumb-image square">
+					<div class="crop-img">
+						<a href="projects/involved">
+							<img src="assets/img/projectthumb-03.png">
+						</a>
+					</div>
+				</div>
+				<p class="project-categories">
+					/7-day Design Challenge /UX Design /UX Research /Mobile App Design
+				</p>
+				<p class="project-title">
+					Involved - Google Design Exercise 2019
+				</p>
+				<p class="project-description">
+					Socializing the experience for new students to find the right organizations to engage with
+				</p>
+			</div>
+
+			<div class="col-lg-3 col-sm-12 project hid-on-init" animateOnScroll animationName="animated fadeIn">
+				<div class="thumb-image square" >
+					<div class="crop-img">
+						<a href="projects/echoes">
+							<img src="assets/img/projectthumb-01.png">
+						</a>
+					</div>
+				</div>
+				<p class="project-categories">
+					/UX Design /UX Research /Platform Design /Design Competition
+				</p>
+				<p class="project-title">
+					Echoes - CHI Student Design Competition
+				</p>
+				<p class="project-description">
+					A Feeling-Centered music experience that connects listeners and artists
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="foot">
+		<p class="copyright center-align">Designed and hand-coded by Jing You © 2020 💡</p>
+		<div class="row width-40 justify-content-center">
+			<div class="col-lg-1">
+				<a href="https://www.linkedin.com/in/jing-you-b823b4132/" target="_blank" class="sm-link">
+					<fa name="linkedin" class="sm-icon"></fa>
+				</a>
+			</div>
+			<div class="col-lg-1">
+				<a href="https://github.com/youjing402/" target="_blank" class="sm-link">
+					<fa name="github" class="sm-icon"></fa>
+				</a>
+			</div>
+			<div class="col-lg-1">
+				<a href="mailto:youjing402@gmail.com" class="sm-link">
+					<fa name="envelope" class="sm-icon"></fa>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!--
+	<div class="padding-lr-30">
+		<a class="float-left">
+			<table style="height: 100px;">
+				<td class="align-middle"><fa name="angle-left" class="prev-icon"></fa></td>
+				<td class="align-middle"><span class="align-middle jump-text">Previous: iTale</span></td>
+			</table>
+		</a>
+
+		<div class="float-right">
+			<table style="height: 100px;">
+				<td class="align-middle"><span class="align-middle jump-text">Next: Light Up Dunhuang</span></td>
+				<td class="align-middle"><fa name="angle-right" class="next-icon"></fa></td>
+			</table>
+		</div>
+	</div>
+-->
+</div>
