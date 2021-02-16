@@ -80,3 +80,13 @@ mark {
 .p-half {
 	margin-bottom: 0.25em !important;
 }
+
+.padding-left-15p {
+	//margin-left: 5%;
+	border-left: 2px solid transparent;
+	padding-left: 30px;
+}
+
+.img-shadow {
+	box-shadow: 1px 1px 8px #bbb;
+}
